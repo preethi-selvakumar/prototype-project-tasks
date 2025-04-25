@@ -1,0 +1,1400 @@
+/* home screen media query */
+
+/* Mobile Header Styles (320px to 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* header */
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+    }
+    
+    .left-header,
+    .right-header {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    
+    .logo-container {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .left-header nav,
+    .right-header nav.right-nav {
+        margin-left: 0;
+    }
+    
+    .left-header nav>ul,
+    .right-header nav.right-nav>ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .left-header nav>ul>li,
+    .right-header nav.right-nav>ul>li {
+        margin: 0.75rem 0;
+    }
+    
+    .left-header nav>ul>li:first-child {
+        margin-left: 0;
+    }
+    
+    .left-header nav>ul>li>a,
+    .right-header nav.right-nav>ul>li>a {
+        font-size: 1.1rem;
+    }
+    
+    .left-header nav>ul>li>a::after,
+    .right-header nav.right-nav>ul>li>a::after {
+        display: none;
+    }
+
+    /* hero section */
+    .hero {
+        padding-top: 2rem;
+        min-height: auto;
+    }
+    
+    .hero-content {
+        margin-bottom: 2rem;
+        width: 95%;
+        max-width: none;
+    }
+    
+    .main-heading {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .sub-text {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-top: 1rem;
+    }
+    
+    .search-box {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        width: 95%;
+        max-width: none;
+        margin-top: 1.5rem;
+    }
+    
+    .custom-select {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .custom-select label {
+        font-size: 0.9rem;
+    }
+    
+    .select-trigger {
+        height: 2.5rem;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+    
+    .select-trigger img {
+        width: 0.8rem;
+        margin-left: 0.5rem;
+    }
+    
+    .search-button {
+        width: 100%;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+    
+    /* cars image section */
+    .cars-image-section {
+        padding: 0.3rem 0;
+    }
+    
+    /* commitment section */
+    .commitment-section {
+        padding: 2rem 1rem;
+    }
+    
+    .commitment-heading {
+        font-size: 1.75rem;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+    }
+    
+    .divider-line1 {
+        width: 95%;
+        margin: 1.5rem auto;
+    }
+    
+    .highlight-cards {
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+    }
+    
+    .yellow-tick-card {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        min-width: auto;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        flex-wrap: nowrap;
+    }
+    
+    .icon-box {
+        width: 5rem;
+        height: 3.5rem;
+        border-radius: 0.5rem;
+        margin-right: 1rem;
+    }
+    
+    .icon-box img {
+        width: 2rem;
+        height: auto;
+    }
+    
+    .yellow-tick-card-text {
+        white-space: normal;
+    }
+    
+    .yellow-tick-card-text h4 {
+        font-size: 1.3rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .yellow-tick-card-text p {
+        font-size: 1.1rem;
+        margin-top: 0;
+        margin-left: 0;
+        text-align: left;
+    }
+    
+    /*top selling cars section*/
+    .top-selling-cars-css {
+        padding: 2rem 1rem;
+    }
+    
+    .section-heading {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .section-subheading {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 1.5rem auto 1rem;
+        text-align: center;
+        width: 95%;
+    }
+    
+    .cars-container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    
+    .home-car-card {
+        width: 100%;
+        min-width: auto;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .home-car-card .car-title {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin: 1rem 0;
+    }
+    
+    .home-car-card .car-image {
+        margin-bottom: 1.5rem;
+    }
+    
+    .home-car-card .car-details {
+        margin-bottom: 1rem;
+        gap: 0.75rem;
+    }
+    
+    .home-car-card .car-details li {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        gap: 0.75rem;
+    }
+
+    .home-car-card .car-icon {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.75rem;
+    }
+
+    .home-car-card .car-price {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    .home-car-card .car-price sup {
+        font-size: 0.65em;
+        top: -0.6em;
+        right: 2.8rem;
+        left: 80%;
+        transform: translateX(-50%);
+    }
+
+    .home-car-card .rupee-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 0.2rem;
+    }
+
+    .view-more-container {
+        margin-top: 2rem;
+    }
+
+    .view-more-button {
+        font-size: 0.7rem;
+        width: 7.5rem;
+        height: 2.8rem;
+        padding: 0.4rem 1rem;
+    }
+
+    /* footer section */
+    footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .footer-brand {
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .logo-container {
+        margin-bottom: 0.5rem;
+    }
+
+    .logo-container img {
+        width: 2.5rem;
+        height: auto;
+        margin-right: 0.5rem;
+    }
+
+    .brand-name span:first-child {
+        font-size: 1.3rem;
+    }
+
+    .brand-name span:last-child {
+        font-size: 1rem;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+
+    .social-links img {
+        width: 1.5rem;
+        height: auto;
+    }
+
+    .footer-about {
+        align-items: center;
+    }
+
+    .footer-about h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .footer-about ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-about ul li a {
+        font-size: 1rem;
+    }
+
+    .footer-contact {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .footer-contact p {
+        font-size: 0.9rem;
+        gap: 0.3rem;
+        margin-bottom: 0.5rem;
+        justify-content: center;
+    }
+
+    .footer-contact p img {
+        width: 1rem;
+        height: auto;
+    }
+}
+
+/* Media Query for Tablets (768px to 1023px)  */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.8rem 1.5rem;
+        width: 100%;
+    }
+
+    .left-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .right-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-container {
+        margin-right: 1rem;
+    }
+
+    .logo-container img {
+        width: 3.5rem;
+        margin-right: 0.3rem;
+    }
+
+    .brand-name span:first-child {
+        font-size: 1.4rem;
+    }
+
+    .brand-name span:last-child {
+        font-size: 1.1rem;
+    }
+
+    .left-header nav {
+        margin-left: 1.5rem;
+    }
+
+    .left-header nav>ul,
+    .right-header nav.right-nav>ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .left-header nav>ul>li,
+    .right-header nav.right-nav>ul>li {
+        margin: 0 0.8rem;
+    }
+
+    .left-header nav>ul>li>a {
+        font-size: 1rem;
+    }
+
+    .left-header nav>ul>li>a::after,
+    .right-header nav.right-nav>ul>li>a::after {
+        display: block;
+        height: 0.1rem;
+        margin-top: 0.4rem;
+    }
+
+    .right-header nav.right-nav>ul>li>a {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    /* Hero Section  */
+    main {
+        padding-top: 0;
+    }
+
+    .hero {
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+
+    .main-heading {
+        font-size: 2.8rem;
+    }
+
+    .sub-text {
+        font-size: 1.05rem;
+    }
+
+    .search-box {
+        flex-direction: row;
+        padding: 0.8rem;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
+    }
+
+    .custom-select {
+        width: auto;
+        min-width: 10rem;
+    }
+
+    .custom-select label {
+        font-size: 0.85rem;
+    }
+
+    .select-trigger {
+        height: 2.2rem;
+        font-size: 0.85rem;
+        padding: 0.4rem;
+    }
+
+    .select-trigger img {
+        width: 0.7rem;
+        margin-left: 0.4rem;
+    }
+
+    .search-button {
+        width: auto;
+        min-width: 8rem;
+        height: 2.2rem;
+        font-size: 0.9rem;
+    }
+
+    /* Commitment Section  */
+    .commitment-section {
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    .commitment-heading {
+        font-size: 2.2rem;
+        line-height: 1.3;
+        margin-bottom: 2.8rem;
+        padding: 0 1rem;
+    }
+
+    .divider-line1 {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .highlight-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2.5rem 1rem;
+        gap: 1.5rem;
+        max-width: 95%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .yellow-tick-card {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        flex-basis: calc(50% - 1rem);
+        margin-bottom: 1.5rem;
+        flex-wrap: nowrap;
+    }
+
+    .icon-box {
+        width: 5rem;
+        height: 3.5rem;
+        border-radius: 0.5rem;
+        margin-right: 0.8rem;
+    }
+
+    .icon-box img {
+        width: 2rem;
+    }
+
+    .yellow-tick-card-text h4 {
+        font-size: 1.3rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .yellow-tick-card-text p {
+        font-size: 1.1rem;
+    }
+
+    /* Top Selling Cars Section  */
+    .top-selling-cars-css {
+        padding: 3rem 1.5rem;
+    }
+
+    .section-heading {
+        font-size: 1.9rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .section-subheading {
+        font-size: 1.3rem;
+        margin: 2rem auto 1.5rem;
+        text-align: left;
+    }
+
+    .cars-container {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .home-car-card {
+        width: calc(50% - 1rem);
+        min-width: auto;
+        padding: 1.8rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .home-car-card .car-title {
+        font-size: 1.3rem;
+    }
+
+    .home-car-card .car-details li {
+        font-size: 1rem;
+    }
+
+    .home-car-card .car-price {
+        font-size: 1.6rem;
+    }
+
+    .home-car-card .car-price sup {
+        font-size: 0.7em;
+        top: -0.6em;
+        right: -3rem;
+        left: auto;
+        transform: translateX(0);
+    }
+
+    .view-more-container {
+        margin-top: 2.2rem;
+    }
+
+    .view-more-button {
+        font-size: 0.75rem;
+        width: 8rem;
+        height: 2.9rem;
+    }
+
+    /* Why Zara Cars Section  */
+    .why-zara-cars-section {
+        padding: 2rem 1.5rem 1rem;
+    }
+
+    .why-zara-cars-section .why-zara-heading {
+        font-size: 1.9rem;
+        text-align: left;
+    }
+
+    .why-zara-cards-container {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1.5rem;
+    }
+
+    .why-zara-card {
+        flex: 0 1 calc(50% - 1rem);
+        padding: 1.8rem;
+    }
+
+    .why-zara-card .card-title {
+        font-size: 1.2rem;
+    }
+
+    .why-zara-card .card-description {
+        font-size: 1rem;
+    }
+
+    .faqs-section {
+        padding: 1.5rem;
+    }
+
+    .faqs-container .section-heading {
+        font-size: 1.9rem;
+        text-align: left;
+    }
+
+    .faq-item .faq-question {
+        font-size: 1.05rem;
+    }
+
+    .faq-item .faq-answer {
+        font-size: 0.95rem;
+    }
+
+    /* Happy Customers Section  */
+    .happy-customers-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .happy-customers-section .happy-customers-heading {
+        font-size: 1.9rem;
+        text-align: left;
+    }
+
+    .customers-container {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1.5rem;
+    }
+
+    .customer-card {
+        flex: 0 1 calc(50% - 1rem);
+        padding: 1.2rem;
+    }
+
+    .customer-image {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .customer-name {
+        font-size: 1.2rem;
+    }
+
+    .customer-rating {
+        font-size: 1.05rem;
+    }
+
+    .customer-testimonial {
+        font-size: 0.95rem;
+    }
+
+    /* Footer  */
+    .footer-container {
+        grid-template-columns: auto auto auto;
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .footer-about {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+/* Laptop Styles (approx. 1024px to 1300px)  */
+@media (min-width: 1024px) and (max-width: 1300px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .left-header nav>ul,
+    .right-header nav.right-nav>ul {
+        gap: 1.2rem;
+    }
+
+    .logo-container img {
+        width: 4rem;
+    }
+
+    .hero {
+        
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .main-heading {
+        font-size: 3.2rem;
+    }
+
+    .search-box {
+        gap: 1.2rem;
+    }
+
+    .commitment-section {
+        padding: 4rem 3rem;
+    }
+
+    .highlight-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .yellow-tick-card {
+        flex-basis: calc(33% - 2rem);
+        margin-bottom: 2rem;
+    }
+
+    .top-selling-cars-css {
+        padding: 4rem 2rem;
+    }
+
+    .cars-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .home-car-card {
+        width: calc(33% - 2rem);
+        margin-bottom: 2rem;
+    }
+
+    .why-zara-cars-cards-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .why-zara-card {
+        flex-basis: calc(33% - 2rem);
+        margin-bottom: 2rem;
+    }
+
+    .customers-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .customer-card {
+        flex-basis: calc(33% - 2rem);
+        margin-bottom: 2rem;
+    }
+
+    .footer-container {
+        grid-template-columns: auto auto auto auto;
+        gap: 2.5rem;
+    }
+}
+
+/* 5seater car type selected */
+/* Media query for mobile and smaller tablets */
+@media (min-width: 320px) and (max-width: 767px) {
+    .car-type-select .car-type-options {
+        width: 95%; 
+        padding: 10px; 
+    }
+
+    .car-type-option span {
+        font-size: 0.9em; 
+    }
+
+    .car-type-option .radio-tick {
+        width: 28px; 
+        height: 28px;
+    }
+}
+
+/* home page view more back arrow */
+/* media query for smaller screens */
+@media (max-width: 600px) {
+    .back-arrow-container {
+        padding-top: 60px; 
+        margin-bottom: 10px;
+    }
+}
+
+/* rental cars in surandai page */
+/* --- Mobile Styles (320px - 767px) --- */
+@media (min-width: 320px) and (max-width: 767px) {
+    .rental-search-hero, .rental-search-hero-red {
+        padding: 20px 10px; 
+    }
+
+    .rental-search-container, .rental-search-container-red  {
+        flex-direction: column; 
+        width: 95%; 
+        gap: 20px; 
+    }
+
+    .rental-search-left, .rental-search-left-red{
+        width: 100%;
+        height: auto; 
+    }
+
+    .rental-search-box, .rental-search-box-red {
+        width: 100%;
+        padding: 20px; 
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    .rental-search-box h2, .rental-search-box-red h2 {
+        font-size: 20px; 
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .custom-select label, .custom-select1-red label {
+        font-size: 12px; 
+        margin-bottom: 5px;
+    }
+
+    .car-type-dropdown-container,
+    .pickup-date-dropdown-container,
+    .pickup-location-dropdown-container,
+    .pickup-time-dropdown-container, .car-type-dropdown-container-red,
+    .pickup-date-dropdown-container-red,
+    .pickup-location-dropdown-container-red,
+    .pickup-time-dropdown-container-red {
+        height: 40px; 
+        font-size: 14px; 
+        padding-left: 10px;
+        padding-right: 8px;
+    }
+
+    .car-type-dropdown-container img,
+    .pickup-date-dropdown-container img,
+    .pickup-location-dropdown-container img,
+    .pickup-time-dropdown-container img, .car-type-dropdown-container-red img,
+    .pickup-date-dropdown-container-red img,
+    .pickup-location-dropdown-container-red img,
+    .pickup-time-dropdown-container-red img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .search-button, .search-button-red {
+        font-size: 16px; 
+        padding: 10px 20px;
+        margin-top: 20px;
+        width: 80%; 
+    }
+
+    .rental-search-right-container {
+        width: 100%; 
+        justify-content: center; 
+    }
+
+    .right-bordered-box, .right-bordered-box-red {
+        width: 90%; 
+        border-radius: 10px; 
+        border-left: 1px solid #DEDEDE; 
+        border-right: 1px solid #DEDEDE; 
+    }
+
+    .hero-image-container, .hero-image-container-red {
+        padding: 15px; 
+    }
+
+    .hero-image, .hero-image-red {
+        border-radius: 6px; 
+    }
+
+    .rental-policy-container, .rental-policy-container-red {
+        padding: 15px; 
+    }
+
+    .policy-text h2, .policy-text-red h2 {
+        font-size: 1.1em; 
+        margin-bottom: 8px;
+    }
+
+    .policy-text ul li, .policy-text-red ul li {
+        font-size: 0.9em; 
+        margin-bottom: 6px;
+        gap: 6px;
+    }
+
+    .policy-text ul li img, .policy-text-red ul li img {
+        width: 14px;
+        height: auto;
+    }
+
+    .view-details-button, .view-details-button-red {
+        font-size: 0.85em; 
+        padding: 6px 12px;
+        border-radius: 4px;
+    }
+}
+
+/* --- Tablet Styles (768px - 1023px) --- */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .rental-search-hero, .rental-search-hero-red {
+        padding: 30px 20px;
+    }
+
+    .rental-search-container, .rental-search-container-red {
+        flex-direction: column; 
+        width: 70%; 
+        margin: 0 auto; 
+        gap: 20px;
+        align-items: center; 
+    }
+
+    .rental-search-left, .rental-search-left-red {
+        width: 100%; 
+        height: auto;
+    }
+
+    .rental-search-box, .rental-search-box-red {
+        width: 100%; 
+        padding: 20px;
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .rental-search-box h2, .rental-search-box-red h2 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+
+    .custom-select, .custom-select-red {
+        width: 80%; 
+        margin: 0 auto 15px;
+    }
+
+    .custom-select label, .custom-select-red label {
+        font-size: 13px;
+        margin-bottom: 6px;
+        text-align: left; 
+    }
+
+    .car-type-dropdown-container,
+    .pickup-date-dropdown-container,
+    .pickup-location-dropdown-container,
+    .pickup-time-dropdown-container, .car-type-dropdown-container-red,
+    .pickup-date-dropdown-container-red,
+    .pickup-location-dropdown-container-red,
+    .pickup-time-dropdown-container-red {
+        height: 42px;
+        font-size: 15px;
+        padding-left: 12px;
+        padding-right: 10px;
+    }
+
+    .car-type-dropdown-container img,
+    .pickup-date-dropdown-container img,
+    .pickup-location-dropdown-container img,
+    .pickup-time-dropdown-container img, .car-type-dropdown-container-red img,
+    .pickup-date-dropdown-container-red img,
+    .pickup-location-dropdown-container-red img,
+    .pickup-time-dropdown-container-red img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .search-button, .search-button-red {
+        font-size: 17px;
+        padding: 12px 22px;
+        margin-top: 25px;
+        width: 60%; 
+    }
+
+    .rental-search-right-container, .rental-search-right-container-red {
+        width: 70%; 
+        margin: 0 auto; 
+        justify-content: center; 
+        text-align: center; 
+    }
+
+    .right-bordered-box, .right-bordered-box-red {
+        border-radius: 10px; 
+        border: 1px solid #DEDEDE; 
+    }
+
+    .hero-image-container, .hero-image-container-red {
+        padding: 15px;
+    }
+
+    .hero-image, .hero-image-red {
+        border-radius: 7px;
+        max-width: 80%; 
+        height: auto;
+    }
+
+    .rental-policy-container, .rental-policy-container-red {
+        padding: 20px;
+    }
+
+    .policy-text h2, .policy-text-red h2 {
+        font-size: 1.15em;
+        margin-bottom: 10px;
+    }
+
+    .policy-text ul {
+        padding-left: 20px;
+    }
+
+    .policy-text ul li, .policy-text-red ul li {
+        font-size: 0.92em;
+        margin-bottom: 8px;
+        gap: 8px;
+    }
+
+    .policy-text ul li img, .policy-text-red ul li img {
+        width: 15px;
+        height: auto;
+    }
+
+    .view-details-button, .view-details-button-red {
+        font-size: 0.88em;
+        padding: 7px 14px;
+        border-radius: 4px;
+        margin-top: 15px;
+    }
+}
+
+/* Responsive Styles for rental cars in tenkasi booking page */
+@media (max-width: 768px) {
+    .booking-fare-details {
+        font-size: 0.8rem; 
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .left-middle-section {
+        flex-direction: column;
+        gap: 1.5rem;
+        border-right: none; 
+    }
+
+    .car-details-card,
+    .booking-details,
+    .fare-details {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .booking-details {
+        flex-direction: column;
+        align-items: center;
+        height: auto; 
+        margin-top: 0; 
+    }
+
+    .booking-details > div {
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+    .booking-details-locations {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pickup-details .location-time,
+    .dropoff-details .location-time {
+        font-size: 0.9rem; 
+    }
+
+    .pickup-details .date,
+    .dropoff-details .date {
+        font-size: 0.8rem; 
+    }
+
+    .to-duration .to-text {
+        font-size: 0.8rem; 
+    }
+
+    .duration-details .duration {
+        font-size: 0.8rem; 
+    }
+
+    .to-duration .city {
+        font-size: 0.7rem; 
+    }
+
+    .pricing-info {
+        font-size: 0.7rem; 
+    }
+
+    .fare-details-heading {
+        font-size: 1.1rem; 
+    }
+
+    .fare-breakdown {
+        font-size: 0.85rem; 
+    }
+
+    .fare-total {
+        font-size: 0.95rem; 
+    }
+
+    .kms-limit,
+    .fuel-charge,
+    .extra-kms-charge,
+    .other-charges {
+        font-size: 0.75rem;
+    }
+
+    .proceed-button {
+        font-size: 0.9rem; 
+        padding: 0.6rem 1rem; 
+    }
+}
+
+/* Responsive Styles for payment method */
+@media (max-width: 768px) {
+    .payment-method-container {
+        margin-top: 1rem;
+    }
+
+    .payment-method-button {
+        font-size: 1.1rem;
+        padding: 1rem 2.5rem;
+        border-radius: 35px;
+        width: 90%; 
+        height: auto; 
+    }
+}
+
+/* rental cars html page */
+/* Mobile Styles (320px to 767px) */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .rental-locations-hero {
+        min-height: 45rem;
+        padding-top: 0;
+        padding-bottom: 20px;
+        position: relative; /* Ensure positioning context for z-index */
+    }
+
+    .rental-locations-box {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        z-index: 2; /* Ensure location box is on top */
+        position: relative; /* Needed for z-index */
+    }
+
+    .dropdown-grid-columns {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .dropdown-grid-columns .column div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-grid-columns .column div:last-child {
+        border-bottom: none;
+    }
+
+    .dropdown-grid-columns .column div a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 5px;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown-grid-columns .column div img {
+        width: 10px;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    .rental-cars-search-box {
+        margin-top: -380px; 
+        z-index: 1; /* Ensure it's behind the location box */
+        position: relative;
+        width: 100%; 
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8); 
+        border-radius: 8px; 
+    }
+
+    .rental-cars-search-box .custom-select {
+        flex: 1 1 calc(50% - 10px);
+        margin-bottom: 10px;
+        min-width: 45%;
+    }
+
+    .rental-cars-search-box label {
+        font-size: 0.8em;
+        margin-bottom: 2px;
+    }
+
+    .rental-cars-search-box .select-trigger {
+        font-size: 0.8em;
+        height: 2.2rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .rental-cars-search-box .select-trigger span {
+        font-size: 0.8em;
+    }
+
+    .rental-cars-search-box .home-search-button {
+        flex-basis: 100%;
+        font-size: 1em;
+        padding: 8px 15px;
+        margin-top: 10px;
+    }
+}
+
+/* Tablet Styles (768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .rental-locations-hero {
+        min-height: 10rem; 
+        padding-top: 0;
+        padding-bottom: 40px; 
+    }
+
+    .rental-locations-box {
+        width: 90%; 
+        height: auto; 
+        padding: 80px; 
+    }
+
+    .dropdown-grid-columns {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px 20px; 
+    }
+
+    .dropdown-grid-columns .column div {
+        flex-direction: row; 
+        align-items: center; 
+        padding-right: 10px; 
+        margin-bottom: 10px; 
+    }
+
+    .dropdown-grid-columns .column div a {
+        font-size: 16px; 
+        height: auto;
+        padding-left: 0;
+        padding-right: 10px;
+        display: inline-block;
+        width: auto;
+    }
+
+    .dropdown-grid-columns .column div img {
+        width: 10px; 
+        height: auto;
+    }
+
+    .rental-cars-search-box {
+        margin-top: -250px;
+        width: 80%; 
+        padding: 15px; 
+        justify-content: space-around; 
+    }
+
+    .rental-cars-search-box .custom-select {
+        flex: 1 1 calc(50% - 15px); 
+        margin-bottom: 15px;
+        min-width: 40%;
+    }
+}
+
+/* laptop styles */
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    .rental-locations-hero {
+        min-height: 10rem; 
+        padding-top: 0;
+        padding-bottom: 40px; 
+    }
+}
+
+
+/* Media Query for Mobile Devices (320px to 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+    body.sigin-body {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .signin-form-side-home {
+        width: 90%;
+        max-width: 350px;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 50px; 
+        padding: 15px; 
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+    }
+
+    .signin-form-side-home .login-form label {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .signin-form-side-home .input-group {
+        margin-bottom: 12px; 
+    }
+
+    .signin-form-side-home .input-field {
+        padding: 6px; 
+    }
+
+    .signin-form-side-home .input-field input {
+        font-size: 0.9rem; 
+        padding: 8px 0;
+    }
+
+    .signin-form-side-home .forgot-password {
+        font-size: 0.8rem;
+        margin-top: 8px;
+    }
+
+    .signin-form-side-home .sign-in-button,
+    .signin-form-side-home .google-sign-in {
+        padding: 10px 12px; 
+        font-size: 0.9rem; 
+    }
+
+    .signin-form-side-home .separator {
+        margin: 15px 0; 
+        font-size: 0.8rem; 
+    }
+
+    .signin-form-side-home .close-button {
+        top: 0.1rem;
+        right: 0.1rem;
+        font-size: 0.7rem; 
+        padding: 0.2rem;
+    }
+}
+
+
