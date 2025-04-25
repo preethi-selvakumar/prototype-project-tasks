@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Cars Booking Sengottai Payment Page</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <!-- Link to Responsive CSS-->
+    <link rel="stylesheet" href="../css/responsive.css" type="text/css">
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="left-header">
+            <div class="logo-container">
+                <img src="../images/Zara-cars-logo-icon.png" alt="zara cars logo">
+                <div class="brand-name">
+                    <span>ZARA</span>
+                    <span>Cars</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="../pages/aboutus.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="../pages/rental_cars.html">
+                            Rental Cars
+                            <img src="../images/down-arrow-icon.png" alt="Down Arrow">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-header">
+            <nav class="right-nav">
+                <ul>
+                    <li><a href="../pages/aboutus.html">FAQs</a></li>
+                    <li><a href="../pages/sign_in.html">Sign in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking-fare-details">
+            <div class="left-middle-section">
+                <div class="car-details-card">
+                    <h3 class="car-model-name">Swift Maruti</h3>
+                    <img src="../images/5-Seater-cars-(Manual-and-automatic)-Swift-Maruti-image.png" alt="Swift Maruti"
+                        class="car-model-image">
+                    <div class="car-features">
+                        <p><img src="../images/Cars-Hatchback-icon.png" alt="Hatchback" class="feature-icon"> Hatchback</p>
+                        <p><img src="../images/Manual-cars-icon.png" alt="Manual" class="feature-icon"> Manual</p>
+                        <p><img src="../images/Cars-seats-icon.png" alt="5Seats" class="feature-icon"> 5Seats</p>
+                    </div>
+                    <p class="car-rent"><img src="../images/cars-Rupees-icon.png" alt="Rupee" class="rupee-icon"> 2500
+                        <sup>Perday</sup></p>
+                </div>
+        
+                <div class="booking-details">
+                    <h3 class="booking-details-heading">BOOKING DETAILS</h3>
+                    <div class="booking-locations-dates">
+                        <div class="pickup-details">
+                            <p class="location-time">Sengottai (09:10am)</p>
+                            <p class="date">23-01-2025</p>
+                        </div>
+                        <div class="to-duration">
+                            <p class="to-text">To</p>
+                            <div class="duration-details">
+                                <img src="../images/Booking-details-time-icon.png" alt="Duration" class="duration-icon">
+                                <p class="duration">2.20 hrs</p>
+                            </div>
+                            <p class="city">Sengottai city</p>
+                        </div>
+                        <div class="dropoff-details">
+                            <p class="location-time">Tenkasi (11:30pm)</p>
+                            <p class="date">23-01-2025</p>
+                        </div>
+                    </div>
+                    <p class="pricing-info">Pricing Plan: Includes 539 kms, excludes fuel</p>
+                </div>
+            </div>
+        
+            <div class="fare-details">
+                <h3 class="fare-details-heading">Fare Details</h3>
+                <div class="fare-breakdown">
+                    <p class="fare-item">Base fare</p>
+                    <p class="fare-amount"><img src="../images/cars-Rupees-icon.png" alt="Rupee"> 400</p>
+                </div>
+                <div class="fare-breakdown">
+                    <p class="fare-item">Doorstep delivery & pickup</p>
+                    <p class="fare-amount"><img src="../images/cars-Rupees-icon.png" alt="Rupee"> 500</p>
+                </div>
+                <div class="fare-breakdown">
+                    <p class="fare-item">Insurance & GST</p>
+                    <p class="fare-amount">Included</p>
+                </div>
+                <div class="fare-breakdown">
+                    <p class="fare-item">Refundable security deposit</p>
+                    <p class="fare-amount"><img src="../images/cars-Rupees-icon.png" alt="Rupee"> 2000</p>
+                </div>
+                <hr class="fare-divider">
+                <div class="fare-total">
+                    <p class="fare-item total">Total</p>
+                    <p class="fare-amount total"><img src="../images/cars-Rupees-icon.png" alt="Rupee"> 2900</p>
+                </div>
+                <div class="kms-limit">
+                    <p class="limit-item">Kms limit</p>
+                    <p class="limit-value">539 kms</p>
+                </div>
+                <div class="fuel-charge">
+                    <p class="charge-item">Fuel</p>
+                    <p class="charge-value">Excluded</p>
+                </div>
+                <div class="extra-kms-charge">
+                    <p class="charge-item">Extra kms charge</p>
+                    <p class="charge-value">₹7/km</p>
+                </div>
+                <div class="other-charges">
+                    <p class="charge-item">Tolls, Parking & Inter-state taxes</p>
+                    <p class="charge-value">To be paid by you</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="payment-method-wrapper">
+            <input type="checkbox" id="payment-toggle" class="payment-toggle-checkbox" style="display:none;">
+            <label for="payment-toggle" class="payment-method-button">Payment Method</label>
+            <div class="payment-overlay">
+                <div class="payment-options-box">
+                    <h3>Payment</h3>
+                    <div class="payment-options">
+                        <button class="payment-option-button">
+                            <img src="../images/Payment-Wallet-icon.png" alt="Wallet">
+                            <span>Wallet</span>
+                            <img src="../images/down-arrow-icon.png" alt="Dropdown Arrow" class="dropdown-arrow">
+                        </button>
+                        <button class="payment-option-button">
+                            <img src="../images/Payment-UPI-icon.png" alt="UPI">
+                            <span>UPI</span>
+                            <img src="../images/down-arrow-icon.png" alt="Dropdown Arrow" class="dropdown-arrow">
+                        </button>
+                        <div class="google-pay-option">
+                            <a href="../pages/google_pay_checkout.html" class="payment-option-button google-pay-button">
+                                <img src="../images/Payment Google-pay-icon.png" alt="Google Pay">
+                                <span>Google Pay</span>
+                                <img src="../images/down-arrow-icon.png" alt="Dropdown Arrow" class="dropdown-arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="../images/Zara-cars-logo-icon.png" alt="Zara Cars Footer Logo">
+                    <div class="brand-name">
+                        <span>ZARA</span>
+                        <span>Cars</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><img src="../images/Social-media-icon-Youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="../images/Social-media-icon-Twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="../images/Social-media-icon-Face-book.png" alt="Facebook"></a>
+                </div>
+            </div>
+            <div class="footer-about">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="../pages/aboutus.html">About us</a></li>
+                    <li><a href="../pages/rental_cars.html">Our cars</a></li>
+                    <li><a href="../pages/aboutus.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact us</h3>
+                <p><img src="../images/Contuct-us-phone-icon.png" alt="Phone">+91 62652360</p>
+                <p><img src="../images/Contuct-us-Email-icon.png" alt="Email">zaracars@cars.in</p>
+                <p><img src="../images/Contact-us-Location-icon.png" alt="Location">143, perumal<br>puram
+                    road,<br>madurai-627 756</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
