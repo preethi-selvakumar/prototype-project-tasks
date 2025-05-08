@@ -1,0 +1,859 @@
+/* Home screen Mobile (320px to 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+    header.custom-header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .custom-header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-logo {
+        margin-bottom: 20px;
+    }
+
+    .custom-nav-menu ul.custom-nav-list {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .custom-nav-menu ul.custom-nav-list li.custom-nav-item a.custom-nav-link {
+        font-size: 1.1rem;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .custom-login-button {
+        margin-left: 0;
+        width: 50%;
+    }
+
+    .custom-hero-banner,
+    .hero-banner {
+        height: 400px;
+    }
+
+    .custom-welcome-section,
+    .wedding-section, .kids-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .custom-welcome-image-container,
+    .wedding-image-container, .kids-image-container {
+        width: 80%;
+        max-width: 300px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .custom-welcome-text,
+    .wedding-text-content, .kids-page-text-content {
+        width: 100%;
+    }
+
+    .custom-welcome-text h2.custom-welcome-heading {
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+    }
+
+    .custom-welcome-text p.custom-welcome-paragraph,
+    .wedding-text-content .wedding-paragraph, .kids-page-paragraph {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .custom-welcome-image,
+    .wedding-image, .kids-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .special-offer-zone {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    .offer-area {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -10px;
+        gap: 10px;
+    }
+
+    .offer-row-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .offer-item-centered {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .special-offer-graphic {
+        max-width: 50%;
+        margin-right: 5px;
+    }
+
+    .special-gift-box img {
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .photo-print-box {
+        width: 100%;
+        height: auto;
+        margin: -60px 0;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-content-area-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-image-container-centered {
+        max-width: 200px;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .discount-label-wrapped {
+        width: 50px;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .discount-percent-wrapped {
+        font-size: 24px;
+    }
+
+    .off-text-wrapped {
+        font-size: 10px;
+    }
+
+    .limited-offer-box {
+        width: 100%;
+        height: auto;
+        margin: 30px 0;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .offer-image-container {
+        max-width: 60%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .discount-percent-big-text {
+        font-size: 2rem;
+    }
+
+    .off-text-big-label {
+        font-size: 1rem;
+    }
+
+    .limited-time-notice {
+        font-size: 0.7rem;
+        margin-top: 5px;
+    }
+
+    .faq-section {
+        max-width: 94vw;
+        margin: 24px auto;
+        padding: 0 4px;
+    }
+
+    .faq-link,
+    .faq-question-box {
+        font-size: 1rem;
+        padding: 14px 10px;
+        border-radius: 10px;
+        margin-bottom: 12px;
+    }
+
+    .faq-arrow {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        background-size: 14px 14px;
+    }
+
+    .faq-section h2 {
+        font-size: 1.15rem;
+        margin-bottom: 18px;
+    }
+
+    .faq-answer {
+        padding: 12px 10px;
+        font-size: 0.98rem;
+    }
+
+    .work-img-box {
+        height: 160px;
+        max-width: 68vw;
+    }
+
+    .footer-section {
+        text-align: center;
+        padding: 32px 0 16px 0;
+    }
+
+    .footer-logo {
+        max-width: 90px;
+    }
+
+    .footer-brand-name {
+        font-size: 1.1rem;
+    }
+
+    .footer-title {
+        font-size: 1.05rem;
+    }
+
+    .footer-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .row>div {
+        margin-bottom: 18px;
+    }
+}
+
+/* Tablet Screens (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header.custom-header {
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    .custom-header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-logo {
+        margin-bottom: 15px;
+    }
+
+    .custom-nav-menu ul.custom-nav-list {
+        gap: 30px;
+    }
+
+    .custom-nav-menu ul.custom-nav-list li.custom-nav-item a.custom-nav-link {
+        font-size: 1rem;
+    }
+
+    .custom-login-button {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .custom-hero-banner,
+    .hero-banner {
+        height: 600px;
+    }
+
+    .custom-welcome-section,
+    .wedding-section, .kids-section {
+        padding: 30px;
+    }
+
+    .custom-welcome-image-container,
+    .wedding-image-container, .kids-image-container {
+        width: 50%;
+        max-width: 400px;
+        margin-right: 20px;
+    }
+
+    .custom-welcome-text,
+    .wedding-text-content, .kids-page-text-content {
+        width: 50%;
+    }
+
+    .custom-welcome-text h2.custom-welcome-heading {
+        font-size: 2rem;
+    }
+
+    .custom-welcome-text p.custom-welcome-paragraph,
+    .wedding-text-content .wedding-paragraph, .kids-page-paragraph {
+        font-size: 1.1rem;
+        line-height: 1.1;
+    }
+
+    .custom-welcome-image,
+    .wedding-image, .kids-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .special-offer-zone {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .offer-area {
+        width: 95%;
+        margin-top: -60px;
+        gap: 15px;
+    }
+
+    .offer-row-top {
+        margin-bottom: 1px;
+    }
+
+    .special-offer-graphic {
+        max-width: 90%;
+        margin-right: 15px;
+    }
+
+    .special-gift-box img {
+        margin-top: 10px;
+    }
+
+    .photo-print-box {
+        width: calc(50% - 24.9px);
+        height: 300px;
+        padding: 15px;
+        margin-top: -100px;
+        margin-bottom: -5px;
+    }
+
+    .photo-heading-text {
+        font-size: 28px;
+        margin-bottom: 3px;
+    }
+
+    .photo-subheading-text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .photo-image-container-centered {
+        max-width: 940px;
+        height: 200px;
+        margin-right: 10px;
+    }
+
+    .discount-percent-wrapped {
+        font-size: 50px;
+    }
+
+    .off-text-wrapped {
+        font-size: 22px;
+    }
+
+    .limited-offer-box {
+        width: calc(50% - 24.9px);
+        height: 300px;
+        margin-top: -100px;
+        margin-left: -25px;
+        padding: 15px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .offer-image-container {
+        max-width: 45%;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .discount-percent-big-text {
+        font-size: 3.5rem;
+    }
+
+    .off-text-big-label {
+        font-size: 2rem;
+    }
+
+    .limited-time-notice {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+}
+
+/* Laptop Screens (1024px to 1300px) */
+@media (min-width: 1024px) and (max-width: 1300px) {
+    .custom-nav-menu ul.custom-nav-list {
+        gap: 40px;
+    }
+
+    .custom-nav-menu ul.custom-nav-list li.custom-nav-item a.custom-nav-link {
+        font-size: 1rem;
+    }
+
+    .custom-login-button {
+        margin-left: 40px;
+    }
+
+    .custom-hero-banner,
+    .hero-banner {
+        height: 735px;
+    }
+
+    .custom-welcome-section,
+    .wedding-section, .kids-section {
+        padding: 40px;
+    }
+
+    .custom-welcome-image-container,
+    .wedding-image-container, .kids-image-container {
+        width: 40%;
+        margin-right: 30px;
+    }
+
+    .custom-welcome-text,
+    .wedding-text-content, .kids-page-text-content {
+        width: 60%;
+    }
+
+    .custom-welcome-text h2.custom-welcome-heading {
+        font-size: 2.2rem;
+    }
+
+    .custom-welcome-text p.custom-welcome-paragraph,
+    .wedding-text-content .wedding-paragraph, .kids-page-paragraph {
+        font-size: 1.15rem;
+    }
+
+    .custom-welcome-image,
+    .wedding-image, .kids-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .special-offer-zone {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .offer-area {
+        width: 90%;
+        margin-top: -10px;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .offer-row-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .offer-item-centered {
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .special-offer-graphic {
+        max-width: 400px;
+        margin-right: 20px;
+    }
+
+    .special-gift-box img {
+        max-width: 400px;
+        margin-top: 0;
+    }
+
+    .photo-print-box {
+        padding: 20px;
+        width: calc(45% - 30px);
+        max-width: 530px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 383px;
+        justify-content: flex-start;
+        position: relative;
+        margin-top: -160px;
+    }
+
+    .photo-content-area-top {
+        margin-bottom: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .photo-heading-text {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .photo-subheading-text {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .photo-content-area-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .photo-image-container-centered {
+        max-width: 160px;
+        margin-right: 20px;
+    }
+
+    .discount-label-wrapped {
+        padding: 15px 20px;
+        border-radius: 8px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 142.78px;
+        height: 118.69px;
+        justify-content: center;
+    }
+
+    .discount-percent-wrapped {
+        font-size: 60px;
+    }
+
+    .off-text-wrapped {
+        font-size: 25px;
+    }
+
+    .limited-offer-box {
+        padding: 20px;
+        text-align: center;
+        width: calc(45% - 30px);
+        max-width: 672.86px;
+        height: 387px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: -160px;
+        margin-left: -20px;
+        margin-bottom: 20px;
+    }
+
+    .offer-image-container {
+        flex-shrink: 0;
+        margin-right: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 50%;
+        height: 100%;
+    }
+
+    .offer-rectangle-box {
+        border-radius: 8px;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .couple-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: contain;
+        max-height: 80%;
+    }
+
+    .offer-text-content {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+    }
+
+    .discount-text-overlay {
+        color: white;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .discount-percent-big-text {
+        font-size: 4rem;
+    }
+
+    .off-text-big-label {
+        font-size: 2.5rem;
+    }
+
+    .limited-time-notice {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+}
+
+/* wedding1 and kids1 page album section */
+@media (min-width: 320px) and (max-width: 767px) {
+    .wedding-album-section .wedding-album-item, .kids1-album-section .kids-album-item {
+        height: auto;
+    }
+
+    .wedding-album-section .row-span-2, .kids1-album-section .row-span-2 {
+        height: auto;
+    }
+
+    .wedding-album-section .image-4,
+    .wedding-album-section .image-6, .kids1-album-section .image-4,
+    .kids1-album-section .image-6 {
+        height: auto;
+    }
+
+    .wedding-album-section .album-item-7,
+    .wedding-album-section .album-item-9,
+    .wedding-album-section .album-item-10,
+    .wedding-album-section .album-item-11, .kids1-album-section .album-item-7,
+    .kids1-album-section .album-item-9,
+    .kids1-album-section .album-item-10,
+    .kids1-album-section .album-item-11 {
+        margin-top: 20px;
+    }
+}
+
+
+/* wedding2 page section */
+@media (max-width: 768px) {
+    .overlay-image-container {
+        top: 1400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .overlay-image-container {
+        top: 1000px;
+    }
+}
+
+/* packages page section */
+@media (max-width: 768px) {
+    .package-col {
+        flex: 1 0 100%;
+    }
+}
+
+/* login, signup and otp page section */
+@media (min-width: 320px) and (max-width: 767px) {
+    #loginFormSection,
+    #signUpFormSection,
+    #otpFormSection {
+        width: 90%;
+        padding: 15px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 95vh;
+    }
+
+    #loginFormSection h2,
+    #signUpFormSection h2,
+    #otpFormSection h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    #loginFormSection input,
+    #signUpFormSection input {
+        padding: 8px;
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    #otpFormSection p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .form-check-label {
+        font-size: 0.9rem;
+    }
+
+    #loginFormSection button[type="submit"],
+    #signUpFormSection button[type="submit"],
+    #otpFormSection button[type="submit"] {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #otpFormSection button[type="submit"] {
+        width: 100%;
+    }
+
+    #otpFormSection .btn-link {
+        font-size: 12px;
+    }
+
+    #otpFormSection .d-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #otpFormSection .d-flex input {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        margin: 5px;
+        padding: 6px;
+    }
+
+    .btn-close {
+        font-size: 16px;
+        top: 8px;
+        right: 8px;
+    }
+}
+
+/* login, signup and otp page section for tablet devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #loginFormSection,
+    #signUpFormSection,
+    #otpFormSection {
+        width: 85%;
+        padding: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 95vh;
+    }
+
+    #loginFormSection h2,
+    #signUpFormSection h2,
+    #otpFormSection h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #loginFormSection input,
+    #signUpFormSection input {
+        padding: 10px;
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    #otpFormSection p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .form-check-label {
+        font-size: 1rem;
+    }
+
+    #loginFormSection button[type="submit"],
+    #signUpFormSection button[type="submit"],
+    #otpFormSection button[type="submit"] {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    #otpFormSection button[type="submit"] {
+        width: 100%;
+    }
+
+    #otpFormSection .btn-link {
+        font-size: 13px;
+    }
+
+    #otpFormSection .d-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #otpFormSection .d-flex input {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        margin: 5px;
+        padding: 8px;
+    }
+
+    .btn-close {
+        font-size: 18px;
+        top: 8px;
+        right: 8px;
+    }
+}
+
+/* photography, bridal, groom portraits page album section */
+@media (min-width: 320px) and (max-width: 767px) {
+    .links-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .photography-category-link1{
+       margin: 5px;
+       display: block; 
+       width: 100%;
+       text-align: center;
+    }
+
+    .photography-album-section, .bridal-album-section, .groom-album-section {
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: nowrap;     
+        height: auto;
+    }
+
+    .photography-album-section img, .bridal-album-section img, .groom-album-section img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .photography-album-section .col-md-4,
+    .photography-album-section .photography-album-col {
+        width: 100%;
+    }
+
+    .photography-album-section .gallery-item-span-vertical, .bridal-album-section .gallery-item-span-vertical, .groom-album-section .gallery-item-span-vertical {
+        display: flex;
+        flex-direction: column;  
+        flex-wrap: nowrap;     
+        height: auto;
+    }
+
+    .photography-album-section .gallery-item-span-vertical img, .bridal-album-section .gallery-item-span-vertical img, .groom-album-section .gallery-item-span-vertical img {
+        width: 100%;         
+        height: auto;
+        margin-top: 10px;      
+        margin-bottom: 0px;
+    }
+}
+
+

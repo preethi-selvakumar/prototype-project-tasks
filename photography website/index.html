@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website</title>
+    <!-- link to bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- link to css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- link to responsive css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!--- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="custom-body">
+    <!-- header -->
+    <header class="custom-header">
+        <div class="container-header custom-header-container">
+            <a class="logo custom-logo" href="#">
+                <img src="./assets/images/LOGO,ILLUS AND ICONS/main-logo.png" alt="Studio Prakan Photography"
+                    class="custom-logo-image">
+            </a>
+            <nav class="nav-menu custom-nav-menu">
+                <ul class="custom-nav-list">
+                    <li class="custom-nav-item"><a href="./assets/pages/wedding.html"
+                            class="custom-nav-link">WEDDINGS</a></li>
+                    <li class="custom-nav-item"><a href="./assets/pages/kids.html" class="custom-nav-link">KIDS</a></li>
+                    <li class="custom-nav-item"><a href="./assets/pages/photography.html"
+                            class="custom-nav-link">PHOTOGRAPHY</a></li>
+                    <li class="custom-nav-item"><a href="./assets/pages/packages.html"
+                            class="custom-nav-link">PACKAGES</a></li>
+                    <li class="custom-nav-item"><a href="./assets/pages/contact_us.html" class="custom-nav-link">CONTACT
+                            US</a></li>
+                </ul>
+            </nav>
+            <button class="login-button custom-login-button" id="loginBtn">Login</button>
+        </div>
+    </header>
+
+    <main class="custom-main">
+        <!-- home hero section -->
+        <section class="hero-banner custom-hero-banner">
+            <div class="banner-container">
+                <div style="display: block;">
+                    <img id="mainBanner" src="./assets/images/HOME SCREEN/image-1.png" alt="Hero Banner Image"
+                        class="custom-hero-image" style="cursor: pointer;">
+                </div>
+                <img id="slideInBanner1" src="./assets/images/HOME SCREEN/image-2.png" alt="Second Banner"
+                    class="slide-in-banner custom-hero-image">
+                <img id="slideInBanner2" src="./assets/images/HOME SCREEN/image-3.png" alt="Third Banner"
+                    class="slide-in-banner custom-hero-image">
+            </div>
+        </section>
+
+        <!-- home welcome section -->
+        <section class="welcome-section custom-welcome-section">
+            <div class="welcome-image custom-welcome-image-container">
+                <img src="./assets/images/HOME SCREEN/image-4.png" alt="Welcome Image" class="custom-welcome-image">
+            </div>
+            <div class="welcome-text custom-welcome-text">
+                <h2 class="custom-welcome-heading">Welcome to Prakan Photo Studio</h2>
+                <p class="custom-welcome-paragraph"><span>Moments Fade, Memories Stay - We Make Them
+                        Timeless.</span> At
+                    Prakan Photo Studio, photography is not just our profession - it's our passion. With years of
+                    experience in capturing life's most precious events, we have grown into one of the most trusted
+                    photography studios in the region. We believe that every photo tells a story. Whether it's the
+                    joyous laughter at a wedding, the sparkle in a child's eyes, or a couple's quiet moment of love,
+                    we
+                    capture emotions that last forever. Our approach is a perfect blend of candid creativity and
+                    professional precision. We are a passionate team of photographers dedicated to capturing life's
+                    most
+                    beautiful moments. Whether it's a wedding, birthday, maternity, or portrait shoot, we bring your
+                    vision to life with high-quality photography and personalized service.</p>
+            </div>
+        </section>
+
+        <!-- home photoshoot section -->
+        <section class="latest-photoshoot-section py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4" style="font-size: 2.5rem; font-family: 'Montserrat', sans-serif;">
+                    LATEST PHOTOSHOOT</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+                    <div class="col">
+                        <a href="./assets/pages/photography.html">
+                            <img src="./assets/images/HOME SCREEN/image-5.png" alt="Photoshoot 1" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="./assets/pages/photography.html">
+                            <img src="./assets/images/HOME SCREEN/image-6.png" alt="Photoshoot 2" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="./assets/pages/photography.html">
+                            <img src="./assets/images/HOME SCREEN/image-7.png" alt="Photoshoot 3" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-4">
+                        <a href="./assets/pages/photography.html">
+                            <img src="./assets/images/HOME SCREEN/image-8.png" alt="Photoshoot 4"
+                                class="img-fluid mx-auto d-block">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="./assets/pages/photography.html">
+                            <img src="./assets/images/HOME SCREEN/image-9.png" alt="Photoshoot 5"
+                                class="img-fluid mx-auto d-block">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- home candid video section -->
+        <section class="candid-videos-section py-5">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-5 text-center">
+                        <div class="candid-videos-text">
+                            <h3 class="mb-2 text-center">Candid Videos</h3>
+                            <h2 class="fw-semibold mb-3 text-center">Capturing the Authentic You</h2>
+                            <p class="fw-medium mb-4 text-center">These unscripted moments capture the raw emotions,
+                                genuine interactions, and spontaneous joy of your wedding day. Candid videos offer a
+                                window into the true essence of your celebration, allowing you to relive the
+                                laughter,
+                                tears, and love that unfolded in real time.</p>
+                            <p class="text-center fw-semibold"><a href="./assets/pages/candid_wedding_flim.html">BROWSE
+                                    MORE VIDEOS</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 candid-videos-image-container">
+                        <div class="position-relative">
+                            <img src="./assets/images/HOME SCREEN/image-10.png" alt="Candid Video"
+                                class="img-fluid rounded candid-video-main-image">
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <img src="./assets/images/LOGO,ILLUS AND ICONS/Group-203.png" alt="Play"
+                                    class="candid-video-play-button">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-4 our-services-header">
+                    <h2 class="fw-semibold ease-simple-text">EASE AND SIMPLE</h2>
+                    <h2 class="fw-semibold our-great-services-text">OUR GREAT SERVICES</h2>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 our-services-list">
+                    <div class="col text-center service-item">
+                        <div class="service-icon-container">
+                            <img src="./assets/images/LOGO,ILLUS AND ICONS/uil-camera.png" alt="Wedding Photoshoot Icon"
+                                class="img-fluid mb-3 service-icon">
+                            <h5 class="fw-bold service-title">WEDDING PHOTOSHOOT</h5>
+                            <p class="service-description">Your wedding day is about your love, not about perfect
+                                pictures. Let us capture its essence with our unconventional photography.</p>
+                        </div>
+                    </div>
+                    <div class="col text-center service-item">
+                        <div class="service-icon-container">
+                            <img src="./assets/images/LOGO,ILLUS AND ICONS/mdi-heart-outline.png"
+                                alt="Fine Retouching Icon" class="img-fluid mb-3 service-icon">
+                            <h5 class="fw-bold service-title">FINE RETOUCHING</h5>
+                            <p class="service-description">We masterfully enhance the details of your photographs,
+                                achieving a polished & professional look while preserving their authentic essence &
+                                natural beauty.</p>
+                        </div>
+                    </div>
+                    <div class="col text-center service-item">
+                        <div class="service-icon-container">
+                            <img src="./assets/images/LOGO,ILLUS AND ICONS/ic-outline-photo.png"
+                                alt="Photo Editing Icon" class="img-fluid mb-3 service-icon">
+                            <h5 class="fw-bold service-title">PHOTO EDITING</h5>
+                            <p class="service-description">Our photo editing artistry transforms raw images into
+                                captivating visual stories, each pixel infused with your unique blend of technical
+                                mastery & artistic expression.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- home special offer section -->
+        <section class="special-offer-zone">
+            <div class="offer-area">
+                <div class="offer-row-top">
+                    <div class="offer-item-centered">
+                        <img src="./assets/images/HOME SCREEN/SPECIAL-OFFER.png" alt="Special Offer"
+                            class="special-offer-graphic">
+                        <div class="special-gift-box">
+                            <img src="./assets/images/HOME SCREEN/image-11.png" alt="Special Offer Gift">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-print-box">
+                    <div class="photo-content-area-top">
+                        <h3 class="photo-heading-text">PHOTO PRINT</h3>
+                        <p class="photo-subheading-text">IMAGINATIONS BECOME TRUE</p>
+                    </div>
+                    <div class="photo-content-area-bottom">
+                        <div class="photo-image-container-centered">
+                            <img src="./assets/images/HOME SCREEN/image-12.png" alt="Child Photo" class="child-image">
+                        </div>
+                        <div class="discount-label-wrapped">
+                            <span class="discount-percent-wrapped">40%</span>
+                            <span class="off-text-wrapped">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="limited-offer-box">
+                    <div class="offer-image-container">
+                        <div class="offer-rectangle-box">
+                            <img src="./assets/images/HOME SCREEN/image-13.png" alt="Couple Photo" class="couple-image">
+                        </div>
+                    </div>
+                    <div class="offer-text-content">
+                        <div class="discount-text-overlay">
+                            <span class="discount-percent-big-text">60%</span>
+                            <span class="off-text-big-label">OFF</span>
+                        </div>
+                        <p class="limited-time-notice">For Limited Time Period</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- home client testimonial section -->
+        <section class="py-5 custom-clients-say-section">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-5 custom-clients-say-heading">WHAT OUR HAPPY CLIENTS SAY</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 rounded-4 shadow-sm p-3 text-center custom-testimonial-card">
+                            <img src="./assets/images/HOME SCREEN/image-15.png" alt="Client 1"
+                                class="rounded-circle mx-auto mb-3 custom-client-image">
+                            <blockquote class="blockquote">
+                                <p class="mb-3 text-black custom-testimonial-text">"Absolutely Loved Our Photos! The
+                                    Team At Prakan Photo Studio Captured Our Special Day Perfectly. Every Moment Was
+                                    Beautifully Framed. Thank You For The Amazing Memories!"</p>
+                                <footer class="blockquote-footer text-black mt-5 custom-client-name fw-bold">-
+                                    Anjali &
+                                    Karthik
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 rounded-4 shadow-sm p-3 text-center custom-testimonial-card">
+                            <img src="./assets/images/HOME SCREEN/image-16.png" alt="Client 2"
+                                class="rounded-circle mx-auto mb-3 custom-client-image">
+                            <blockquote class="blockquote">
+                                <p class="mb-3 text-black custom-testimonial-text">"Professional, Friendly, And
+                                    Creative! I Had A Portrait Session And The Results Were Beyond Expectations. The
+                                    Editing Was Subtle And Natural, And The Staff Made Me Feel So Comfortable.
+                                    Highly
+                                    Recommend!"</p>
+                                <footer class="blockquote-footer text-black mt-5 custom-client-name fw-bold">-
+                                    Suresh M.
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 rounded-4 shadow-sm p-3 text-center custom-testimonial-card">
+                            <img src="./assets/images/HOME SCREEN/image-17.png" alt="Client 3"
+                                class="rounded-circle mx-auto mb-3 custom-client-image">
+                            <blockquote class="blockquote">
+                                <p class="mb-3 text-black custom-testimonial-text">"The Best Photo Studio Experience
+                                    Ever!! From The First Consultation To The Final Album Delivery, Everything Was
+                                    Smooth. Their Attention To Detail And Passion For Photography Really Shows."</p>
+                                <footer class="blockquote-footer text-black mt-5 custom-client-name fw-bold">- Divya
+                                    R.
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-3 custom-carousel-indicators">
+                    <button class="btn btn-sm rounded-pill mx-1 custom-indicator-active"></button>
+                    <button class="btn btn-sm rounded-pill mx-1 custom-indicator"></button>
+                    <button class="btn btn-sm rounded-pill mx-1 custom-indicator"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- home FAQ section -->
+        <section class="faq-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">FAQ's</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="faq-arrow"></span> What Is Your Photography Style?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Throughout The Years, We Have Created Our Distinctive Aesthetic That Can Be
+                                Characterized As A
+                                Fusion Of Photojournalistic, Contemporary, Fine Art, And Candid Wedding Photography. We
+                                Consider
+                                How To Effectively Express Your Tale Using Our Artistic Perspective Based On The
+                                Circumstance And
+                                The Atmosphere. We Capture Casual Photos As Well As Some Stunning Staged Shots Of The
+                                Newlyweds
+                                On Their Big Day And Their Close Relatives To Give Viewers A Complete Picture Of The
+                                Wedding
+                                Celebrations.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="faq-arrow"></span> Do You Offer Wedding Cinematography?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yeah, we also provide wedding cinematography services. Also, our clients and fans
+                                seem to like our wedding films, as we have a dedicated video editing team that will
+                                make your wedding videos look cinematic, with good production value.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="faq-arrow"></span> What Do You Cover In Wedding Photography?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                From the moment the bride and groom are getting dressed until the wedding celebrations
+                                are done, we capture them. For instance, at a wedding, this would include pictures of
+                                the bride and groom getting ready, their individual and couple portraits, pictures of
+                                their close family members, pictures of the guests who actively participate in the
+                                wedding, and pictures of all the ceremonies and rituals taken in creative
+                                close-ups and documentary wide angle. Moreover, we will take into account any specific
+                                photos the customer needs, and we will make every effort to obtain them all. Yet while
+                                planning a wedding, one must also take into account any unforeseen circumstances
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <span class="faq-arrow"></span> How Early Should We Book?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We typically begin booking dates six months in advance; for planning considerations,
+                                early booking is encouraged. It's always important to double-check our availability
+                                because we can be open even up to a week before your wedding.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- home glimpse of our work section -->
+        <section class="work-glimpse-section py-4">
+            <div class="container">
+                <h2 class="text-center mb-5 fw-bold" style="letter-spacing:1px;">GLIMPSE OF OUR WORK</h2>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 d-flex justify-content-center mb-4 mb-md-0">
+                        <div class="work-img-box">
+                            <img src="./assets/images/HOME SCREEN/IMAGE-18.png" alt="Work 1" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center mb-4 mb-md-0">
+                        <div class="work-img-box highlight-img">
+                            <img src="./assets/images/HOME SCREEN/image-19.png" alt="Work 2" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="work-img-box">
+                            <img src="./assets/images/HOME SCREEN/image-21.png" alt="Work 3" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- login form -->
+        <div class="container-fluid d-flex justify-content-center align-items-center" id="authSection"
+            style="display: none;">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div id="loginFormSection">
+                    <h2 class="text-center">Log in to your Account</h2>
+                    <div class="mb-3">
+                        <input type="text" id="loginEmailPhone" class="form-control" placeholder="Email or phone">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" id="loginPassword" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                        <a href="#" class="float-end">Forgot
+                            Password?</a>
+                    </div>
+                    <button type="submit" id="loginSubmit" class="btn btn-primary w-100">Login</button>
+                    <p class="mt-3 text-center">Don't have an account? <a href="#" id="registerNow">Register Now</a></p>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2" aria-label="Close"
+                        id="closeLoginForm"></button>
+                </div>
+
+                <!-- Sign Up Form -->
+                <div id="signUpFormSection">
+                    <h2 class="text-center">Register Now</h2>
+                    <div class="mb-3">
+                        <input type="text" id="signUpFullName" class="form-control" placeholder="Full Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="signUpEmail" class="form-control" placeholder="Email Id">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="signUpPhone" class="form-control" placeholder="Mobile number">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" id="signUpPassword" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" id="signUpConfirmPassword" class="form-control"
+                            placeholder="Confirm Password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="termsAndConditions">
+                        <label class="form-check-label" for="termsAndConditions">I agree to the terms and
+                            conditions</label>
+                    </div>
+                    <button type="submit" id="createAccount" class="btn btn-primary w-100">Create an Account</button>
+                    <p class="mt-3 text-center">Already have an account? <a href="#" id="loginFromSignUp">Login</a></p>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2" aria-label="Close"
+                        id="closeSignUpForm"></button>
+                </div>
+
+                <!-- OTP Form -->
+                <div id="otpFormSection" style="display: none;">
+                    <h2 class="text-center">Enter OTP</h2>
+                    <p class="text-center">OTP sent to 9874651230</p>
+                    <div class="d-flex justify-content-around">
+                        <input type="text" class="form-control text-center" maxlength="1">
+                        <input type="text" class="form-control text-center" maxlength="1">
+                        <input type="text" class="form-control text-center" maxlength="1">
+                        <input type="text" class="form-control text-center" maxlength="1">
+                        <input type="text" class="form-control text-center" maxlength="1">
+                        <input type="text" class="form-control text-center" maxlength="1">
+                    </div>
+                    <button type="submit" id="verifyOtp" class="btn btn-primary w-100">Verify OTP</button>
+                    <button type="button" class="btn btn-link w-100 text-center">Resend OTP</button>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2" aria-label="Close"
+                        id="closeOtpForm"></button>
+                </div>
+
+                <div id="overlay"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <!-- Logo & Brand -->
+                <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                    <img src="./assets/images/LOGO,ILLUS AND ICONS/main-logo.png" alt="Prakan Studio Logo"
+                        class="footer-logo mb-3">
+                    <div class="footer-brand-name text-center">
+                        PRAKAN STUDIO<br>PHOTOGRAPHY
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                    <div class="footer-title mb-2">QUICK LINKS</div>
+                    <div class="footer-links text-center">
+                        <a href="#" class="footer-link">Home</a><br>
+                        <a href="./assets/pages/about_us.html" class="footer-link">About Us</a><br>
+                        <a href="./assets/pages/privacy_policy_page.html" class="footer-link">Privacy Policy</a><br>
+                        <a href="./assets/pages/terms_and_conditions.html" class="footer-link">Terms and Conditions</a>
+                    </div>
+                </div>
+                <!-- Contact -->
+                <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                    <div class="footer-title mb-2">CONTACT</div>
+                    <div class="footer-contact text-center">
+                        <div class="mb-2 d-flex align-items-center justify-content-center">
+                            <img src="./assets/images/LOGO,ILLUS AND ICONS/material-symbols-call.png" alt="Phone"
+                                class="footer-icon me-2">
+                            <span class="footer-contact-text">9874653210/9632587410</span>
+                        </div>
+                        <div class="mb-2 d-flex align-items-center justify-content-center">
+                            <img src="./assets/images/LOGO,ILLUS AND ICONS/ic-baseline-email.png" alt="Email"
+                                class="footer-icon me-2">
+                            <span class="footer-contact-text">mailtoprakan@studio.com</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="./assets/images/LOGO,ILLUS AND ICONS/mdi-location.png" alt="Location"
+                                class="footer-icon me-2">
+                            <span class="footer-contact-text">Guduvancherry,603202</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+
+    <!-- custom js -->
+    <script>
+        // login form code
+        const loginBtn = document.getElementById('loginBtn');
+        const loginFormSection = document.getElementById('loginFormSection');
+        const closeLoginForm = document.getElementById('closeLoginForm');
+        const loginSubmitBtn = document.getElementById('loginSubmit');
+        const registerNowBtn = document.getElementById('registerNow');
+        const signUpFormSection = document.getElementById('signUpFormSection');
+        const closeSignUpForm = document.getElementById('closeSignUpForm');
+        const loginFromSignUpBtn = document.getElementById('loginFromSignUpBtn');
+        const signUpSubmitBtn = document.getElementById('createAccount');
+        const otpFormSection = document.getElementById('otpFormSection');
+        const closeOtpForm = document.getElementById('closeOtpForm');
+        const otpInputs = document.querySelectorAll('#otpFormSection .d-flex input');
+        const verifyOtpBtn = document.getElementById('verifyOtp');
+        const overlay = document.getElementById('overlay');
+
+        function showOverlayAndPreventScroll() {
+            overlay.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function hideOverlayAndAllowScroll() {
+            overlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        loginFormSection.style.display = 'none';
+        signUpFormSection.style.display = 'none';
+        otpFormSection.style.display = 'none';
+        overlay.style.display = 'none';
+
+        if (loginBtn && loginFormSection && closeLoginForm) {
+            loginBtn.addEventListener('click', function () {
+                showOverlayAndPreventScroll();
+                loginFormSection.style.display = 'block';
+            });
+
+            closeLoginForm.addEventListener('click', function () {
+                loginFormSection.style.display = 'none';
+                hideOverlayAndAllowScroll();
+            });
+        }
+
+        if (registerNowBtn && signUpFormSection && closeSignUpForm) {
+            registerNowBtn.addEventListener('click', function () {
+                showOverlayAndPreventScroll();
+                loginFormSection.style.display = 'none';
+                signUpFormSection.style.display = 'block';
+            });
+
+            closeSignUpForm.addEventListener('click', function () {
+                signUpFormSection.style.display = 'none';
+                hideOverlayAndAllowScroll();
+            });
+        }
+
+        if (loginFromSignUpBtn && loginFormSection && signUpFormSection) {
+            loginFromSignUpBtn.addEventListener('click', function () {
+                signUpFormSection.style.display = 'none';
+                loginFormSection.style.display = 'block';
+            });
+        }
+
+        if (signUpSubmitBtn && otpFormSection && otpInputs.length === 6) {
+            signUpSubmitBtn.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                const fullName = document.getElementById('signUpFullName').value;
+                const email = document.getElementById('signUpEmail').value;
+                const phone = document.getElementById('signUpPhone').value;
+                const password = document.getElementById('signUpPassword').value;
+                const confirmPassword = document.getElementById('signUpConfirmPassword').value;
+                const terms = document.getElementById('termsAndConditions').checked;
+
+                if (!fullName || !email || !phone || !password || !confirmPassword || !terms) {
+                    alert('Please fill in all the fields and agree to the terms and conditions.');
+                    return;
+                }
+
+                if (password !== confirmPassword) {
+                    alert('Passwords do not match.');
+                    return;
+                }
+
+                signUpFormSection.style.display = 'none';
+                showOverlayAndPreventScroll();
+                otpFormSection.style.display = 'block';
+
+                setTimeout(function () {
+                    const testOtp = '123456';
+                    for (let i = 0; i < otpInputs.length; i++) {
+                        otpInputs[i].value = testOtp[i];
+                    }
+                }, 1000);
+            });
+        }
+
+        if (closeOtpForm && otpFormSection) {
+            closeOtpForm.addEventListener('click', function () {
+                otpFormSection.style.display = 'none';
+                hideOverlayAndAllowScroll();
+            });
+        }
+
+        otpInputs.forEach(input => {
+            input.addEventListener('input', function () {
+                this.value = this.value.replace(/[^0-9]/g, '');
+                if (this.value.length === 1 && this.nextElementSibling) {
+                    this.nextElementSibling.focus();
+                }
+            });
+        });
+
+        if (verifyOtpBtn && otpInputs.length > 0) {
+            verifyOtpBtn.addEventListener('click', function () {
+                let allFieldsFilled = true;
+                otpInputs.forEach(input => {
+                    if (input.value.length === 0) {
+                        allFieldsFilled = false;
+                    }
+                });
+
+                if (!allFieldsFilled) {
+                    alert('Please enter the OTP in all the boxes.');
+                } else {
+                    alert('OTP Verified!');
+                    otpFormSection.style.display = 'none';
+                    showOverlayAndPreventScroll();
+                    loginFormSection.style.display = 'block';
+                }
+                otpFormSection.style.display = 'none';
+            });
+        }
+
+        if (loginSubmitBtn) {
+            loginSubmitBtn.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                const loginEmailPhone = document.getElementById('loginEmailPhone').value.trim();
+                const loginPassword = document.getElementById('loginPassword').value.trim();
+
+                if (!loginEmailPhone || !loginPassword) {
+                    alert('Please enter both Email/Phone and Password.');
+                    return;
+                }
+
+                alert('Login Successful!');
+                hideOverlayAndAllowScroll();
+                window.location.href = './assets/pages/logged_in_screen_page.html';
+            });
+        }
+
+        // banner slide in code
+        const mainBanner = document.getElementById('mainBanner');
+        const slideInBanner1 = document.getElementById('slideInBanner1');
+        const slideInBanner2 = document.getElementById('slideInBanner2');
+
+        if (mainBanner && slideInBanner1 && slideInBanner2) {
+            mainBanner.addEventListener('click', () => {
+                slideInBanner1.classList.add('slide-in');
+                setTimeout(() => {
+                    slideInBanner1.classList.remove('slide-in');
+                    slideInBanner2.classList.add('slide-in');
+                    setTimeout(() => {
+                        slideInBanner2.classList.remove('slide-in');
+                    }, 1000);
+                }, 1000);
+            });
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

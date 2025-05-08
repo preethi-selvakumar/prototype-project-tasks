@@ -1,0 +1,1233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.custom-body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+header.custom-header {
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 3px solid #e93a9d;
+    padding: 10px 20px;
+    height: 105px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-header-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-logo img.custom-logo-image {
+    max-width: 205px;
+    height: 90px;
+}
+
+.custom-nav-menu ul.custom-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-nav-menu ul.custom-nav-list li.custom-nav-item a.custom-nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.custom-login-button {
+    background-color: #e93a9d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 104px;
+    height: 42px;
+    font-weight: bold;
+    font-size: 24px;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* home and wedding page banner */
+.custom-hero-banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.custom-hero-banner img.custom-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* home and wedding welcome section */
+.custom-welcome-section,
+.wedding-section,
+.kids-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.custom-welcome-image-container,
+.wedding-image-container,
+.kids-image-container {
+    width: 411px;
+    margin-right: 30px;
+}
+
+.custom-welcome-image-container img.custom-welcome-image {
+    width: 100%;
+    height: 490px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.custom-welcome-text,
+.wedding-text-content,
+.kids-page-text-content {
+    width: 644px;
+}
+
+.custom-welcome-text h2.custom-welcome-heading {
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.custom-welcome-text span {
+    font-weight: 600;
+}
+
+.custom-welcome-text p.custom-welcome-paragraph,
+.wedding-text-content .wedding-paragraph,
+.kids-page-paragraph {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+}
+
+/* home candid videos section */
+.candid-videos-section {
+    background-image: url('/assets/images/HOME\ SCREEN/image-20.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 600px;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.03em;
+}
+
+.candid-videos-text {
+    opacity: 0.8;
+}
+
+.candid-videos-text h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.candid-videos-text h2 {
+    font-size: 1.5rem;
+}
+
+.candid-videos-text p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.candid-videos-text a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.candid-videos-text a:hover {
+    text-decoration: underline;
+}
+
+.candid-videos-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.candid-video-main-image {
+    width: 504px;
+    height: 337px;
+    border-radius: 10px;
+}
+
+.candid-video-play-button {
+    width: 50px;
+    height: 50px;
+}
+
+.our-services-header {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.ease-simple-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.our-great-services-text {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.our-services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    text-align: center;
+    flex: 1 0 30%;
+}
+
+.service-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.75rem;
+}
+
+.service-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.service-description {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 0.25rem;
+}
+
+/* home special offer section */
+.special-offer-zone {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100px;
+}
+
+.offer-area {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: -80px;
+    gap: 20px;
+}
+
+.offer-row-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.offer-item-centered {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.special-offer-graphic {
+    max-width: 100%;
+    height: auto;
+    transform: rotate(1.62deg);
+    margin-right: 20px;
+}
+
+.special-gift-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.photo-print-box {
+    background-color: #EBCD9B;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(45% - 30px);
+    max-width: 530px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 383px;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: -10px;
+    margin-top: -230px;
+    z-index: 10;
+}
+
+.photo-content-area-top {
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.photo-heading-text {
+    color: #EE0D0D;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.photo-subheading-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.photo-content-area-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.photo-image-container-centered {
+    border: 8px solid white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.child-image {
+    width: 194px;
+    height: auto;
+    display: block;
+}
+
+.discount-label-wrapped {
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 142.78px;
+    height: 118.69px;
+    justify-content: center;
+}
+
+.discount-percent-wrapped {
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1;
+    display: block;
+}
+
+.off-text-wrapped {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1;
+    display: block;
+}
+
+.limited-offer-box {
+    padding: 20px;
+    text-align: center;
+    width: calc(45% - 30px);
+    max-width: 672.86px;
+    height: 387px;
+    margin-top: -230px;
+    z-index: 10;
+    margin-left: -50px;
+    margin-bottom: 20px;
+    background-image: url('../images/HOME SCREEN/image-14.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.offer-image-container {
+    flex-shrink: 0;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    height: 100%;
+}
+
+.offer-rectangle-box {
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.couple-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+    max-height: 80%;
+}
+
+.offer-text-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.discount-text-overlay {
+    color: white;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.discount-percent-big-text,
+.off-text-big-label {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ffc107;
+    display: block;
+}
+
+.limited-time-notice {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #f8f9fa;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.limited-time-notice span {
+    display: block;
+}
+
+/* WHAT OUR HAPPY CLIENTS SAY section */
+.custom-clients-say-heading {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-testimonial-card {
+    border: 1px solid #E93A9D;
+}
+
+.custom-client-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.custom-testimonial-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.custom-client-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.custom-carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.custom-indicator-active {
+    background-color: #FF6EC7 !important;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 0.25rem;
+    border: none;
+}
+
+.custom-indicator {
+    background-color: #D9D9D9;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 0.25rem;
+    border: none;
+}
+
+/* home FAQ section */
+.faq-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 28px;
+    font-weight: bold;
+    font-size: 2rem; 
+}
+
+.faq-section .accordion-button {
+    display: flex;
+    align-items: center; 
+    background: #ed4694;
+    color: #fff;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 1.15rem;
+    padding: 18px 24px;
+    margin-bottom: 18px;
+    text-decoration: none;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.faq-section .accordion-button:hover {
+    background-color: #d13c80;
+}
+
+.faq-section .faq-arrow {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 14px;
+    background: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.5 5.5l5 5 5-5"/></svg>') no-repeat center center;
+    background-size: 16px 16px;
+    flex-shrink: 0;
+}
+
+.faq-section .accordion-button::after {
+    display: none;
+}
+
+.faq-section .accordion-item{
+    border: none; 
+}
+
+.faq-section .accordion-header button:not(.collapsed){
+    background-color: #ed4694;
+    color: #fff;
+}
+.faq-section .accordion-body{
+    background-color: #fff;
+    border-radius: 0 0 14px 14px;
+    margin-top: -18px; 
+}
+
+/* home glimpse of our work section  */
+.work-img-box {
+    border: 3px solid #ed4694;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 290px;
+    width: 100%;
+    max-width: 340px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.work-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.highlight-img {
+    transform: scale(1.17);
+    z-index: 2;
+    box-shadow: 0 0 12px #ed469455;
+}
+
+/* footer section */
+.footer-section {
+    background: #ed4694;
+    padding: 48px 0 24px 0;
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin-top: 35px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.footer-brand-name {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-link {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 7px;
+    font-size: 1.05rem;
+    transition: text-decoration 0.2s;
+
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.footer-contact-text {
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.2px;
+}
+
+/* home hero page slide effect */
+.banner-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    height: auto;
+}
+
+.slide-in-banner {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: auto;
+    transition: left 0.5s ease-in-out;
+}
+
+.slide-in {
+    left: 0 !important;
+}
+
+/* wedding page header section */
+.header-user-logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-user-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #ed4694;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    letter-spacing: 1px;
+}
+
+.header-logout-link {
+    color: #ed4694;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* wedding page photo grid section */
+.photo-grid-section {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.photo-grid-section .photo-grid-item {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.photo-grid-section .photo-grid-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.photo-grid-section .photo-grid-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* wedding1 page hero section */
+.hero-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* wedding1 and kids1 page wedding and kids album section */
+.wedding-album-section,
+.kids1-album-section {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.wedding-album-section .wedding-album-item,
+.kids1-album-section .kids-album-item {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+.wedding-album-section .wedding-album-image,
+.kids1-album-section .kids-album-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wedding-album-section .row-span-2,
+.kids1-album-section .row-span-2 {
+    height: 660px;
+}
+
+.wedding-album-section .image-4,
+.wedding-album-section .image-6,
+.kids1-album-section .image-4,
+.kids1-album-section .image-6 {
+    height: 300px;
+    border-radius: 10px;
+}
+
+.wedding-album-section .album-item-7,
+.wedding-album-section .album-item-9,
+.kids1-album-section .album-item-7,
+.kids1-album-section .album-item-9 {
+    margin-top: -350px;
+}
+
+.wedding-album-section .album-item-10,
+.wedding-album-section .album-item-11,
+.kids1-album-section .album-item-10,
+.kids1-album-section .album-item-11 {
+    height: 300px;
+    border-radius: 10px;
+    margin-top: -380px;
+}
+
+.wedding-album-section .row,
+.kids1-album-section .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* wedding2 and kids2 page section*/
+.wedding-album-section02,
+.kids-album-section02 {
+    position: relative;
+    z-index: 1;
+}
+
+.wedding-album-section02::before,
+.kids-album-section02::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: rgba(217, 217, 217, 0.5);
+    z-index: 99;
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+.wedding-album-section02 .container,
+.kids-album-section02 .container {
+    position: relative;
+    z-index: 1;
+}
+
+.wedding-album-section02 .wedding-album-image,
+.kids-album-section02 .kids-album-image {
+    position: relative;
+    z-index: 1;
+}
+
+.overlay-image-container {
+    position: absolute;
+    top: 1600px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    width: 90%;
+    max-width: 1100px;
+    height: auto;
+}
+
+.overlay-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 90px;
+    height: 90px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 5;
+    line-height: 0;
+    font-size: 60px;
+}
+
+/* packages section page*/
+.package-section {
+    padding: 40px 0;
+}
+
+.package-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.package-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.package-col {
+    flex: 1 0 calc(33.33% - 30px);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-card {
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.package-header {
+    background-color: #E93A9D;
+    color: white;
+    padding: 20px 15px;
+    border-radius: 8px 8px 0 0;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.package-title {
+    font-size: 1.9rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.package-subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.package-body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e93a9d;
+    margin-bottom: 20px;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.package-features img {
+    margin-right: 40px;
+}
+
+.package-button {
+    background-color: #e93a9d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.package-button:hover {
+    background-color: #d12b89;
+}
+
+.package-col:nth-child(1) .package-body .text-center .package-button {
+    margin-top: 300px;
+}
+
+.package-col:nth-child(2) .package-body .text-center .package-button {
+    margin-top: 210px;
+}
+
+/* contact us page */
+.form-control {
+    border: 1px solid #E93A9D;
+}
+
+/* success modal */
+.success-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #e93a9d;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    text-align: center;
+    width: 80%;
+    height: 90%;
+}
+
+.success-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.success-modal-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.success-modal-close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.success-modal-close-button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.success-modal-close-button:hover {
+    color: #333;
+}
+
+.success-modal-icon {
+    font-size: 2.5rem;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.success-modal-greeting {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 5px;
+}
+
+.success-modal-message {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.success-modal-image {
+    margin-bottom: 15px;
+}
+
+.success-modal-image img {
+    max-width: 30%;
+    height: auto;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* login, signup and otp form page */
+#loginFormSection,
+#signUpFormSection,
+#otpFormSection {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border: 2px solid #E93A9D;
+}
+
+#loginFormSection h2,
+#signUpFormSection h2,
+#otpFormSection h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+#loginFormSection input,
+#signUpFormSection input {
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#otpFormSection p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.form-check-label {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+#loginFormSection button[type="submit"],
+#signUpFormSection button[type="submit"] {
+    background-color: #e91e63;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#otpFormSection button[type="submit"] {
+    background-color: #e91e63;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#otpFormSection button[type="submit"]:hover {
+    background-color: #6D5E5E;
+}
+
+#otpFormSection .btn-link {
+    color: #007bff;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+#otpFormSection .btn-link:hover {
+    text-decoration: underline;
+}
+
+.btn-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#otpFormSection .d-flex {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#otpFormSection .d-flex input {
+    width: 55px;
+    height: 55px;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* photography, bridal, groom portraits section */
+.links-container {
+    background-color: #fff;
+    height: 94px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.photography-category-link1 {
+    text-decoration: none;
+    color: #000;
+}
+
+.photography-category-link1:hover {
+    text-decoration: underline;
+}
+
+.photography-album-section .gallery-item-span-vertical, .bridal-album-section .gallery-item-span-vertical, .groom-album-section .gallery-item-span-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
