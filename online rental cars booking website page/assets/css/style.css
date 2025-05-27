@@ -1,0 +1,2012 @@
+/* import poppins font */
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+
+/*import inter font */
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap);
+
+/*import roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Header Styles  */
+header {
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+.left-header,
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.logo-container img {
+    width: 4.355rem;
+    height: 3.003rem;
+    margin-right: 0.5rem;
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+}
+
+.brand-name span {
+    font-family: Inter, sans-serif;
+    white-space: nowrap;
+}
+
+.brand-name span:first-child {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.brand-name span:last-child {
+    font-size: 1.3rem;
+}
+
+.left-header nav {
+    margin-left: 4rem;
+}
+
+.left-header nav>ul,
+.right-header nav.right-nav>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.left-header nav>ul>li,
+.right-header nav.right-nav>ul>li {
+    margin: 0 1.5rem;
+}
+
+.left-header nav>ul>li:first-child {
+    margin-left: 0;
+}
+
+.left-header nav>ul>li>a,
+.right-header nav.right-nav>ul>li>a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.right-header nav.right-nav>ul>li:last-child {
+    margin-right: 0;
+}
+
+.dropdown a img {
+    height: 0.6rem;
+    margin-left: 1rem;
+}
+
+/* Main Styles */
+main {
+    width: 100%;
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(180deg, #FFBE44 0%, #FFF0D4 100%);
+    width: 100%;
+    min-height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.hero-content {
+    margin-bottom: 2.5rem;
+    width: 80%;
+    max-width: 50rem;
+}
+
+.main-heading {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: auto;
+    margin: 0 auto;
+}
+
+.sub-text {
+    font-weight: regular;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-top: 1.25rem;
+    text-align: center;
+}
+
+.search-box, .rental-cars-search-box {
+    background-color: white;
+    border-radius: 1.25rem;
+    width: 80%;
+    max-width: 74.8125rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.25rem;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    margin-top: 1.875rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+.custom-select {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    min-width: 9.375rem;
+}
+
+.custom-select label {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.3125rem;
+}
+
+.select-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2.75rem;
+    border: 0.0625rem solid black;
+    border-radius: 0.3125rem;
+    padding: 0.625rem;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    text-decoration: none;
+    color: #000;
+}
+
+.select-trigger span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.select-trigger img {
+    width: 0.9375rem;
+    height: auto;
+    margin-left: 0.625rem;
+}
+
+.home-search-button {
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+    border-radius: 1.25rem;
+    width: 10.0625rem;
+    height: 2.625rem;
+    padding: 0;
+    font-size: 1.125rem;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+.home-search-button a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Cars Image Section */
+.cars-image-section {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0.625rem 0;
+}
+
+.cars-image-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Commitment Section */
+.commitment-section {
+    width: 100%;
+    padding: 3.75rem 1.25rem;
+    text-align: center;
+}
+
+.commitment-heading {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.4;
+    padding: 0 0.625rem;
+    margin-bottom: 3.125rem;
+}
+
+.divider-line1 {
+    max-width: 55.25rem;
+    width: 90%;
+    height: 0.0625rem;
+    background-color: #000;
+    border: none;
+    margin: 1.875rem auto;
+}
+
+.highlight-cards {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 1.25rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.yellow-tick-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5625rem;
+    padding: 0.625rem;
+    text-align: left;
+    min-width: 18.75rem;
+    flex-wrap: nowrap;
+}
+
+.icon-box {
+    background-color: #E5FB3E;
+    width: 7.1875rem;
+    height: 5.1875rem;
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-box img {
+    width: 3.333rem;
+    height: 2.667rem;
+    object-fit: contain;
+}
+
+.yellow-tick-card-text {
+    white-space: nowrap;
+}
+
+.yellow-tick-card-text h4 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.yellow-tick-card-text p {
+    font-size: 1.25rem;
+    margin-top: 0;
+    text-align: left;
+    margin-left: 0.625rem;
+}
+
+/* Top Selling Cars Section */
+.top-selling-cars-css {
+    padding: 4rem 2rem;
+}
+
+.section-heading {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: auto;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.section-subheading {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin: 2.5rem auto 2rem;
+    width: 95%;
+    max-width: 85rem;
+}
+
+.cars-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 95%;
+    max-width: 85rem;
+    padding: 2.5rem;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.home-car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .25);
+    padding: 2rem;
+    text-align: center;
+    width: calc(33.33% - 2rem);
+    min-width: 18rem;
+    margin-bottom: 2rem;
+}
+
+.home-car-card .car-title {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 1.25rem 0;
+}
+
+.home-car-card .car-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.home-car-card .car-details {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home-car-card .car-details li {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.home-car-card .car-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.home-car-card .car-price {
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 2.4;
+    letter-spacing: 0.01em;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-top: 1.25rem;
+}
+
+.home-car-card .car-price sup {
+    font-size: 0.75em;
+    vertical-align: top;
+    margin-left: 0.3em;
+    color: #000;
+    font-weight: normal;
+    position: absolute;
+    top: -0.7em;
+    right: -4rem;
+}
+
+.home-car-card .rupee-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.3rem;
+    vertical-align: middle;
+}
+
+.view-more-container {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.view-more-button {
+    background-color: #FFBE44;
+    color: #000;
+    border: 0.0625rem solid #000;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 8.5rem;
+    height: 3.0625rem;
+    padding: 0.5rem 1.25rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.view-more-button:hover {
+    background-color: #E6A83A;
+}
+
+/* Why Zara Cars Section */
+.why-zara-cars-section {
+    width: 100%;
+    padding: 2.5rem 1.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why-zara-cars-section .why-zara-heading {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: auto;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    width: 90%;
+    max-width: 75rem;
+}
+
+.why-zara-cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    max-width: 75rem;
+}
+
+.why-zara-card {
+    background-color: #FFE9C1;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    flex: 1 0 18rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+.why-zara-card .card-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.why-zara-card .card-description {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* FAQs Section */
+.faqs-section {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.faqs-container {
+    flex-grow: 1;
+    padding: 1.5rem;
+    max-width: 75rem;
+}
+
+.faqs-container .section-heading {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: auto;
+    letter-spacing: 0%;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.faq-item .faq-question {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.faq-item .faq-answer {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Happy Customers Section */
+.happy-customers-section {
+    width: 100%;
+    padding: 2.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.happy-customers-section .happy-customers-heading {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: auto;
+    letter-spacing: 0%;
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 90%;
+    max-width: 75rem;
+}
+
+.customers-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    max-width: 75rem;
+}
+
+.customer-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    flex: 1 0 18rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+.customer-image {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.customer-name {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer-rating {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 0.3rem;
+}
+
+.star-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+    vertical-align: middle;
+    margin-left: 0.2rem;
+}
+
+.customer-testimonial {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #FFC965;
+    padding: 3rem 2rem;
+    width: 100%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.logo-container img {
+    width: 3rem;
+    height: auto;
+    margin-right: 0.75rem;
+}
+
+.brand-name span:first-child {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.brand-name span:last-child {
+    font-size: 1.1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.social-links img {
+    width: 1.75rem;
+    height: auto;
+}
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-about h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-about ul {
+    list-style: none;
+}
+
+.footer-about ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-about ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.footer-contact h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    justify-content: flex-end;
+}
+
+.footer-contact p img {
+    width: 1.2rem;
+    height: auto;
+}
+
+/* about us section */
+.about-us {
+    line-height: 1.6;
+    padding: 50px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.about-us h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.about-us p {
+    margin-bottom: 1em;
+    font-size: 1.25rem;
+}
+
+.about-us ul {
+    font-size: 1.25rem;
+    list-style-type: disc;
+    margin-left: 50px;
+    margin-bottom: 1em;
+}
+
+.about-us li {
+    margin-bottom: 0.5em;
+}
+
+/* rental cars page section */
+.rental-locations-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0; 
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
+    width: 100%;
+    min-height: 30rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(180deg, #FFBE44 0%, #FFF0D4 100%);
+    position: relative;
+}
+
+.rental-locations-box {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 930px;
+    height: 416px;
+    padding: 55px 101px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 2;
+    position: relative;
+}
+
+.dropdown-grid-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    width: 100%; 
+}
+
+.dropdown-grid-columns .column div {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown-grid-columns .column div a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    width: 385px; 
+    height: 56px; 
+    display: flex;
+    align-items: center;
+    padding-left: 0; 
+    padding-right: 80px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.dropdown-grid-columns .column div img {
+    width: 7.13px; 
+    height: 12.97px; 
+}
+
+.rental-cars-search-box {
+    margin-top: -150px; 
+    z-index: 1; 
+    position: relative; /* Needed for z-index to work */
+}
+
+.rental-cars-search-box .select-trigger, .rental-cars-search-box .home-search-button {
+    background-color: #D9D9D9;
+}
+
+
+/* car 5 and 7seater screen tick section */
+.car-type-select .car-type-options {
+    display: flex;
+    flex-direction: column;
+    padding: 12px; 
+    border: 1px solid #000; 
+    border-radius: 10px; 
+    width: 215px; 
+    max-width: 90%; 
+    height: auto; 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+.car-type-option {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 8px 0; 
+    cursor: pointer;
+    text-decoration: none; 
+    color: #000;
+}
+
+.car-type-option span {
+    font-size: 1em; 
+}
+
+.car-type-option .radio-tick {
+    position: relative;
+    width: 31px; 
+    height: 31px; 
+    border: 1px solid #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-type-option .radio-tick input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.car-type-option .radio-tick img {
+    display: none;
+    width: 70%; 
+    height: 70%;
+    object-fit: contain;
+}
+
+.car-type-option input[type="radio"]:checked + img {
+    display: block;
+}
+
+/* home page view more button back arrow section */
+.back-arrow-container {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.back-arrow-icon {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.back-arrow-container a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* rental cars in surandai page section */
+.rental-search-hero {
+    background: linear-gradient(180deg, #FFBE44 0%, #FFF0D4 100%);
+    width: 100%;
+    min-height: 45rem;
+}
+
+.rental-search-container {
+    display: flex;
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: center;
+}
+
+.rental-search-left {
+    flex: 0 0 598px; 
+    height: 508px; 
+}
+
+.rental-search-right-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; 
+}
+
+.rental-search-box {
+    background-color: #fff;
+    border-radius: 20px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    text-align: left;
+    width: 100%; 
+    height: 100%; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 25px;
+}
+
+.rental-search-box h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 500;
+    grid-column: 1 / -1;
+}
+
+.custom-select, .custom-select1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-select, .custom-select1 label {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.car-type-dropdown-container,
+.pickup-date-dropdown-container,
+.pickup-location-dropdown-container,
+.pickup-time-dropdown-container {
+    width: 100%;
+    height: 50px;
+    background-color: #FCFCC5;
+    border-radius: 12px; 
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.car-type-dropdown-container a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 15px;
+    width: 100%; 
+    height: 100%; 
+}
+
+.car-type-dropdown-container img,
+.pickup-date-dropdown-container img,
+.pickup-location-dropdown-container img,
+.pickup-time-dropdown-container img {
+    width: 15px;
+    height: 15px;
+}
+
+.rental-search-button {
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: 500;
+    line-height: 24px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    width: 161px; 
+    height: 42px; 
+    background-color: #FFBE44; 
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.rental-search-button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.rental-search-button:hover {
+    background-color: #E6A83A;
+}
+
+.right-bordered-box {
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; 
+    align-items: flex-start; 
+}
+
+.hero-image-with-policy {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: flex-start; 
+}
+
+.hero-image-container {
+    padding: 20px;
+    padding-top: 0; 
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.rental-policy-container {
+    padding: 20px;
+}
+
+.policy-text h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.policy-text ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.policy-text ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.policy-text ul li img {
+    width: 16px;
+    height: auto;
+}
+
+/* rental cars in tenkasi, rental cars in tenkasi search page, viewmore page, rental cars im surandai and surandai search page car cards style */
+.car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .25);
+    padding: 2rem;
+    text-align: center;
+    width: calc(33.33% - 2rem); 
+    min-width: 18rem; 
+    margin-bottom: 2rem;
+    
+}
+
+.car-card .car-title {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 1.25rem 0;
+}
+
+.car-card .car-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.car-card .car-details {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.car-card .car-details li {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.car-card .car-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.car-card .car-price {
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 2.4;
+    letter-spacing: 0.01em;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-top: 1.25rem;
+}
+
+.car-card .car-price sup {
+    font-size: 0.75em;
+    vertical-align: top;
+    margin-left: 0.3em;
+    color: #000;
+    font-weight: normal;
+    position: absolute;
+    top: -0.7em;
+    right: -4rem;
+}
+
+.car-card .rupee-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.3rem;
+    vertical-align: middle;
+}
+
+.view-details-button {
+    background-color: transparent; 
+    border: 1px solid #000; 
+    padding: 8px 15px; 
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 0.8em;
+    width: 108px; 
+    height: 33px; 
+}
+
+.view-details-button a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* rental cars surandai section */
+.top-selling-cars-css p {
+    text-align: center;
+    font-size: clamp(14px, 4vw, 20px);
+    font-family: 'Inter', sans-serif;
+}
+
+/* rental cars surandai search page section*/
+.rental-search-hero-red {
+    background: linear-gradient(180deg, #FFBE44 0%, #FFF0D4 100%);
+    width: 100%;
+    min-height: 45rem;
+}
+
+.rental-search-container-red {
+    display: flex;
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.rental-search-left-red {
+    margin-top: 5%;
+    flex: 0 0 598px; 
+    height: 508px; 
+}
+
+.rental-search-right-container-red {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; 
+}
+
+.rental-search-box-red {
+    background-color: #fff;
+    border-radius: 20px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    text-align: left;
+    width: 100%; 
+    height: 100%; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 25px;
+}
+
+.rental-search-box-red h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 500;
+    grid-column: 1 / -1;
+}
+
+.custom-select-red, .custom-select1-red {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-select-red, .custom-select1-red label {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.car-type-dropdown-container-red,
+.pickup-date-dropdown-container-red,
+.pickup-location-dropdown-container-red,
+.pickup-time-dropdown-container-red {
+    width: 100%;
+    height: 50px;
+    background-color: #FCFCC5;
+    border-radius: 12px; 
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 28px;
+    justify-content: space-between;
+}
+
+.car-type-dropdown-container-red img,
+.pickup-date-dropdown-container-red img,
+.pickup-location-dropdown-container-red img,
+.pickup-time-dropdown-container-red img {
+    width: 15px;
+    height: 15px;
+}
+
+.rental-search-button-red {
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: 500;
+    line-height: 24px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    width: 161px; 
+    height: 42px; 
+    background-color: #FFBE44; 
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.rental-search-button-red a {
+    text-decoration: none;
+    color: #000;
+}
+
+.rental-search-button-red:hover {
+    background-color: #E6A83A;
+}
+
+.right-bordered-box-red {
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; 
+    align-items: flex-start; 
+}
+
+.hero-image-with-policy-red {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: flex-start; 
+    padding-top: 20%;
+}
+
+.hero-image-container-red {
+    padding: 20px;
+    padding-top: 0; 
+}
+
+.hero-image-red {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.rental-policy-container-red {
+    padding: 20px;
+}
+
+.policy-text-red h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.policy-text-red ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.policy-text-red ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.policy-text-red ul li img {
+    width: 16px;
+    height: auto;
+}
+
+.view-details-button-red {
+    background-color: transparent;
+    border: 1px solid #000; 
+    padding: 8px 15px; 
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 0.8em; 
+    width: 108px; 
+    height: 33px; 
+}
+
+.view-details-button-red a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* rental car in tenkasi and rental car surandai search page  */
+.custom-select-red .car-type-dropdown-container-red, .custom-select-white .car-type-dropdown-container-white {
+    background-color: #FCFCC5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 12px;
+    width: 215px;
+    max-width: 90%;
+    height: 50px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.custom-select-red .car-type-dropdown-container-red span, .custom-select-white .car-type-dropdown-container-white span {
+    font-size: 1em;
+}
+
+.custom-select-red .car-type-dropdown-container-red .tick-container-red, .custom-select-white .car-type-dropdown-container-white .tick-container-white {
+    position: relative;
+    width: 31px;
+    height: 31px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-select-red .car-type-dropdown-container-red .tick-container-red input[type="radio"], .custom-select-white .car-type-dropdown-container-white .tick-container-white input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.custom-select-red .car-type-dropdown-container-red .tick-container-red img, .custom-select-white .car-type-dropdown-container-white .tick-container-white img  {
+    display: none;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.custom-select-red .car-type-dropdown-container-red input[type="radio"]:checked + img, .custom-select-white .car-type-dropdown-container-white .tick-container-white input[type="radio"]:checked + img {
+    display: block;
+}
+
+/* cars rental in tenkasi search page */
+.sold-out-button {
+    background-color: transparent; 
+    border: 1px solid #000; 
+    padding: 8px 15px; 
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 0.8em; 
+    width: 108px; 
+    height: 33px; 
+    color: yellow;
+}
+
+/* Booking and Fare Details Section */
+.booking-fare-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 74.8125rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    gap: 1rem;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 0.9rem; 
+}
+
+.booking-fare-details a {
+    text-decoration: none;
+    color: #000;
+}
+
+.left-middle-section {
+    display: flex;
+    gap: 1rem; 
+    flex-grow: 1; 
+    border-right: 1px solid #000;
+    align-items: center; 
+}
+
+/* Left Car Details Card */
+.car-details-card {
+    flex: 0 0 30%; 
+    background-color: #fff;
+    border-radius: 0.625rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.car-model-name {
+    font-size: 1.2rem; 
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+}
+
+.car-model-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.3125rem;
+    margin-bottom: 0.8rem;
+}
+
+.car-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem; 
+}
+
+.car-features p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.feature-icon {
+    width: 1rem; 
+    height: auto;
+    margin-right: 0.35rem;
+}
+
+.car-rent {
+    font-size: 1.1rem; 
+}
+
+.rupee-icon {
+    width: 0.8rem; 
+    height: auto;
+    margin-right: 0.15rem;
+}
+
+/* Center Booking Details Card  */
+.booking-details {
+    flex: 0 0 65%; 
+    background-color: #fff;
+    border-radius: 0.625rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    height: 60%;
+    margin-top: 10%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 0.9rem; 
+}
+
+.booking-details-heading {
+    font-size: 1.2rem; 
+    font-weight: 500;
+    margin-bottom: 1.1rem;
+    text-align: center;
+    flex-basis: auto;
+}
+
+.booking-locations-dates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.1rem;
+}
+
+.pickup-details .location-time,
+.dropoff-details .location-time {
+    font-size: 1rem; 
+    margin-bottom: 0.3rem;
+}
+
+.pickup-details .date,
+.dropoff-details .date {
+    font-size: 0.9rem; 
+    color: #555;
+}
+
+.to-duration .to-text {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.3rem;
+}
+
+.to-duration .duration-details {
+    margin-bottom: 0.3rem;
+}
+
+.duration-details .duration-icon {
+    width: 1.1rem; 
+    height: auto;
+    margin-right: 0.35rem;
+}
+
+.duration-details .duration {
+    font-size: 0.9rem; 
+}
+
+.to-duration .city {
+    font-size: 0.8rem; 
+    color: #777;
+}
+
+.pricing-info {
+    font-size: 0.8rem; 
+    color: #777;
+    margin-top: 1.1rem;
+    text-align: center;
+    flex-basis: auto;
+}
+
+/* Right Fare Details Card */
+.fare-details {
+    flex: 0 0 30%;
+    background-color: #fff;
+    border-radius: 0.625rem;
+    padding: 1rem;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.fare-details-heading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    text-align: center;
+    align-self: stretch; 
+}
+
+.fare-breakdown {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    align-self: stretch; 
+}
+
+.fare-breakdown .fare-amount {
+    display: flex;
+    align-items: center;
+}
+
+.fare-breakdown .fare-amount .rupee-indian {
+    width: 0.7rem;
+    height: auto;
+    margin-right: 0.15rem;
+}
+
+.fare-divider {
+    margin: 0.6rem 0;
+    align-self: stretch;
+}
+
+.fare-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    align-self: stretch; 
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 0.5rem; 
+}
+
+.kms-limit,
+.fuel-charge,
+.extra-kms-charge,
+.other-charges {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    align-self: stretch; 
+}
+
+.proceed-button {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+    background-color: #FFBE44;
+    width: 50%; 
+    border: none;
+    border-radius: 40px;
+}
+
+/* Style for the Payment Method Section and Overlay */
+.payment-method-wrapper, .payment-options-horizontal {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.payment-method-button {
+    background-color: #ffc107;
+    color: #000;
+    padding: 30px 90px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.payment-method-button:hover {
+    background-color: #e0a800;
+}
+
+.payment-toggle-checkbox {
+    display: none;
+}
+
+.payment-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.payment-options-box {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    padding: 5%;
+}
+
+.payment-options-box h3 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.payment-option-button {
+    display: flex;
+    align-items: center;
+    width: 348px;
+    height: 55px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+}
+
+.payment-option-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.payment-option-button span {
+    flex-grow: 1;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.payment-option-button .dropdown-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.payment-option-button:hover {
+    background-color: #eee;
+}
+
+.payment-options-box .close-button:hover {
+    color: #333;
+}
+
+.google-pay-option {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.google-pay-option .google-pay-button {
+    width: 100%;
+    text-decoration: none;
+}
+
+.dropdown-arrow {
+    margin-left: auto;
+}
+
+#payment-toggle:checked + .payment-method-button + .payment-overlay {
+    display: flex;
+}
+
+/* Styles for the Sign-in Overlay and Form on sign_in.html */
+.sigin-body {
+    overflow: hidden;
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.signin-popup-wrapper-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    display: block;
+}
+
+.signin-overlay-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 51;
+}
+
+.signin-form-side-home {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 52;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.signin-form-side-home .login-form {
+    text-align: left;
+}
+
+.signin-form-side-home .login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.signin-form-side-home .input-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.signin-form-side-home .input-field img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+}
+
+.signin-form-side-home .input-field input {
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.signin-form-side-home .forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.signin-form-side-home .sign-in-button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+
+.signin-form-side-home .separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+    color: #999;
+    font-size: 1rem;
+}
+
+.signin-form-side-home .separator hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.signin-form-side-home .separator span {
+    padding: 0 12px;
+}
+
+.signin-form-side-home .google-sign-in {
+    background-color: #fff;
+    color: #333;
+    padding: 14px 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.signin-form-side-home .google-sign-in img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.signin-form-side-home .close-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #777;
+    background: none;
+    border: none;
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful Page</title>
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .success-container {
+            background-color: white;
+            width: 401px;
+            height: 452px;
+            padding: 46px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .checkmark-icon img {
+            width: 221px;
+            height: 221px;
+            margin-bottom: 20px;
+        }
+
+        .success-message {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            .success-container {
+                width: 90%;
+                height: auto;
+                padding: 30px 20px;
+            }
+
+            .checkmark-icon img {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 15px;
+            }
+
+            .success-message {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="success-container">
+        <div class="checkmark-icon">
+            <img src="../images/Payment-completed-image.png" alt="Payment Successful">
+        </div>
+        <p class="success-message">Payment Completed</p>
+    </div>
+</body>
+
+</html>
