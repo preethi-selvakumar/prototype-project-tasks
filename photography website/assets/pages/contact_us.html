@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- link to bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- link to css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- link to responsive css -->
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!--- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="custom-body">
+    <!-- header -->
+    <header class="custom-header">
+        <div class="container-header custom-header-container">
+            <a class="logo custom-logo" href="#">
+                <img src="../images/LOGO,ILLUS AND ICONS/main-logo.png" alt="Studio Prakan Photography"
+                    class="custom-logo-image">
+            </a>
+            <nav class="nav-menu custom-nav-menu">
+                <ul class="custom-nav-list">
+                    <li class="custom-nav-item"><a href="../pages/wedding.html" class="custom-nav-link">WEDDINGS</a></li>
+                    <li class="custom-nav-item"><a href="../pages/kids.html" class="custom-nav-link">KIDS</a></li>
+                    <li class="custom-nav-item"><a href="../pages/photography.html" class="custom-nav-link">PHOTOGRAPHY</a>
+                    </li>
+                    <li class="custom-nav-item"><a href="../pages/packages.html" class="custom-nav-link">PACKAGES</a></li>
+                    <li class="custom-nav-item"><a href="#" class="custom-nav-link">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="header-user-logout">
+                <span class="header-user-circle">K</span>
+                <a href="/index.html" class="header-logout-link">LOGOUT</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="custom-main">
+        <section class="py-5">
+            <div class="container">
+                <h1 class="text-center mb-1 fw-semibold">CONTACT US</h1>
+            </div>
+        </section>
+        <section class="contact-form-section py-5">
+            <div class="container">
+                <h2>Book Our Services</h2>
+                <p class="lead mb-4">Let Us Be The People Who Sketch The Outline And Fill In The Colors For The
+                    Beautiful Picture Of Your Love Story On Your Wedding Day. Forget All The Hassle Of Getting Things
+                    Coordinated, We Are Here To Make You Look Flawless On Your Special Day With Our Wedding Photography
+                    Services.</p>
+                <form id="contactForm">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="brideGroomName" class="form-label">Bride/Groom Name</label>
+                            <input type="text" class="form-control" id="brideGroomName" name="brideGroomName">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" name="city">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="eventType" class="form-label">Event Type</label>
+                            <input type="text" class="form-control" id="eventType" name="eventType">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="date" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="date" name="date">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" class="form-control" id="location" name="location">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="venue" class="form-label">Venue</label>
+                            <input type="text" class="form-control" id="venue" name="venue">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="time" class="form-label">Time</label>
+                            <input type="time" class="form-control" id="time" name="time">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="crowdStrength" class="form-label">Crowd Strength</label>
+                            <input type="number" class="form-control" id="crowdStrength" name="crowdStrength">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Tell Us More About The Couple And The Wedding *</label>
+                        <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg mt-3"
+                        style="background-color: #e93a9d; border-color: #e93a9d; width: 100%;">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <div id="successMessageContainer" class="success-modal">
+        <div class="success-modal-header">
+            <h5 class="success-modal-title">Thank You For Reaching Out!</h5>
+            <button id="closeSuccessMessage" class="success-modal-close-button"><a href="../pages/logged_in_screen_page.html">X</a></button>
+        </div>
+        <div class="success-modal-body">
+            <div class="success-modal-icon">✔️</div>
+            <p class="success-modal-greeting">Hi There! 👋</p>
+            <p class="success-modal-message">We've Received Your Enquiry And Truly Appreciate Your Interest In Prakan
+                Photo Studio. Our Team Will Get Back To You Within 24 Hours With All The Details You Need.</p>
+            <div class="success-modal-image">
+                <img src="../images/CONTACT/image-24.png" alt="Success Cat">
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="modal-overlay"></div>
+
+
+    <!-- footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <!-- Logo & Brand -->
+                <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                    <img src="../images/LOGO,ILLUS AND ICONS/main-logo.png" alt="Prakan Studio Logo"
+                        class="footer-logo mb-3">
+                    <div class="footer-brand-name text-center">
+                        PRAKAN STUDIO<br>PHOTOGRAPHY
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                    <div class="footer-title mb-2">QUICK LINKS</div>
+                    <div class="footer-links text-center">
+                        <a href="../pages/logged_in_screen_page.html" class="footer-link">Home</a><br>
+                        <a href="../pages/about_us.html" class="footer-link">About Us</a><br>
+                        <a href="../pages/privacy_policy_page.html" class="footer-link">Privacy Policy</a><br>
+                        <a href="../pages/terms_and_conditions.html" class="footer-link">Terms and Conditions</a>
+                    </div>
+                </div>
+                <!-- Contact -->
+                <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                    <div class="footer-title mb-2">CONTACT</div>
+                    <div class="footer-contact text-center">
+                        <div class="mb-2 d-flex align-items-center justify-content-center">
+                            <img src="../images/LOGO,ILLUS AND ICONS/material-symbols-call.png" alt="Phone"
+                                class="footer-icon me-2">
+                            <span class="footer-contact-text">9874653210/9632587410</span>
+                        </div>
+                        <div class="mb-2 d-flex align-items-center justify-content-center">
+                            <img src="../images/LOGO,ILLUS AND ICONS/ic-baseline-email.png" alt="Email"
+                                class="footer-icon me-2">
+                            <span class="footer-contact-text">mailtoprakan@studio.com</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="../images/LOGO,ILLUS AND ICONS/mdi-location.png" alt="Location"
+                                class="footer-icon me-2">
+                            <span class="footer-contact-text">Guduvancherry,603202</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    
+    <!-- custom js link -->
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const successMessageContainer = document.getElementById('successMessageContainer');
+        const overlay = document.getElementById('overlay');
+        const closeSuccessMessageButton = document.getElementById('closeSuccessMessage');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (event) {
+                event.preventDefault(); 
+
+                let isValid = true; 
+                let errorMessage = ''; 
+
+                // Check if Bride/Groom Name is filled
+                const brideGroomNameInput = document.getElementById('brideGroomName');
+                if (brideGroomNameInput.value.trim() === '') {
+                    isValid = false;
+                }
+
+                // Check if Email is filled and looks like an email
+                const emailInput = document.getElementById('email');
+                if (emailInput.value.trim() === '') {
+                    isValid = false;
+                } else if (!isValidEmail(emailInput.value.trim())) {
+                    isValid = false;
+                }
+
+                // Check if the message is filled
+                const messageInput = document.getElementById('message');
+                if (messageInput.value.trim() === '') {
+                    isValid = false;
+                }
+
+                // If any of the required fields are not valid, show a single alert
+                if (!isValid) {
+                    alert('Please enter all the required fields.');
+                } 
+                else {
+                    // If all the required fields are filled, show the success message
+                    successMessageContainer.style.display = 'block';
+                    overlay.style.display = 'block';
+
+                    contactForm.reset();
+                }
+            });
+        }
+
+        if (closeSuccessMessageButton) {
+            closeSuccessMessageButton.addEventListener('click', function () {
+                successMessageContainer.style.display = 'none';
+                overlay.style.display = 'none';
+            });
+        }
+
+        // Simple function to check if an email looks valid
+        function isValidEmail(email) {
+            // check for @ symbol
+            return email.includes('@');
+        }
+    </script>
+</body>
+
+</html>
