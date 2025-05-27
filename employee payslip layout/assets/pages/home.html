@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/dashboard.png" type="image/png" />
+    <title>Home Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- sidebar -->
+    <button class="navbar-toggler" id="sidebarToggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="d-flex" id="wrapper">
+        <aside class="sidebar-wrapper" id="sidebar-wrapper">
+
+            <nav class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action default-yellow-link active">
+                    <img src="../images/Overview.png" alt="Overview Icon" class="sidebar-icon">
+                    Overview
+                </a>
+                <a href="../pages/payroll.html" class="list-group-item list-group-item-action">
+                    <img src="../images/payroll.png" alt="Payroll Icon" class="sidebar-icon">
+                    Payroll
+                </a>
+                <a href="../pages/payslip.html" class="list-group-item list-group-item-action">
+                    <img src="../images/payroll.png" alt="Payslip Icon" class="sidebar-icon">
+                    Payslip
+                </a>
+            </nav>
+        </aside>
+
+        <main id="page-content-wrapper">
+            <!-- top bar part -->
+            <section class="top-bar-section">
+                <h1 class="good-morning-text">Good Morning !!!</h1>
+
+                <div class="search-box-container">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <img src="../images/search.png" alt="Search Icon" class="search-icon">
+                </div>
+
+                <div class="header-right-icons">
+                    <div class="icon-notification-wrapper">
+                        <img src="../images/notification.png" alt="Notification Icon" class="notification-icon">
+                    </div>
+                    <img src="../images/Profile.png" alt="Profile Picture" class="profile-pic">
+                </div>
+            </section>
+
+            <!-- yellow cards part -->
+            <section class="info-cards-section">
+                <div class="container-fluid">
+                    <div class="row info-cards-row">
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="info-card">
+                                <div class="icon-circle">
+                                    <img src="../images/total.png" alt="Total Employees Icon" class="card-icon">
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-text">Total Employees</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="info-card">
+                                <div class="icon-circle">
+                                    <img src="../images/no-of-leave.png" alt="Number Of Leave Icon" class="card-icon">
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-text">Number Of leave</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="info-card">
+                                <div class="icon-circle">
+                                    <img src="../images/add.png" alt="New Employee Icon" class="card-icon">
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-text">New Employee's</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="info-card">
+                                <div class="icon-circle">
+                                    <img src="../images/holiday.png" alt="Holiday Icon" class="card-icon">
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-text">Holiday of this Year</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <!-- calender part -->
+                    <div class="col-12 col-lg-6 mb-4">
+                        <h2 class="calendar-heading">Calendar</h2>
+                        <div class="calendar-container">
+                            <div class="calendar-header">
+                                <span class="month-year" id="currentMonthYear">May 2025</span>
+                                <div class="navigation-buttons">
+                                    <button id="prevMonth" class="nav-button prev-month-btn">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.3033 1.69669L2.6067 5L6.3033 8.30331" stroke="#263238" /*
+                                                Changed stroke color here */ stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <button id="nextMonth" class="nav-button next-month-btn">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.6967 8.30331L7.3933 5L3.6967 1.69669" stroke="#263238" /*
+                                                Changed stroke color here */ stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <table class="calendar-table">
+                                <thead>
+                                    <tr class="day-names">
+                                        <th>Sun</th>
+                                        <th>Mon</th>
+                                        <th>Tue</th>
+                                        <th>Wed</th>
+                                        <th>Thu</th>
+                                        <th>Fri</th>
+                                        <th>Sat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="calendarBody">
+                                    <tr>
+                                        <td class="fade-day"></td>
+                                        <td class="fade-day"></td>
+                                        <td class="fade-day"></td>
+                                        <td class="fade-day"></td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td class="selected">17</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        <td>25</td>
+                                        <td>26</td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td>31</td>
+                                        <td class="fade-day"></td>
+                                        <td class="fade-day"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- upcoming meeting part -->
+                    <div class="col-12 col-lg-6 mb-4">
+                        <h2 class="meetings-heading">Upcoming Meetings <span class="view-all-link">View All</span></h2>
+                        <div class="meetings-container">
+                            <div class="meeting-card">
+                                <div class="meeting-details">
+                                    <p class="meeting-title">Client Meeting - 10.00 Am</p>
+                                </div>
+                                <div class="meeting-date-info">
+                                    <span class="meeting-day" id="meeting-day-1">Fri</span>
+                                    <span class="meeting-month-date" id="meeting-month-date-1">May 30</span>
+                                </div>
+                            </div>
+
+                            <div class="meeting-card">
+                                <div class="meeting-details">
+                                    <p class="meeting-title">Team Meeting - 11.00 Am</p>
+                                </div>
+                                <div class="meeting-date-info">
+                                    <span class="meeting-day" id="meeting-day-2">Fri</span>
+                                    <span class="meeting-month-date" id="meeting-month-date-2">May 30</span>
+                                </div>
+                            </div>
+
+                            <div class="meeting-card">
+                                <div class="meeting-details">
+                                    <p class="meeting-title">HR Interview - 2.00 Pm</p>
+                                </div>
+                                <div class="meeting-date-info">
+                                    <span class="meeting-day" id="meeting-day-3">Fri</span>
+                                    <span class="meeting-month-date" id="meeting-month-date-3">May 30</span>
+                                </div>
+                            </div>
+
+                            <div class="meeting-card">
+                                <div class="meeting-details">
+                                    <p class="meeting-title">Client Meeting- 4.00 Pm</p>
+                                </div>
+                                <div class="meeting-date-info">
+                                    <span class="meeting-day" id="meeting-day-4">Fri</span>
+                                    <span class="meeting-month-date" id="meeting-month-date-4">May 30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        // calender part code 
+        const monthYearDisplay = document.getElementById('currentMonthYear');
+        const prevMonthBtn = document.getElementById('prevMonth');
+        const nextMonthBtn = document.getElementById('nextMonth');
+        const calendarBody = document.getElementById('calendarBody');
+
+        const meetingDayElements = [];
+        const meetingMonthDateElements = [];
+
+        for (let i = 1; i <= 4; i++) {
+            meetingDayElements.push(document.getElementById(`meeting-day-${i}`));
+            meetingMonthDateElements.push(document.getElementById(`meeting-month-date-${i}`));
+        }
+
+        let currentDate = new Date();
+        let selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), 30);
+        if (selectedDate.getDate() !== 30) {
+            selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+        }
+
+        function updateMeetingDisplays(date) {
+            const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
+            const monthAndDate = date.toLocaleString('en-US', { month: 'short', day: 'numeric' });
+
+            meetingDayElements.forEach(el => el && (el.textContent = dayOfWeek));
+            meetingMonthDateElements.forEach(el => el && (el.textContent = monthAndDate));
+        }
+
+        function renderCalendar() {
+            calendarBody.innerHTML = '';
+
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth();
+            const monthName = new Date(year, month).toLocaleString('en-US', { month: 'long' });
+            monthYearDisplay.textContent = `${monthName} ${year}`;
+
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            let date = 1;
+
+            for (let i = 0; i < 6; i++) {
+                const row = document.createElement('tr');
+                for (let j = 0; j < 7; j++) {
+                    const cell = document.createElement('td');
+
+                    if (i === 0 && j < firstDay) {
+                        const prevMonthDay = new Date(year, month, 0).getDate() - firstDay + j + 1;
+                        cell.textContent = prevMonthDay;
+                        cell.classList.add('fade-day');
+                        cell.setAttribute('data-date', `${year}-${month}-${prevMonthDay}`);
+                    } else if (date > daysInMonth) {
+                        const nextDate = date - daysInMonth;
+                        cell.textContent = nextDate;
+                        cell.classList.add('fade-day');
+                        cell.setAttribute('data-date', `${year}-${month + 2}-${nextDate}`);
+                        date++;
+                    } else {
+                        cell.textContent = date;
+                        cell.setAttribute('data-date', `${year}-${month + 1}-${date}`);
+
+                        if (
+                            selectedDate.getFullYear() === year &&
+                            selectedDate.getMonth() === month &&
+                            selectedDate.getDate() === date
+                        ) {
+                            cell.classList.add('selected');
+                        }
+
+                        cell.addEventListener('click', () => {
+                            const prevSelected = document.querySelector('.calendar-table td.selected');
+                            if (prevSelected) {
+                                prevSelected.classList.remove('selected');
+                            }
+                            cell.classList.add('selected');
+                            selectedDate = new Date(year, month, parseInt(cell.textContent));
+                            updateMeetingDisplays(selectedDate);
+                        });
+
+                        date++;
+                    }
+
+                    row.appendChild(cell);
+                }
+                calendarBody.appendChild(row);
+                if (date > daysInMonth && row.children.length === 7) break;
+            }
+
+            updateMeetingDisplays(selectedDate);
+        }
+
+        prevMonthBtn.addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            const newDay = Math.min(selectedDate.getDate(), new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate());
+            selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), newDay);
+            renderCalendar();
+        });
+
+        nextMonthBtn.addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            const newDay = Math.min(selectedDate.getDate(), new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate());
+            selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), newDay);
+            renderCalendar();
+        });
+
+        renderCalendar();
+
+        // mobile toggle code
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebarWrapper = document.getElementById('sidebar-wrapper');
+        const overlay = document.getElementById('overlay');
+
+        function toggleSidebar() {
+            if (!sidebarWrapper || !overlay) return;
+
+            const isActive = sidebarWrapper.classList.contains('active');
+
+            if (isActive) {
+                sidebarWrapper.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = ''; 
+            } else {
+                sidebarWrapper.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden'; 
+            }
+        }
+
+        if (sidebarToggle) {
+            sidebarToggle.addEventListener('click', toggleSidebar);
+        }
+
+        if (overlay) {
+            overlay.addEventListener('click', toggleSidebar);
+        }
+
+        if (sidebarWrapper) {
+            const sidebarLinks = sidebarWrapper.querySelectorAll('.list-group-item');
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 767) {
+                        toggleSidebar();
+                    }
+                });
+            });
+        }
+
+        function handleSidebarVisibility() {
+            if (window.innerWidth > 767) {
+                if (sidebarWrapper) sidebarWrapper.classList.remove('active');
+                if (overlay) overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            } else {
+                if (sidebarWrapper && !sidebarWrapper.classList.contains('active')) {
+                    sidebarWrapper.classList.remove('active');
+                }
+            }
+        }
+
+        handleSidebarVisibility();
+        window.addEventListener('resize', handleSidebarVisibility);
+    </script>
+
+
+</body>
+
+</html>

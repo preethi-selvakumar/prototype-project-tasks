@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/payslip.webp" type="image/png" />
+    <title>Payslip Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- sidebar -->
+    <button class="navbar-toggler" id="sidebarToggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="d-flex" id="wrapper">
+        <aside class="sidebar-wrapper" id="sidebar-wrapper">
+
+            <nav class="list-group list-group-flush">
+                <a href="../pages/home.html" class="list-group-item list-group-item-action">
+                    <img src="../images/overview-white.png" alt="Overview Icon" class="sidebar-icon">
+                    Overview
+                </a>
+                <a href="../pages/payroll.html" class="list-group-item list-group-item-action">
+                    <img src="../images/payroll.png" alt="Payroll Icon" class="sidebar-icon">
+                    Payroll
+                </a>
+                <a href="#" class="list-group-item list-group-item-action  default-yellow-link active">
+                    <img src="../images/payroll-yellow.png" alt="Payslip Icon" class="sidebar-icon">
+                    Payslip
+                </a>
+            </nav>
+        </aside>
+
+        <main id="page-content-wrapper">
+            <h1 class="payslip-header-text">Payslip Details</h1>
+            <div class="payslip-details-card">
+                <div class="payslip-info-row">
+                    <div class="payslip-info-item">
+                        <span class="payslip-info-label">Employee Name :</span>
+                        <span id="displayEmployeeName"></span>
+                    </div>
+                    <div class="payslip-info-item">
+                        <span class="payslip-info-label">Date :</span>
+                        <span id="displayDate"></span>
+                    </div>
+                </div>
+
+                <div class="payslip-info-row">
+                    <div class="payslip-info-item">
+                        <span class="payslip-info-label">Employee I'D :</span>
+                        <span id="displayEmployeeId"></span>
+                    </div>
+                    <div class="payslip-info-item">
+                        <span class="payslip-info-label">Month :</span>
+                        <span id="displayMonth"></span>
+                    </div>
+                </div>
+
+                <div class="payslip-info-row">
+                    <div class="payslip-info-item">
+                        <span class="payslip-info-label">Role :</span>
+                        <span id="displayEmployeeRole"></span>
+                    </div>
+                    <div class="payslip-info-item"></div>
+                </div>
+
+                <div class="payslip-table-container">
+                    <table class="payslip-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Employee Details</th>
+                                <th colspan="2">Earnings</th>
+                                <th rowspan="2">Additions</th>
+                                <th rowspan="2">Deductions</th>
+                            </tr>
+                            <tr>
+                                <th>Employee I'd</th>
+                                <th>Employee Name</th>
+                                <th>Basic Salary</th>
+                                <th>Total Salary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span id="tableEmployeeId"></span></td>
+                                <td><span id="tableEmployeeName"></span></td>
+                                <td><span id="displayBasicSalary"></span></td>
+                                <td><span id="displayTotalSalary"></span></td>
+                                <td><span id="displayAdditions"></span></td>
+                                <td><span id="displayDeductions"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="total-earnings">
+                    <span id="totalEarningsLabel">Total Earnings: ₹ </span><span id="displayTotalEarnings"></span>
+                </div>
+
+                <div class="payslip-buttons">
+                    <button class="btn btn-yellow-custom px-4 py-2 fw-semibold text-white"
+                        style="background-color: #F8CC14;" id="saveButton">
+                        Save
+                    </button>
+                    <button class="btn btn-dark-custom px-4 py-2 fw-semibold" id="downloadButton">
+                        Download
+                    </button>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+        // mobile toggle code
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebarWrapper = document.getElementById('sidebar-wrapper');
+        const overlay = document.getElementById('overlay');
+
+        function toggleSidebar() {
+            if (!sidebarWrapper || !overlay) return;
+
+            const isActive = sidebarWrapper.classList.contains('active');
+
+            if (isActive) {
+                sidebarWrapper.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            } else {
+                sidebarWrapper.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        if (sidebarToggle) {
+            sidebarToggle.addEventListener('click', toggleSidebar);
+        }
+
+        if (overlay) {
+            overlay.addEventListener('click', toggleSidebar);
+        }
+
+        if (sidebarWrapper) {
+            const sidebarLinks = sidebarWrapper.querySelectorAll('.list-group-item');
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 767) {
+                        toggleSidebar();
+                    }
+                });
+            });
+        }
+
+        function handleSidebarVisibility() {
+            if (window.innerWidth > 767) {
+                if (sidebarWrapper) sidebarWrapper.classList.remove('active');
+                if (overlay) overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            } else {
+                if (sidebarWrapper && !sidebarWrapper.classList.contains('active')) {
+                    sidebarWrapper.classList.remove('active');
+                }
+            }
+        }
+
+        handleSidebarVisibility();
+        window.addEventListener('resize', handleSidebarVisibility);
+
+        // JavaScript to retrieve and display data
+        document.addEventListener('DOMContentLoaded', () => {
+            const payrollData = JSON.parse(localStorage.getItem('payrollDetails'));
+
+            if (payrollData) {
+                document.getElementById('displayEmployeeName').textContent = payrollData.employeeName || '';
+                document.getElementById('displayEmployeeId').textContent = payrollData.employeeId || '';
+                document.getElementById('displayEmployeeRole').textContent = payrollData.employeeRole || '';
+
+                // Format Date and Month
+                if (payrollData.date) {
+                    const dateObj = new Date(payrollData.date);
+                    const formattedDate = dateObj.toLocaleDateString('en-GB');
+                    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                    const monthName = monthNames[dateObj.getMonth()];
+                    document.getElementById('displayDate').textContent = formattedDate;
+                    document.getElementById('displayMonth').textContent = monthName;
+                }
+
+                document.getElementById('displayBasicSalary').textContent = parseFloat(payrollData.basicSalary).toLocaleString('en-IN') || '0';
+                document.getElementById('displayTotalSalary').textContent = parseFloat(payrollData.totalSalary).toLocaleString('en-IN') || '0';
+                document.getElementById('displayAdditions').textContent = parseFloat(payrollData.additions).toLocaleString('en-IN') || '0';
+                document.getElementById('displayDeductions').textContent = parseFloat(payrollData.deductions).toLocaleString('en-IN') || '0';
+
+                // For the table, combine Employee Details
+                document.getElementById('tableEmployeeId').textContent = payrollData.employeeId || '';
+                document.getElementById('tableEmployeeName').textContent = payrollData.employeeName || '';
+
+
+                // Calculate Total Earnings
+                const basicSalary = parseFloat(payrollData.basicSalary) || 0;
+                const additions = parseFloat(payrollData.additions) || 0;
+                const deductions = parseFloat(payrollData.deductions) || 0;
+                const totalEarnings = (basicSalary + additions) - deductions;
+                document.getElementById('displayTotalEarnings').textContent = totalEarnings.toLocaleString('en-IN');
+            }
+            else {
+                console.log('No payroll data found in localStorage.');
+            }
+        });
+
+        // Save button
+        const saveButton = document.getElementById('saveButton');
+        if (saveButton) {
+            saveButton.addEventListener('click', () => {
+                window.location.href = '../pages/home.html';
+            });
+        }
+
+        // Download button
+        const downloadButton = document.getElementById('downloadButton');
+        if (downloadButton) {
+            downloadButton.addEventListener('click', () => {
+                const payslipCard = document.querySelector('.payslip-details-card');
+                const payslipHeaderText = document.querySelector('.payslip-header-text');
+
+                const pdfContent = document.createElement('div');
+                pdfContent.appendChild(payslipHeaderText.cloneNode(true));
+                pdfContent.appendChild(payslipCard.cloneNode(true));
+
+                console.log("PDF Content HTML:", pdfContent.outerHTML); 
+
+                const options = {
+                    margin: 10,
+                    filename: 'payslip_details.pdf',
+                    image: { type: 'jpeg', quality: 0.98 },
+                    html2canvas: { scale: 3, useCORS: true },
+                    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                };
+
+                const buttonsInClonedContent = pdfContent.querySelector('.payslip-buttons');
+                if (buttonsInClonedContent) {
+                    buttonsInClonedContent.remove();
+                }
+
+                setTimeout(() => {
+                    html2pdf().set(options).from(pdfContent).save();
+                }, 500);
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
