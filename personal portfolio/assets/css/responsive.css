@@ -1,0 +1,369 @@
+/* Mobile devices  */
+@media (min-width: 320px) and (max-width: 767px) {
+    .home {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .home-container {
+        width: 98%;
+        padding: 30px;
+    }
+
+    .home-row {
+        flex-direction: column;
+    }
+
+    .home-left,
+    .home-right {
+        flex-basis: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .home-left {
+        margin-bottom: 30px;
+        width: 80%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-right {
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .home-right .btn {
+        align-self: auto;
+    }
+
+    .home h1 {
+        font-size: 2.6rem;
+    }
+
+    .home h2 {
+        font-size: 1.8rem;
+    }
+
+    .home h3 {
+        font-size: 1.4rem;
+    }
+
+    .home .lead {
+        font-size: 1.1rem;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+        font-size: 1.1rem;
+    }
+
+    .navbar .nav-link {
+        margin-left: 15px;
+    }
+
+    .navbar .navbar-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .navbar .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .home img {
+        max-width: 250px;
+        height: 250px;
+    }
+
+    .about-section {
+        padding: 60px 15px;
+    }
+
+    .about-section .row {
+        flex-direction: column;
+    }
+
+    .about-section-image-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .about-section-content-wrapper {
+        text-align: center;
+    }
+
+    .about-section-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .about-section-content h1 {
+        font-size: 2.4rem;
+        margin-bottom: 15px;
+    }
+
+    .about-section-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Tablet devices  */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .home-right {
+        padding-left: 15px;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .home h2 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1.1rem;
+    }
+
+    .home h3 {
+        font-size: 1.6rem;
+    }
+
+    .home .lead {
+        font-size: 1.2rem;
+    }
+
+    .home img {
+        max-width: 300px;
+    }
+
+    .home-left {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .home-right {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .home .btn {
+        margin: 30px auto 0 auto;
+        display: block;
+        max-width: 500px;
+        width: fit-content;
+    }
+
+    .navbar .navbar-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar .btn {
+        margin: 10px;
+    }
+
+    .about-section {
+        padding: 60px 30px;
+    }
+
+    .about-section-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .about-section-content h1 {
+        font-size: 2.6rem;
+        margin-bottom: 15px;
+    }
+
+    .about-section-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+}
+
+/* Laptop devices  */
+@media (min-width: 1024px) and (max-width: 1300px) {
+    .navbar .nav-link {
+        margin-left: 30px;
+    }
+
+    .about-section {
+        padding: 80px 40px;
+    }
+
+    .about-section .row {
+        gap: 25px;
+    }
+
+    .about-section-content h2 {
+        font-size: 2.1rem;
+        margin-bottom: 20px;
+    }
+
+    .about-section-content h1 {
+        font-size: 2.9rem;
+        margin-bottom: 20px;
+    }
+
+    .about-section-content p {
+        font-size: 1.08rem;
+        line-height: 1.75;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media Queries for My Skills Section */
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+    .my-skills-section .container {
+        padding: 1rem;
+    }
+
+    .my-skills-section .card-deck {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .my-skills-section .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .my-skills-section .card-image-top {
+        width: 60px;
+        height: 60px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .my-skills-section .card-title {
+        font-size: 1.2rem;
+    }
+
+    .skills-category-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .soft-skills-container {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .soft-skill-item {
+        align-items: center;
+    }
+
+    .skill-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .skill-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* media query for project page section */
+@media (max-width: 991px) {
+    .projects-section .project-card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .projects-section .project-card-image {
+        height: 180px;
+    }
+
+    .projects-section .card-title {
+        font-size: 1.4rem;
+    }
+
+    .projects-section .project-buttons .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .projects-section .project-card {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projects-section .project-card-image {
+        height: 150px;
+    }
+
+    .projects-section .card-title {
+        font-size: 1.3rem;
+    }
+
+    .projects-section .project-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* contact section page */
+@media (max-width: 991px) {
+    .contact-form-card {
+        padding: 1.5rem;
+    }
+
+    .contact-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-input {
+        font-size: 0.9rem;
+    }
+
+    .contact-submit-button {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-form-card {
+        padding: 1rem;
+    }
+
+    .contact-heading {
+        font-size: 1.75rem;
+    }
+
+    .contact-submit-button {
+        font-size: 0.9rem;
+        padding: 0.75rem 1rem;
+    }
+}
