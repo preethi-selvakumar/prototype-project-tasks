@@ -1,0 +1,1059 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Header */
+.site-header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    padding: 0 30px;
+    width: 100%;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+/* Navigation Links */
+.nav-links li a {
+    text-decoration: none;
+    color: #E72E77;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+    color: #E72E77;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    min-width: 160px;
+    border-radius: 5px;
+    z-index: 9999; 
+    white-space: nowrap; 
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #E72E77;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.dropdown-menu li a:hover {
+    text-decoration: underline;
+    color: #E72E77;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover Image */
+.available-days {
+    position: relative; 
+}
+
+.available-days .hover-image {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    z-index: 9999;
+}
+
+.available-days:hover .hover-image {
+    display: block;
+}
+
+/* header Button */
+.btn-appointment {
+    background-color: #E72E77;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px 0px 30px 0px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    max-width: 350px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-appointment:hover {
+    background-color: #fff;
+    color: #E72E77;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url('../images/hero\ banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    padding-left: 5vw;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: #fff;
+}
+
+.hero-subheading {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.hero-heading {
+    color: #4B2142;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
+    padding-left: 8vw;
+}
+
+.line {
+    width: 50%;
+    height: 2px;
+    background-color: #D41616;
+    margin: 10px auto;
+}
+
+.btn-book {
+    background-color: #E72E77;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+}
+
+/* Button Hover Effect */
+.btn-book:hover {
+    background-color: #4B2142;
+}
+
+/* Opening Hours Section */
+.opening-hours {
+    background-color: #D9D9D9;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.opening-hours .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #E72E77;
+}
+
+.clock-icon {
+    width: 24px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 8%;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.about-text h2 span {
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    color: #911717;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.about-text p:nth-of-type(2) {
+    padding-left: 15px;
+}
+
+.about-text h3 {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    margin-top: 20px;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.about-text ul li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.about-text ul li::before {
+    content: "•";
+    color: #911717;
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.about-image {
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 8px;
+}
+
+/* experience section */
+.experience-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    background: url('../images/experience\ box.png');
+    background-repeat: repeat;
+}
+
+/* Background overlay */
+.experience-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(227, 182, 182, 0.5);
+    z-index: 0;
+}
+
+.experience-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 326px;
+    min-height: 131px;
+    max-width: 90%;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+/* Odd-numbered boxes styling */
+.experience-box:nth-child(1),
+.experience-box:nth-child(3) {
+    background-color: rgba(255, 227, 11, 0.3);
+    border-radius: 5px;
+}
+
+/* Hover effect for even-numbered boxes */
+.experience-box:nth-child(2):hover,
+.experience-box:nth-child(4):hover {
+    transform: scale(1.1) translate(10px, 20px);
+    background-color: rgba(255, 227, 11, 0.3);
+    border-radius: 5px;
+}
+
+.experience-box h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.experience-box p {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* Makeup Services Section */
+.makeup-services {
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 1px solid #911717;
+}
+
+.makeup-services h2 {
+    color: #D41616;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: #FCD2EB;
+    padding: 20px;
+    width: calc(50% - 20px);
+    min-height: 500px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.service-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.service-card h3 {
+    font-family: 'Cambay', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 10px 0;
+    color: #911717;
+}
+
+.service-card p {
+    font-size: 24px;
+    color: #333;
+    line-height: 1.4;
+    padding: 0 20px;
+}
+
+/* additional service */
+.additional-services {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 20px;
+    border-bottom: 1px solid #911717;
+}
+
+.service-box {
+    width: 685px;
+    height: 683px;
+    background: white;
+    border-radius: 0 70px 0 70px;
+    border: 2px solid black;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.service-box img {
+    width: 555px;
+    height: 537px;
+    object-fit: cover;
+    border-radius: 70px 0 70px 0;
+    border: 3px solid #911717;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.service-box h3 {
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: 'Cambay', sans-serif;
+    font-weight: bold;
+    color: #6E7006;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.service-box a {
+    text-decoration: none;
+}
+
+.service-box a:hover {
+    text-decoration: underline;
+    color: #ced10e;
+}
+
+/* Booking Policy */
+.booking-policy {
+    background-color: #FCD2EB;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+.booking-policy h3 {
+    color: #E72E77;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.booking-policy p {
+    color: #E72E77;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #FCD2EB;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-section h4 {
+    color: #E72E77;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: #E72E77;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    flex: 1;
+}
+
+.logo-section img {
+    width: 88.5px;
+    height: 120.14px;
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #E72E77;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.footer-section ul li a:hover,
+.footer-section p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 300px;
+    height: 102.23px;
+    object-fit: contain;
+}
+
+/* Copyright Section */
+.copyright {
+    background-color: #FCD2EB;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    border-top: 2px solid #fff;
+} 
+
+/* Hairstyle Page Banner */
+.hairstyle-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    background-image: url('../images/hair\ style\ banner.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh; 
+    min-height: 300px; 
+    padding-left: 5vw; 
+}
+
+/* Overlay with Opacity Effect */
+.hairstyle-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #575454; 
+    opacity: 0.6; 
+}
+
+/* Text Styling */
+.hairstyle-banner-content {
+    position: relative; 
+    color: white;
+    font-size: 80px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left; 
+}
+
+/* Hairstyle and BeautyCare Section */
+.hairstyle-section, .beautycare-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Box Shadow for Main Hairstyle Box and BeautyCare Box and contact box*/
+.hairstyle-box-shadow, .beautycare-box-shadow, .contact-box-shadow {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 
+        inset 4px 4px 4px rgba(0, 0, 0, 0.25), /* Inner shadow */
+        4px 4px 4px rgba(0, 0, 0, 0.25); /* Outer shadow */
+}
+
+/* Image Rows */
+.hairstyle-container, .beautycare-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hairstyle-row, .beautycare-row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Hairstyle and BeautyCare Box */
+.hairstyle-box, .beautycare-box {
+    width: 336px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Hairstyle and BeautyCare Image */
+.hairstyle-box img, .beautycare-box img {
+    width: 100%;
+    max-width: 336px;
+    height: auto;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hair List and BeautyCare Container*/
+.hair-list-container, .beautycare-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 40px; 
+    margin-top: 50px;
+}
+
+/* Styling for Hairstyle and BeautyCare List Boxes */
+.hair-list-box, .beautycare-list-box {
+    background-color: #FCD2EB;
+    padding: 30px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px; 
+    max-width: 100%;
+    height: auto;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hair List and BeautyCare Headings */
+.hair-list-box h3, .beautycare-list-box h3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Cambay', sans-serif;
+    color: #2C0D90;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Hair List Items  */
+.hair-list-box ul, .beautycare-list-box ul {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.hair-list-box ul li, .beautycare-list-box ul li {
+    color: #2C0D90; 
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Centered Appointment Button inside Box */
+.btn-appointment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Centered Appointment Button  */
+.btn-appointment-hairstyle, .btn-appointment-beautycare {
+    background-color: #E72E77;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 45px;
+    margin-top: 25px; 
+    margin-bottom: 10px; 
+    cursor: pointer;
+}
+
+.btn-appointment-hairstyle:hover, .btn-appointment-beautycare:hover {
+    background-color: #4B2142;
+}
+
+.btn-appointment-hairstyle a, .btn-appointment-beautycare a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Beauty Care Page Banner */
+.beautycare-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    background-image: url('../images/beautycare\ banner.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh; 
+    min-height: 300px; 
+    padding-left: 10vw; 
+}
+
+/* Overlay with Opacity Effect */
+.beautycare-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #575454; 
+    opacity: 0.6; 
+}
+
+/* Text Styling */
+.beautycare-banner-content {
+    position: relative; 
+    color: white;
+    font-size: 80px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left; 
+    max-width: 80%; 
+}
+
+/* Styles for Others Box */
+.beautycare-list-full-box {
+    background-color: #FCD2EB; 
+    padding: 20px;
+    border-radius: 20px; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    width: 90%;
+    margin: 40px auto; 
+}
+
+.beautycare-list-full-box h3 {
+    color: #2C0D90; 
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.beautycare-list-full-box ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    padding: 0;
+}
+
+/* List Item Styling */
+.beautycare-list-full-box li {
+    color: #2C0D90; 
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Skincare Tips Section  */
+.skincare-tips {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Common Styling for Headings & Text */
+.skincare-tips h1,
+.tip h2,
+.intro-text,
+.tip p {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+.skincare-tips h1 {
+    color: #E91E63;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    margin-bottom: 20px;
+}
+
+/* Tip Articles  */
+.tip {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+    margin: 15px 0;
+}
+
+/* Image Centered */
+.tip img {
+    width: 100%;
+    max-width: 326px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    border-radius: 40px;
+}
+
+.tip-content {
+    width: 100%;
+    margin-top: 20px; 
+}
+
+/* Contact Page Banner */
+.contact-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url('../images/contact\ banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    min-height: 300px;
+    padding-left: 10vw;
+}
+
+/* Overlay with Opacity Effect */
+.contact-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #575454;
+    opacity: 0.6;
+}
+
+/* Text Styling */
+.contact-banner-content {
+    position: relative;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    max-width: 80%;
+}
+
+/* Contact Form Section */
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Label Styling */
+label {
+    font-weight: 400;
+    color: #911717;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Input & Textarea Styling */
+input, textarea {
+    width: 100%;
+    max-width: 679px;
+    padding: 12px;
+    border: 1px solid #663399;
+    border-radius: 8px;
+    background-color: #fbd9fc;
+    font-size: 14px;
+}
+
+/* Textarea Styling */
+textarea {
+    resize: none;
+}
+
+/* Contact Details */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px; /* Reduced gap */
+}
+
+/* Contact Item */
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px; /* Reduced gap */
+}
+
+/* Contact Item Text */
+.contact-item a, span {
+    font-size: 20px; /* Reduced font size from 30px to 20px */
+    font-weight: 400;
+    color: #911717;
+}
+
+/* Contact Item Icons */
+.contact-item img {
+    width: 25px; /* Slightly reduced size */
+    height: 25px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+.button-container button {
+    width: 276px;
+    height: 67px;
+    background-color: #911717;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Button Hover Effect */
+.button-container button:hover {
+    background-color: skyblue;
+}
+
+.button-container button a {
+    text-decoration: none;
+    color: white;
+}
+

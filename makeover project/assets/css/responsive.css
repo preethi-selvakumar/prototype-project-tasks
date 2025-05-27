@@ -1,0 +1,791 @@
+/*home page media query*/
+
+@media screen and (max-width: 767px) {
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .btn-appointment {
+        width: 90%;
+        max-width: 300px;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /*hero section*/
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        min-height: 250px;
+        padding: 20px;
+    }
+
+    .hero-content {
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .hero-subheading {
+        font-size: 1.4rem;
+    }
+
+    .hero-heading {
+        font-size: 2rem;
+        padding-left: 0;
+    }
+
+    .line {
+        width: 60%;
+        min-width: 150px;
+        max-width: 300px;
+    }
+
+    .btn-book {
+        width: 90%;
+        max-width: 280px;
+        font-size: 1rem;
+        height: 50px;
+    }
+
+    /*about*/
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+        white-space: normal;
+    }
+
+    .about-text h2 span {
+        font-size: 1.7rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .about-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-text ul {
+        padding-left: 0;
+    }
+
+    .about-text ul li {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .about-text ul li::before {
+        font-size: 1.2rem;
+    }
+
+    .about-image img {
+        max-width: 250px;
+    }
+
+    /*experience section*/
+    .experience-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .experience-box {
+        width: 90%;
+        min-height: 100px;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .experience-box h2 {
+        font-size: 22px;
+    }
+
+    .experience-box p {
+        font-size: 16px;
+    }
+
+    /* Makeup Services Section */
+    .makeup-services {
+        padding: 30px 15px;
+    }
+
+    .makeup-services h2 {
+        font-size: 28px;
+    }
+
+    .service-grid {
+        gap: 30px;
+    }
+
+    .service-card {
+        width: 95%;
+        min-height: auto;
+        padding: 15px;
+    }
+
+    .service-card img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .service-card h3 {
+        font-size: 24px;
+    }
+
+    .service-card p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    /* Additional Services Section */
+    .additional-services {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 30px 15px;
+    }
+
+    .service-box {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .service-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-box h3 {
+        font-size: 28px;
+    }
+
+    /* Footer Section */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .footer-section h4 {
+        font-size: 24px;
+    }
+
+    .footer-section p {
+        font-size: 18px;
+    }
+
+    .logo-section {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .logo-section img {
+        width: 80px;
+        height: auto;
+    }
+
+    .footer-section ul {
+        padding: 0;
+    }
+
+    .footer-section ul li a {
+        font-size: 18px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons img {
+        width: 200px;
+        height: auto;
+    }
+
+    /* Copyright Section */
+    .copyright {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /*  Header */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .nav-links li a {
+        font-size: 1.2rem;
+    }
+
+    .btn-appointment {
+        width: 220px;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /*  Hero Section */
+    .hero-section {
+        height: 65vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .hero-heading {
+        font-size: 2.8rem;
+    }
+
+    .hero-subheading {
+        font-size: 1.4rem;
+    }
+
+    .btn-book {
+        width: 260px;
+        font-size: 1rem;
+        height: 50px;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 40px;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    /*  Makeup Services */
+    .makeup-services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .service-card {
+        width: calc(50% - 15px);
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .service-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Last Card Centered  */
+    .service-card:nth-child(odd):last-child {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*  Additional Services */
+    .additional-services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .service-box {
+        width: calc(50% - 15px);
+        height: auto;
+        padding: 20px;
+    }
+
+    .service-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Last Box Centered  */
+    .service-box:nth-child(odd):last-child {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*  Experience Section */
+    .experience-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .experience-box {
+        width: 45%;
+        min-height: 110px;
+    }
+
+    .experience-box h2 {
+        font-size: 20px;
+    }
+
+    /*  Footer  */
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .footer-section {
+        width: calc(50% - 15px);
+        text-align: left;
+    }
+
+    .footer-section h4 {
+        font-size: 22px;
+    }
+
+    .footer-section p {
+        font-size: 16px;
+    }
+
+    /*  Footer Logo Section */
+    .logo-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .logo-section img {
+        width: 100px;
+    }
+
+    /*  Footer Links */
+    .footer-section ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-section ul li a {
+        font-size: 16px;
+    }
+
+    /*  Social Icons  */
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .social-icons img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /*  Copyright */
+    .copyright {
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+/* Media Queriy for hairstyle page banner */
+@media (max-width: 1024px) {
+    .hairstyle-banner-content {
+        font-size: 72px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .hairstyle-banner {
+        height: 60vh; 
+        padding-left: 4vw; 
+    }
+
+    .hairstyle-banner-content {
+        font-size: 60px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .hairstyle-banner {
+        height: 50vh; 
+        min-height: 250px;
+        padding-left: 3vw; 
+    }
+
+    .hairstyle-banner-content {
+        font-size: 42px; 
+    }
+}
+
+/* Responsive for hairstyle and beautycare page */
+@media (max-width: 1024px) {
+    .hair-list-container, .beautycare-list-container {
+        justify-content: space-evenly; 
+    }
+}
+
+@media (max-width: 768px) {
+    .hair-list-container, .beautycare-list-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hairstyle-box img, .beautycare-box img {
+        max-width: 280px; 
+    }
+
+    .hair-list-box, .beautycare-list-box {
+        width: 90%;
+        max-width: 336px;
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .btn-appointment-hairstyle, .btn-appointment-beautycare {
+        width: 250px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .hair-list-box, .beautycare-list-box {
+        width: 95%; 
+    }
+
+    .btn-appointment-hairstyle, .btn-appointment-beautycare {
+        width: 220px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive for beautycare banner */
+@media (max-width: 1024px) {
+    .beautycare-banner {
+        padding-left: 12vw; 
+    }
+    
+    .beautycare-banner-content {
+        font-size: 65px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .beautycare-banner {
+        padding-left: 15vw; 
+    }
+    
+    .beautycare-banner-content {
+        font-size: 50px; 
+        text-align: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .beautycare-banner {
+        justify-content: center; 
+        padding-left: 0;
+    }
+    
+    .beautycare-banner-content {
+        font-size: 40px; 
+        text-align: center;
+    }
+}
+
+/*  Mobile Responsive (320px - 767px) for others box */
+@media (max-width: 767px) {
+    .beautycare-list-full-box {
+        max-width: 90%; 
+        padding: 15px;
+        margin: 20px auto; 
+    }
+
+    .beautycare-list-full-box h3 {
+        font-size: 20px; 
+    }
+
+    .beautycare-list-full-box ul {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px; 
+        padding: 0;
+    }
+
+    .beautycare-list-full-box li {
+        font-size: 18px; 
+    }
+}
+
+/*contact form mobile */
+@media (max-width: 767px) {
+
+    .contact-banner {
+        width: 100%;
+        height: 40vh; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .contact-banner-content {
+        font-size: 24px; 
+        font-weight: bold;
+        text-align: center;
+        max-width: 90%;
+    }
+    .contact-container {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    input, textarea {
+        width: 100%;
+        max-width: 100%;
+        height: 60px; 
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 120px; 
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+
+    .button-container button {
+        width: 100%;
+        max-width: 276px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .contact-details {
+        gap: 15px;
+    }
+
+    .contact-item a, span {
+        font-size: 20px; 
+    }
+
+    .contact-item img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column; 
+        gap: 30px;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .contact-banner {
+        height: 40vh; 
+        padding: 20px;
+        text-align: center; 
+    }
+
+    .contact-banner-content {
+        font-size: 38px;
+        text-align: center; 
+        max-width: 90%;
+    }
+
+    form {
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px; 
+    }
+
+    input, textarea {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+        height: auto; 
+    }
+
+    textarea {
+        min-height: 120px; /
+    }
+
+    .contact-details {
+        text-align: center; 
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .button-container button {
+        width: 100%;
+        max-width: 300px;
+        height: 55px;
+        font-size: 18px;
+    }
+}
+
+/* Laptop (1024px - 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .contact-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        gap: 40px;
+        padding: 40px;
+        align-items: center;
+    }
+
+    .contact-banner-content {
+        font-size: 48px; 
+        line-height: 1.2;
+    }
+
+    form {
+        width: 80%;
+        max-width: 600px;
+        padding: 30px;
+        border-radius: 8px;
+    }
+
+    input, textarea {
+        width: 100%;
+        font-size: 18px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+}
+
+/* Large Screens (1367px and above) */
+@media (min-width: 1367px) {
+    .contact-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 50px;
+        padding: 50px;
+        align-items: center;
+    }
+
+    .contact-banner-content {
+        font-size: 60px;
+        line-height: 1.2;
+    }
+
+    form {
+        width: 70%; 
+        max-width: 700px;
+        padding: 40px;
+        border-radius: 8px; 
+    }
+
+    input, textarea {
+        width: 100%;
+        font-size: 20px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+}
+
+
+
