@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition</title>
+    <!-- icon link -->
+    <link rel="icon" href="../Images/nutrition.png" type="image/png">
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- responsive css link-->
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="../Images/main-logo.png" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/start.html">START</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/train.html">TRAIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/progress.html">PROGRESS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-underline" href="#"
+                            style="display: inline-flex; align-items: center">NUTRITION <img
+                                src="../Images/navbar-vector.svg" alt="Start Icon"
+                                style="width: 20px; height: 20px; margin-left: 8px" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/plan.html">PLANS</a>
+                    </li>
+                </ul>
+                <button class="join-now-button" type="button"><a href="../pages/contact.html">JOIN
+                        NOW</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- nutrition page banner -->
+        <section class="nutrition-banner-section">
+            <div class="nutrition-banner-container">
+                <img src="../Images/pexels-edwardeyer-1049626.jpg" alt="Nutrition Diet" class="nutrition-banner-image">
+                <div class="nutrition-banner-overlay"></div>
+                <h1 class="nutrition-banner-overlay-text">Nutrition Diet</h1>
+            </div>
+        </section>
+
+        <!-- complete  daily nutrition section -->
+        <section class="daily-nutrition-section">
+            <div class="daily-nutrition-container">
+                <h2 class="section-title">Complete Daily Nutrition</h2>
+                <div class="row daily-nutrition-box-wrapper justify-content-center">
+                    <div class="col-lg-3 col-md-6 col-sm-10 d-flex justify-content-center">
+                        <div class="nutrition-box box-calorie">
+                            <div class="box-header">
+                                <span class="box-title text-white">Calorie</span>
+                                <img src="../Images/fire.svg" alt="Calorie Icon" class="box-icon">
+                            </div>
+                            <div class="box-content">
+                                <p class="total-cons-label text-white">Total Cons</p>
+                                <p class="total-cons-value text-white">832 kcal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-10 d-flex justify-content-center">
+                        <div class="nutrition-box box-protein">
+                            <div class="box-header">
+                                <span class="box-title">Protein</span>
+                                <img src="../Images/protein.svg" alt="Protein Icon" class="box-icon">
+                            </div>
+                            <div class="box-content">
+                                <p class="total-cons-label">Total Cons</p>
+                                <p class="total-cons-value">235 gm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-10 d-flex justify-content-center">
+                        <div class="nutrition-box box-water">
+                            <div class="box-header">
+                                <span class="box-title">Water</span>
+                                <img src="../Images/water.svg" alt="Water Icon" class="box-icon">
+                            </div>
+                            <div class="box-content">
+                                <p class="total-cons-label">Total Cons</p>
+                                <p class="total-cons-value">832 kcal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-10 d-flex justify-content-center">
+                        <div class="nutrition-box box-fat">
+                            <div class="box-header">
+                                <span class="box-title">Fat</span>
+                                <img src="../Images/fat.svg" alt="Fat Icon" class="box-icon">
+                            </div>
+                            <div class="box-content">
+                                <p class="total-cons-label">Total Cons</p>
+                                <p class="total-cons-value">-132 kcal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- food menu section -->
+        <section class="food-menu-section">
+            <div class="food-menu-container">
+                <div class="row food-menu-row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="meal-column">
+                            <div class="meal-column-header active-header">Breakfast</div>
+                            <div class="meal-card"
+                                style=" border-top-left-radius: 34px; border-top-right-radius: 34px;">
+                                <div class="meal-item-content">
+                                    <div class="meal-image-wrapper">
+                                        <img src="../Images/egg-food.jpg" alt="Egg Food" class="meal-image">
+                                    </div>
+                                    <div class="meal-details">
+                                        <h3 class="meal-name">Egg Food</h3>
+                                        <p class="meal-caloric-value">234 kcal</p>
+                                    </div>
+                                </div>
+                                <p class="meal-description">"Fresh and Low Calorie"</p>
+                                <button class="done-button">
+                                    <i class="fas fa-check"></i> Done
+                                </button>
+                            </div>
+                            <div class="meal-card">
+                                <div class="meal-item-content">
+                                    <div class="meal-image-wrapper">
+                                        <img src="../Images/yogurt.jpg" alt="Yogurt" class="meal-image">
+                                    </div>
+                                    <div class="meal-details">
+                                        <h3 class="meal-name">Yogurt</h3>
+                                        <p class="meal-caloric-value">234 kcal</p>
+                                    </div>
+                                </div>
+                                <p class="meal-description">"Fresh and Low Calorie"</p>
+                                <button class="done-button">
+                                    <i class="fas fa-check"></i> Done
+                                </button>
+                            </div>
+                            <div class="meal-card"
+                                style="border-bottom-left-radius: 34px; border-bottom-right-radius: 34px;">
+                                <div class="meal-item-content">
+                                    <div class="meal-image-wrapper">
+                                        <img src="../Images/oat-meal.jpg" alt="Oat Meal" class="meal-image">
+                                    </div>
+                                    <div class="meal-details">
+                                        <h3 class="meal-name">Oat Meal</h3>
+                                        <p class="meal-caloric-value">234 kcal</p>
+                                    </div>
+                                </div>
+                                <p class="meal-description">"Fresh and Low Calorie"</p>
+                                <button class="done-button">
+                                    <i class="fas fa-check"></i> Done
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="meal-column">
+                            <div class="meal-column-header">Lunch</div>
+                            <div class="meal-card"
+                                style=" border-top-left-radius: 34px; border-top-right-radius: 34px;">
+                                <div class="meal-item-content">
+                                    <div class="meal-image-wrapper">
+                                        <img src="../Images/turkey-salad.jpg" alt="Turkey Salad" class="meal-image">
+                                    </div>
+                                    <div class="meal-details">
+                                        <h3 class="meal-name">Turkey Salad</h3>
+                                        <p class="meal-caloric-value">234 kcal</p>
+                                    </div>
+                                </div>
+                                <p class="meal-description">"Fresh and Low Calorie"</p>
+                                <button class="done-button">
+                                    <i class="fas fa-check"></i> Done
+                                </button>
+                            </div>
+                            <div class="meal-card">
+                                <div class="meal-item-content">
+                                    <div class="meal-image-wrapper">
+                                        <img src="../Images/lentil-soup.jpg" alt="Lentil Soup" class="meal-image">
+                                    </div>
+                                    <div class="meal-details">
+                                        <h3 class="meal-name">Lentil Soup</h3>
+                                        <p class="meal-caloric-value">234 kcal</p>
+                                    </div>
+                                </div>
+                                <p class="meal-description">"Fresh and Low Calorie"</p>
+                                <button class="done-button">
+                                    <i class="fas fa-check"></i> Done
+                                </button>
+                            </div>
+                            <div class="meal-card"
+                                style="border-bottom-left-radius: 34px; border-bottom-right-radius: 34px;">
+                                <div class="meal-item-content">
+                                    <div class="meal-image-wrapper">
+                                        <img src="../Images/egg-sandwich.jpg" alt="Egg Sandwich" class="meal-image">
+                                    </div>
+                                    <div class="meal-details">
+                                        <h3 class="meal-name">Egg Sandwich</h3>
+                                        <p class="meal-caloric-value">234 kcal</p>
+                                    </div>
+                                </div>
+                                <p class="meal-description">"Fresh and Low Calorie"</p>
+                                <button class="done-button">
+                                    <i class="fas fa-check"></i> Done
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="meal-column">
+                            <div class="meal-column-header">Dinner</div>
+                            <div class="meal-card"
+                                style=" border-top-left-radius: 34px; border-top-right-radius: 34px;">
+                                <div class="meal-item-content">
+                                    <div class="meal-image-wrapper">
+                                        <img src="../Images/chicken.jpg" alt="Chicken Rice" class="meal-image">
+                                    </div>
+                                    <div class="meal-details">
+                                        <h3 class="meal-name">Chicken Rice</h3>
+                                        <p class="meal-caloric-value">234 kcal</p>
+                                    </div>
+                                </div>
+                                <p class="meal-description">"Fresh and Low Calorie"</p>
+                                <button class="done-button">
+                                    <i class="fas fa-check"></i> Done
+                                </button>
+                            </div>
+                            <div class="meal-card">
+                                <div class="meal-item-content">
+                                    <div class="meal-image-wrapper">
+                                        <img src="../Images/chickpeas.jpg" alt="Chickpeas" class="meal-image">
+                                    </div>
+                                    <div class="meal-details">
+                                        <h3 class="meal-name">Chickpeas</h3>
+                                        <p class="meal-caloric-value">234 kcal</p>
+                                    </div>
+                                </div>
+                                <p class="meal-description">"Fresh and Low Calorie"</p>
+                                <button class="done-button">
+                                    <i class="fas fa-check"></i> Done
+                                </button>
+                            </div>
+                            <div class="meal-card"
+                                style="border-bottom-left-radius: 34px; border-bottom-right-radius: 34px;">
+                                <div class="meal-item-content">
+                                    <div class="meal-image-wrapper">
+                                        <img src="../Images/sweet-potato.jpg" alt="Sweet Potato" class="meal-image">
+                                    </div>
+                                    <div class="meal-details">
+                                        <h3 class="meal-name">Sweet Potato</h3>
+                                        <p class="meal-caloric-value">234 kcal</p>
+                                    </div>
+                                </div>
+                                <p class="meal-description">"Fresh and Low Calorie"</p>
+                                <button class="done-button">
+                                    <i class="fas fa-check"></i> Done
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- mix salad section -->
+        <section class="mix-salad-section">
+            <div class="mix-salad-container">
+                <div class="mix-salad-header">
+                    <h2 class="mix-salad-title">Mix Salad Vegetables</h2>
+                    <div class="nutrition-info-line">
+                        <div class="nutrition-item">240 Calories</div>
+                        <div class="nutrition-item">19gr Protein</div>
+                        <div class="nutrition-item">5gr Carbs</div>
+                    </div>
+                </div>
+
+                <div class="ingredients-grid-wrapper">
+                    <table class="custom-data-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="ingredient-image-wrapper">
+                                        <img src="../Images/shirmp.jpg" alt="Shrimp" class="ingredient-image">
+                                    </div>
+                                    <div class="ingredient-details">
+                                        <h3 class="ingredient-name">Shrimp</h3>
+                                        <p class="ingredient-description">"A bit of shrimp<br> and a lot of<br>
+                                            glamour."</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="ingredient-image-wrapper">
+                                        <img src="../Images/kale.jpg" alt="Kale" class="ingredient-image">
+                                    </div>
+                                    <div class="ingredient-details">
+                                        <h3 class="ingredient-name">Kale</h3>
+                                        <p class="ingredient-description">"nutrition superstar<br> due to amounts<br> of
+                                            vitamins it<br> contains"</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="ingredient-image-wrapper">
+                                        <img src="../Images/curd.jpg" alt="Curd" class="ingredient-image">
+                                    </div>
+                                    <div class="ingredient-details">
+                                        <h3 class="ingredient-name">Curd</h3>
+                                        <p class="ingredient-description">"Delicious food is<br> the best kind of<br>
+                                            therapy."
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="ingredient-image-wrapper">
+                                        <img src="../Images/strawberry.jpg" alt="Strawberry" class="ingredient-image">
+                                    </div>
+                                    <div class="ingredient-details">
+                                        <h3 class="ingredient-name">Strawberry</h3>
+                                        <p class="ingredient-description">Life is berry sweet<br> when you have<br>
+                                            strawberries!</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="ingredient-image-wrapper">
+                                        <img src="../Images/corn.jpg" alt="Corn" class="ingredient-image">
+                                    </div>
+                                    <div class="ingredient-details">
+                                        <h3 class="ingredient-name">Corn</h3>
+                                        <p class="ingredient-description">"Life is sweeter<br> with corn on the<br> cob"
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="ingredient-image-wrapper">
+                                        <img src="../Images/ghee.jpg" alt="Ghee" class="ingredient-image">
+                                    </div>
+                                    <div class="ingredient-details">
+                                        <h3 class="ingredient-name">Ghee</h3>
+                                        <p class="ingredient-description">what ghee can do<br> for you, even your<br>
+                                            mother and
+                                            father<br> can't!</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="fit-footer py-4">
+        <div class="container-fluid">
+            <div class="row align-items-start">
+                <div
+                    class="col-12 col-md-3 text-center text-md-start mb-3 mb-md-0 d-flex flex-column align-items-md-start align-items-center">
+                    <img src="../Images/main-logo-1.png" alt="Fitness Fit Logo" class="fit-footer-logo mb-2" />
+                    <div class="fit-footer-copyright">
+                        &copy; 2025 Fitness Fit<br />
+                        All Rights Reserved.
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                    <div class="d-flex fit-footer-links-row justify-content-center align-items-start">
+                        <div class="fit-footer-links-col">
+                            <a href="#" class="fit-footer-link">HOME</a>
+                            <a href="#" class="fit-footer-link">TRAIN</a>
+                            <a href="#" class="fit-footer-link">PROGRESS</a>
+                            <a href="#" class="fit-footer-link">PLANS</a>
+                        </div>
+                        <div class="fit-footer-links-col">
+                            <a href="#" class="fit-footer-link">NUTRITION</a>
+                            <a href="#" class="fit-footer-link">HELP</a>
+                            <a href="#" class="fit-footer-link">Privacy Policy</a>
+                            <a href="#" class="fit-footer-link">Cookie Policy</a>
+                        </div>
+                        <div class="fit-footer-links-col">
+                            <a href="#" class="fit-footer-link">Community Guidelines</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 d-flex flex-column align-items-md-start align-items-center mb-3 mb-md-0">
+                    <div class="fit-footer-social-label mb-2 text-md-start text-center">
+                        Follow Us On :
+                    </div>
+                    <div class="fit-footer-social">
+                        <a href="#"><img src="../Images/skill-icons_instagram.svg" alt="Instagram"
+                                class="fit-footer-social-icon" /></a>
+                        <a href="#"><img src="../Images/logos_facebook.svg" alt="Facebook"
+                                class="fit-footer-social-icon" /></a>
+                        <a href="#"><img src="../Images/skill-icons_twitter.svg" alt="Twitter"
+                                class="fit-footer-social-icon" /></a>
+                        <a href="#"><img src="../Images/logos_youtube-icon.svg" alt="YouTube"
+                                class="fit-footer-social-icon" /></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 d-flex justify-content-start">
+                    <div class="fit-footer-app-box">
+                        <div class="fit-footer-app-label mb-2">GET THE APP</div>
+                        <a href="#"><img src="../Images/google-play.webp" alt="google play and App Store"
+                                class="fit-footer-app-img mb-2" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
