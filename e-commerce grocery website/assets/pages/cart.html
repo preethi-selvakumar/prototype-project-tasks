@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- responsive link -->
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="top-green-bar">
+            Fresh & Organic produce form our farmers to your kitchen
+        </div>
+
+        <div class="container main-header-container">
+            <div class="row align-items-center top-header-row">
+                <div class="col-lg-4 col-md-4 col-sm-12 logo-section">
+                    <img src="../images/logo.png" alt="Logo" class="logo-image">
+                </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-12 search-section">
+                    <div class="input-group search-input-group">
+                        <input type="text" class="form-control search-input" placeholder="Search for products"
+                            aria-label="Search for products">
+                        <button class="btn search-button" type="button">
+                            <i class="fas fa-search me-2"></i> Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row nav-links-row">
+                <div class="col-12 nav-section-container pt-2 pb-3">
+                    <nav class="navbar navbar-expand-lg navbar-light p-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAlt" aria-controls="navbarNavAlt" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAlt">
+                            <ul class="navbar-nav nav-links-and-buttons">
+                                <li class="nav-item">
+                                    <a href="../pages/home.html" class="nav-link nav-link-item me-4">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-link-item me-4 home">Categories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../pages/bestsales.html" class="nav-link nav-link-item me-4">Best Sales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../pages/blogs.html" class="nav-link nav-link-item me-4">Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-link-item me-4 position-relative">
+                                        <img src="../images/cart icon.png" alt="Cart Icon" class="cart-image">
+                                        <span id="cartItemCount"
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                            style="display: none;">
+                                            0
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="btn register-button">My Account</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-section py-5">
+            <div class="container cart-container">
+                <h1 class="text-center mb-5 cart-heading">Cart</h1>
+
+                <div class="cart-steps d-flex justify-content-center mb-4">
+                    <a href="#" class="cart-step active">BAG</a>
+                    <span class="cart-step-separator"> > </span>
+                    <a href="#" class="cart-step">ADDRESS</a>
+                    <span class="cart-step-separator"> > </span>
+                    <a href="#" class="cart-step">PAYMENT</a>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 cart-items-column">
+                        <div class="cart-items-list p-3" id="cartItemsList">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 cart-summary-column">
+                        <div class="cart-summary p-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal</span>
+                                <span>₹ <span id="cartSubtotal">0</span></span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Delivery Charges</span>
+                                <span>₹ <span id="cartDeliveryCharges">0</span></span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span>Discount</span>
+                                <span>- ₹ <span id="cartDiscount">0</span></span>
+                            </div>
+                            <hr class="cart-summary-separator">
+                            <div class="d-flex justify-content-between fw-bold mb-4 cart-total-row">
+                                <span>TOTAL</span>
+                                <span>₹ <span id="cartTotal">0</span></span>
+                            </div>
+                            <a href="../pages/address.html" class="btn btn-success w-100 cart-checkout-btn">CHECKOUT</a>
+                            <p class="text-center mt-3 cart-secure-payment-info"><i class="fas fa-lock me-2"></i>100%
+                                Secure Payments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer-section">
+        <div class="app-usp-features-section">
+            <div class="container-fluid d-flex flex-wrap align-items-center h-100">
+                <div class="d-flex align-items-center mx-3 my-2">
+                    <div class="app-usp-icon-wrapper me-2">
+                        <img src="../images/free shipping icon.png" alt="Free Shipping" class="app-usp-icon">
+                    </div>
+                    <div>
+                        <p class="mb-0 app-usp-title">Free Shipping</p>
+                        <small class="mb-0 app-usp-description">For Orders Above 500</small>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mx-3 my-2">
+                    <div class="app-usp-icon-wrapper me-2">
+                        <img src="../images/fresh produce icon.png" alt="Fresh Produce" class="app-usp-icon">
+                    </div>
+                    <div>
+                        <p class="mb-0 app-usp-title">Fresh Product</p>
+                        <small class="mb-0 app-usp-description">Guaranteed Product Warranty</small>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mx-3 my-2">
+                    <div class="app-usp-icon-wrapper me-2">
+                        <img src="../images/safety icon.png" alt="Security" class="app-usp-icon">
+                    </div>
+                    <div>
+                        <p class="mb-0 app-usp-title">100% Safety & Security</p>
+                        <small class="mb-0 app-usp-description">Your Data is Highly Secured</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-get-in-touch-wrapper">
+            <img src="../images/get in touch bg .png" alt="Orange Background" class="app-orange-bg-image">
+            <div class="app-get-in-touch-content text-white">
+                <div class="container">
+                    <h5 class="mb-1">Get in Touch with us</h5>
+                    <p class="mb-0">+91 91010 90000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-main-footer">
+            <img src="../images/footer bg.png" alt="Footer Background" class="app-footer-bg-image">
+
+            <div class="container app-footer-content">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="app-footer-logo-block text-white text-md-start">
+                            <img src="../images/logo.png" alt="Groceries at Doorstep" class="app-footer-logo mb-3">
+                            <p>Fresh groceries, particularly fruits, vegetables, wines, grains, and sour proteins, play
+                                a crucial role in nourishing and wellness and promoting overall well-being.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="app-footer-navigate text-white text-left text-md-start">
+                            <h5 class="app-footer-heading">NAVIGATE</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="../pages/privacypolicy.html" class="app-footer-link">Privacy Policy</a>
+                                </li>
+                                <li><a href="../pages/terms_conditions.html" class="app-footer-link">Terms &
+                                        Conditions</a></li>
+                                <li><a href="../pages/terms_conditions.html" class="app-footer-link">How to Order</a>
+                                </li>
+                                <li><a href="../pages/aboutus.html" class="app-footer-link">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="app-footer-gstore text-white text-left text-md-start">
+                            <h5 class="app-footer-heading">G-STORE</h5>
+                            <p class="mb-1">Reg: T2154205T548</p>
+                            <p class="mb-1">TIN: 14578452884</p>
+                            <p class="mb-0">Email: groceries at doorstep@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid app-copyright-bar py-3">
+                <div class="container text-center text-white">
+                    <p class="mb-0">Copyrights 2022 &copy; Groceries At Doorstep Ltd</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <!-- custom js link -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="top-green-bar">
+            Fresh & Organic produce form our farmers to your kitchen
+        </div>
+
+        <div class="container main-header-container">
+            <div class="row align-items-center top-header-row">
+                <div class="col-lg-4 col-md-4 col-sm-12 logo-section">
+                    <img src="../images/logo.png" alt="Logo" class="logo-image">
+                </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-12 search-section">
+                    <div class="input-group search-input-group">
+                        <input type="text" class="form-control search-input" placeholder="Search for products"
+                            aria-label="Search for products">
+                        <button class="btn search-button" type="button">
+                            <i class="fas fa-search me-2"></i> Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row nav-links-row">
+                <div class="col-12 nav-section-container pt-2 pb-3">
+                    <nav class="navbar navbar-expand-lg navbar-light p-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAlt" aria-controls="navbarNavAlt" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAlt">
+                            <ul class="navbar-nav nav-links-and-buttons">
+                                <li class="nav-item">
+                                    <a href="../pages/home.html" class="nav-link nav-link-item me-4">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-link-item me-4 home">Categories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../pages/bestsales.html" class="nav-link nav-link-item me-4">Best Sales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../pages/blogs.html" class="nav-link nav-link-item me-4">Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-link-item me-4 position-relative">
+                                        <img src="../images/cart icon.png" alt="Cart Icon" class="cart-image">
+                                        <span id="cartItemCount"
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                            style="display: none;">
+                                            0
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="btn register-button">My Account</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="payment-section py-5">
+            <div class="container payment-container">
+                <h1 id="cartPageTitle" class="text-center mb-5 payment-heading">Cart</h1>
+
+                <div id="cartStepsContainer" class="cart-steps d-flex justify-content-center mb-4">
+                    <a href="../pages/cart.html" class="cart-step active">BAG</a>
+                    <span class="cart-step-separator"> > </span>
+                    <a href="../pages/address.html" class="cart-step active">ADDRESS</a>
+                    <span class="cart-step-separator"> > </span>
+                    <a href="../pages/payment.html" class="cart-step active">PAYMENT</a>
+                </div>
+
+                <div id="paymentFormAndSummary" class="row">
+                    <div class="col-lg-7 payment-options-column">
+                        <div class="payment-card p-4 mb-4">
+                            <div class="form-check payment-radio-item mb-3">
+                                <input class="form-check-input payment-radio" type="radio" name="paymentMethod"
+                                    id="creditCardRadio" checked>
+                                <label
+                                    class="form-check-label payment-radio-label d-flex justify-content-between align-items-center"
+                                    for="creditCardRadio">
+                                    <div>Credit Card</div>
+                                    <div class="payment-card-icons">
+                                        <img src="../images/master card logo - payment.png" alt="Mastercard"
+                                            class="payment-mastercard-img">
+                                        <img src="../images/visa logo - payment.png" alt="Visa"
+                                            class="payment-visa-img">
+                                    </div>
+                                </label>
+                            </div>
+                            <p class="payment-info-text">Save money transfer using bank account</p>
+                            <p class="payment-info-text">Visa, Mastero</p>
+
+                            <div class="mb-3">
+                                <label for="creditCardNumber" class="form-label payment-label">CREDIT CARD
+                                    NUMBER</label>
+                                <input type="text" class="form-control payment-input" id="creditCardNumber"
+                                    placeholder="Enter you card number">
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label for="cvvCode" class="form-label payment-label">CVV CODE</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control payment-input" id="cvvCode"
+                                            placeholder="***">
+                                        <span class="input-group-text payment-input-icon"><i
+                                                class="fas fa-credit-card"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="expiryDate" class="form-label payment-label">EXPIRY DATE</label>
+                                    <input type="text" class="form-control payment-input" id="expiryDate"
+                                        placeholder="MM/YY">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nameOnCard" class="form-label payment-label">NAME ON CARD</label>
+                                <input type="text" class="form-control payment-input" id="nameOnCard"
+                                    placeholder="Enter your name on the card">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 payment-summary-column">
+                        <div class="payment-summary p-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal</span>
+                                <span>₹ <span id="paymentSubtotal">0</span></span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Delivery Charges</span>
+                                <span>₹ <span id="paymentDeliveryCharges">0</span></span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span>Discount</span>
+                                <span>- ₹ <span id="paymentDiscount">0</span></span>
+                            </div>
+                            <hr class="payment-summary-separator">
+                            <div class="d-flex justify-content-between fw-bold mb-4 payment-total-row">
+                                <span>TOTAL</span>
+                                <span>₹ <span id="paymentTotal">0</span></span>
+                            </div>
+                            <button class="btn btn-success w-100 payment-proceed-btn">PROCEED TO PAY</button>
+                            <p class="text-center mt-3 payment-secure-payment-info"><i class="fas fa-lock me-2"></i>100%
+                                Secure Payments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="paymentSuccessMessage" class="payment-success-message-wrapper d-none">
+                    <img src="../images/tick-payment suc.png" alt="Success" class="payment-success-icon">
+                    <h2 class="payment-success-heading">Payment Successful!</h2>
+                    <p class="payment-success-text">Your order has been confirmed by the vendor.</p>
+                    <p class="payment-success-text">Thank you for giving us the opportunity to serve you.</p>
+                    <a href="../pages/home.html" class="payment-continue-btn">CONTINUE</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer-section">
+        <div class="app-usp-features-section">
+            <div class="container-fluid d-flex flex-wrap align-items-center h-100">
+                <div class="d-flex align-items-center mx-3 my-2">
+                    <div class="app-usp-icon-wrapper me-2">
+                        <img src="../images/free shipping icon.png" alt="Free Shipping" class="app-usp-icon">
+                    </div>
+                    <div>
+                        <p class="mb-0 app-usp-title">Free Shipping</p>
+                        <small class="mb-0 app-usp-description">For Orders Above 500</small>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mx-3 my-2">
+                    <div class="app-usp-icon-wrapper me-2">
+                        <img src="../images/fresh produce icon.png" alt="Fresh Produce" class="app-usp-icon">
+                    </div>
+                    <div>
+                        <p class="mb-0 app-usp-title">Fresh Product</p>
+                        <small class="mb-0 app-usp-description">Guaranteed Product Warranty</small>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mx-3 my-2">
+                    <div class="app-usp-icon-wrapper me-2">
+                        <img src="../images/safety icon.png" alt="Security" class="app-usp-icon">
+                    </div>
+                    <div>
+                        <p class="mb-0 app-usp-title">100% Safety & Security</p>
+                        <small class="mb-0 app-usp-description">Your Data is Highly Secured</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-get-in-touch-wrapper">
+            <img src="../images/get in touch bg .png" alt="Orange Background" class="app-orange-bg-image">
+            <div class="app-get-in-touch-content text-white">
+                <div class="container">
+                    <h5 class="mb-1">Get in Touch with us</h5>
+                    <p class="mb-0">+91 91010 90000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-main-footer">
+            <img src="../images/footer bg.png" alt="Footer Background" class="app-footer-bg-image">
+
+            <div class="container app-footer-content">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="app-footer-logo-block text-white text-md-start">
+                            <img src="../images/logo.png" alt="Groceries at Doorstep" class="app-footer-logo mb-3">
+                            <p>Fresh groceries, particularly fruits, vegetables, wines, grains, and sour proteins, play
+                                a crucial role in nourishing and wellness and promoting overall well-being.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="app-footer-navigate text-white text-left text-md-start">
+                            <h5 class="app-footer-heading">NAVIGATE</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="../pages/privacypolicy.html" class="app-footer-link">Privacy Policy</a>
+                                </li>
+                                <li><a href="../pages/terms_conditions.html" class="app-footer-link">Terms &
+                                        Conditions</a></li>
+                                <li><a href="../pages/terms_conditions.html" class="app-footer-link">How to Order</a>
+                                </li>
+                                <li><a href="../pages/aboutus.html" class="app-footer-link">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="app-footer-gstore text-white text-left text-md-start">
+                            <h5 class="app-footer-heading">G-STORE</h5>
+                            <p class="mb-1">Reg: T2154205T548</p>
+                            <p class="mb-1">TIN: 14578452884</p>
+                            <p class="mb-0">Email: groceries at doorstep@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid app-copyright-bar py-3">
+                <div class="container text-center text-white">
+                    <p class="mb-0">Copyrights 2022 &copy; Groceries At Doorstep Ltd</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    
+    <!-- custom js -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function updateCartIconCount() {
+                const cart = JSON.parse(sessionStorage.getItem('cart') || '[]');
+                const cartItemCountSpan = document.getElementById('cartItemCount');
+
+                if (cartItemCountSpan) {
+                    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+                    if (totalItems > 0) {
+                        cartItemCountSpan.textContent = totalItems;
+                        cartItemCountSpan.style.display = 'block';
+                    } else {
+                        cartItemCountSpan.textContent = '0';
+                        cartItemCountSpan.style.display = 'none';
+                    }
+                }
+            }
+
+            function loadCartSummary() {
+                const cartSummaryData = sessionStorage.getItem('cartSummary');
+
+                if (cartSummaryData) {
+                    const data = JSON.parse(cartSummaryData);
+                    document.getElementById('paymentSubtotal').textContent = data.subtotal || '0';
+                    document.getElementById('paymentDeliveryCharges').textContent = data.deliveryCharges || '0';
+                    document.getElementById('paymentDiscount').textContent = data.discount || '0';
+                    document.getElementById('paymentTotal').textContent = data.total || '0';
+                } else {
+                    document.getElementById('paymentSubtotal').textContent = '0';
+                    document.getElementById('paymentDeliveryCharges').textContent = '0';
+                    document.getElementById('paymentDiscount').textContent = '0';
+                    document.getElementById('paymentTotal').textContent = '0';
+                }
+            }
+
+            loadCartSummary();
+
+            const proceedToPayBtn = document.querySelector('.payment-proceed-btn');
+            const paymentFormAndSummary = document.getElementById('paymentFormAndSummary');
+            const paymentSuccessMessage = document.getElementById('paymentSuccessMessage');
+            const cartStepsContainer = document.getElementById('cartStepsContainer');
+            const cartPageTitle = document.getElementById('cartPageTitle');
+            const continueShoppingBtn = paymentSuccessMessage.querySelector('.payment-continue-btn');
+
+            if (proceedToPayBtn) {
+                proceedToPayBtn.addEventListener('click', function (event) {
+                    event.preventDefault();
+
+                    const creditCardNumber = document.getElementById('creditCardNumber').value.trim();
+                    const cvvCode = document.getElementById('cvvCode').value.trim();
+                    const expiryDate = document.getElementById('expiryDate').value.trim();
+                    const nameOnCard = document.getElementById('nameOnCard').value.trim();
+
+                    let isValid = true;
+
+                    if (creditCardNumber === '') {
+                        alert('Please enter your credit card number.');
+                        isValid = false;
+                    } else if (!/^\d{16}$/.test(creditCardNumber)) {
+                        alert('Please enter a valid 16-digit credit card number.');
+                        isValid = false;
+                    } else if (cvvCode === '') {
+                        alert('Please enter your CVV code.');
+                        isValid = false;
+                    } else if (!/^\d{3,4}$/.test(cvvCode)) {
+                        alert('Please enter a valid 3 or 4 digit CVV code.');
+                        isValid = false;
+                    } else if (expiryDate === '') {
+                        alert('Please enter the expiry date (MM/YY).');
+                        isValid = false;
+                    } else if (!/^(0[1-9]|1[0-2])\/?([0-9]{2})$/.test(expiryDate)) {
+                        alert('Please enter a valid expiry date in MM/YY format.');
+                        isValid = false;
+                    } else if (nameOnCard === '') {
+                        alert('Please enter the name on your card.');
+                        isValid = false;
+                    }
+
+                    if (isValid) {
+                        alert('Payment details submitted successfully!');
+
+                        cartPageTitle.classList.add('d-none');
+                        cartStepsContainer.classList.add('d-none');
+                        paymentFormAndSummary.classList.add('d-none');
+                        paymentSuccessMessage.classList.remove('d-none');
+
+                        console.log("Payment successful. Clearing cart from session storage and updating icon.");
+                        sessionStorage.removeItem('cart'); 
+                        updateCartIconCount(); 
+                    }
+                });
+            }
+
+            if (continueShoppingBtn) {
+                continueShoppingBtn.addEventListener('click', function (event) {
+                    event.preventDefault(); 
+                    window.location.href = '../pages/home.html'; 
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

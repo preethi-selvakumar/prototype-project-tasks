@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header-container">
+        <div class="top-green-bar">
+            Fresh & Organic produce form our farmers to your kitchen
+        </div>
+
+        <div class="container main-header-container">
+            <div class="row align-items-center top-header-row">
+                <div class="col-lg-4 col-md-4 col-sm-12 logo-section">
+                    <img src="../images/logo.png" alt="Logo" class="logo-image">
+                </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-12 search-section">
+                    <div class="input-group search-input-group">
+                        <input type="text" class="form-control search-input" placeholder="Search for products"
+                            aria-label="Search for products">
+                        <button class="btn search-button" type="button">
+                            <i class="fas fa-search me-2"></i> Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row nav-links-row">
+                <div class="col-12 nav-section-container pt-2 pb-3">
+                    <nav class="navbar navbar-expand-lg navbar-light p-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAlt" aria-controls="navbarNavAlt" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAlt">
+                            <ul class="navbar-nav nav-links-and-buttons">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-link-item me-4 home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../pages/categories.html"
+                                        class="nav-link nav-link-item me-4">Categories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../pages/bestsales.html" class="nav-link nav-link-item me-4">Best Sales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../pages/blogs.html" class="nav-link nav-link-item me-4">Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../pages/cart.html" class="nav-link nav-link-item me-4 position-relative">
+                                        <img src="../images/cart icon.png" alt="Cart Icon" class="cart-image">
+                                        <span id="cartItemCount"
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                            style="display: none;">
+                                            0
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="btn register-button">My Account</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- home banner -->
+        <section class="banner-section container my-5">
+            <div class="row g-4">
+                <!-- Left Banner  -->
+                <div class="col-12 col-lg-8">
+                    <div class="left-banner-card">
+                        <img src="../images/header image 1.png" alt="Shopping cart with fresh groceries"
+                            class="banner-background-image left-banner-bg-image">
+                        <div class="banner-content">
+                            <p class="banner-sub-heading">Halal Products <span class="highlight-text">Online Delivery
+                                    Shop</span></p>
+                            <h2 class="banner-main-heading">Make Healthy Life with <span>Fresh</span> Grocery</h2>
+                            <p class="banner-description">
+                                Fresh groceries, particularly fruits, vegetables, whole grains, and lean proteins,
+                                play a crucial role in nourishing our bodies and promoting overall well-being.
+                            </p>
+                            <a href="../pages/categories.html" class="banner-shop-button">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Banner -->
+                <div class="col-12 col-lg-4">
+                    <div class="right-banner-card">
+                        <span class="discount-tag">-12% OFF</span>
+                        <img src="../images/header image 2.png" alt="Assortment of organic fruits and vegetables"
+                            class="banner-background-image right-banner-bg-image">
+                        <div class="banner-content">
+                            <p class="banner-sub-heading">Black Friday Sale</p>
+                            <h2 class="banner-main-heading">Organic Food Up To 50% Off</h2>
+                            <a href="../pages/categories.html" class="banner-shop-button">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- category section -->
+        <section class="category-section">
+            <div class="category-container container">
+                <!-- Section Header -->
+                <div class="category-header-row row">
+                    <div class="col-12">
+                        <div class="category-header">
+                            <h2 class="category-main-heading">Browse All Categories</h2>
+                            <p class="category-sub-heading">Explore a diverse range of categories to find exactly what
+                                you need!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category Cards Grid -->
+                <div class="category-cards-grid-row row g-4 justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2 d-flex">
+                        <a href="../pages/vegetable.html" class="category-card category-card-link">
+                            <div class="category-icon-wrapper icon-green">
+                                <img src="../images/vegetable-icon.png" alt="Vegetable Icon" class="category-icon">
+                            </div>
+                            <h3 class="category-title">Vegetable</h3>
+                            <p class="category-items-count">20 items</p>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 d-flex">
+                        <a href="../pages/bestsales.html" class="category-card category-card-link">
+                            <div class="category-icon-wrapper icon-pink">
+                                <img src="../images/fresh-fruit-icon.png" alt="Fresh Fruits Icon" class="category-icon">
+                            </div>
+                            <h3 class="category-title">Fresh Fruits</h3>
+                            <p class="category-items-count">12 items</p>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 d-flex">
+                        <a href="../pages/meat_and_seafood.html" class="category-card category-card-link">
+                            <div class="category-icon-wrapper icon-brown">
+                                <img src="../images/meat-icon.png" alt="Meat Icon" class="category-icon">
+                            </div>
+                            <h3 class="category-title">Meat</h3>
+                            <p class="category-items-count">7 items</p>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 d-flex">
+                        <a href="../pages/meat_and_seafood.html" class="category-card category-card-link">
+                            <div class="category-icon-wrapper icon-purple">
+                                <img src="../images/seafood-icon.png" alt="Sea Food Icon" class="category-icon">
+                            </div>
+                            <h3 class="category-title">Sea Food</h3>
+                            <p class="category-items-count">12 items</p>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 d-flex">
+                        <a href="../pages/diary_and_eggs.html" class="category-card category-card-link">
+                            <div class="category-icon-wrapper icon-blue">
+                                <img src="../images/milk-icon.png" alt="Milk & Dairy Icon" class="category-icon">
+                            </div>
+                            <h3 class="category-title">Milk & dairy</h3>
+                            <p class="category-items-count">8 items</p>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 d-flex">
+                        <a href="../pages/bakery.html" class="category-card category-card-link">
+                            <div class="category-icon-wrapper icon-yellow">
+                                <img src="../images/bread-icon.png" alt="Fresh Bread Icon" class="category-icon">
+                            </div>
+                            <h3 class="category-title">Fresh Bread</h3>
+                            <p class="category-items-count">24 items</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- produce banner section -->
+        <section class="produce-banner-section">
+            <img src="../images/poster image home.png" alt="Farm Fresh Produce" class="produce-banner-image">
+
+            <div class="produce-banner-content-overlay">
+                <p class="produce-banner-small-text">Enjoy upto 20% off on your first order</p>
+                <h2 class="produce-banner-heading">Fresh Produce, From Farm<br>Products At A Reasonable Price!</h2>
+                <a href="../pages/categories.html" class="produce-banner-button">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- featured section -->
+        <section class="featured-products-main-section">
+            <div class="featured-products-container">
+                <div class="featured-products-header">
+                    <h2 class="featured-products-title">Featured Products</h2>
+                    <p class="featured-products-subtitle">Each item is carefully selected for quality, freshness, and
+                        nutritional benefits.</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Product Card 1: Organic Tomatoes -->
+                    <div class="col-6 col-md-4 col-lg-3 product-card-col">
+                        <div class="product-card-wrapper">
+                            <div class="product-card" data-category="Vegetables">
+                                <div class="product-image-container">
+                                    <img src="../images/featured pro home 1.png" alt="Organic Tomatoes"
+                                        class="product-image">
+                                </div>
+                                <h3 class="product-name">Organic Tomatoes</h3>
+                                <p class="product-price">₹ 80</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <a href="#" class="add-to-cart-button" data-product-id="FP001-Tomatoes">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2: Fresh Meat -->
+                    <div class="col-6 col-md-4 col-lg-3 product-card-col">
+                        <div class="product-card-wrapper">
+                            <div class="product-card" data-category="Meat">
+                                <div class="product-image-container">
+                                    <img src="../images/featured pro home 2.png" alt="Fresh Meat" class="product-image">
+                                </div>
+                                <h3 class="product-name">Fresh Meat</h3>
+                                <p class="product-price">₹ 420</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star empty"></i>
+                                </div>
+                                <a href="#" class="add-to-cart-button" data-product-id="FP002-FreshMeat">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3: Seasonal Mangoes -->
+                    <div class="col-6 col-md-4 col-lg-3 product-card-col">
+                        <div class="product-card-wrapper">
+                            <div class="product-card" data-category="Fruits">
+                                <div class="product-image-container">
+                                    <img src="../images/featured pro home 3.png" alt="Seasonal Mangoes"
+                                        class="product-image">
+                                </div>
+                                <h3 class="product-name">Seasonal Mangoes</h3>
+                                <p class="product-price">₹ 120</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <a href="#" class="add-to-cart-button" data-product-id="FP003-Mangoes">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4: Green Onions -->
+                    <div class="col-6 col-md-4 col-lg-3 product-card-col">
+                        <div class="product-card-wrapper">
+                            <div class="product-card" data-category="Vegetables">
+                                <div class="product-image-container">
+                                    <img src="../images/featured pro home 4.png" alt="Green Onions"
+                                        class="product-image">
+                                </div>
+                                <h3 class="product-name">Green Onions</h3>
+                                <p class="product-price">₹ 100</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <a href="#" class="add-to-cart-button" data-product-id="FP004-GreenOnions">Add to
+                                    cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- new arrival section -->
+        <section class="new-arrivals-promo-section py-4">
+            <div class="container new-arrivals-promo-container">
+                <div class="row new-arrivals-promo-row">
+
+                    <div class="col-md-6 new-arrivals-products-column">
+                        <nav class="nav new-arrivals-tabs-nav mb-4">
+                            <a class="nav-link active new-arrivals-tab-link-active" aria-current="page" href="#">New
+                                Arrivals</a>
+                            <a class="nav-link new-arrivals-tab-link" href="#">Trending Products</a>
+                            <a class="nav-link new-arrivals-tab-link" href="#">Best Sellings</a>
+                        </nav>
+
+                        <div class="new-arrivals-product-list-display">
+                            <div class="d-flex align-items-center mb-3 new-arrivals-product-item-card"
+                                data-category="Fruits">
+                                <img src="../images/new arrivals 1.png" alt="European Zesty Lemon"
+                                    class="new-arrivals-product-thumbnail me-3">
+                                <div>
+                                    <h5 class="new-arrivals-product-title mb-1">European Zesty Lemon</h5>
+                                    <p class="new-arrivals-product-price mb-2">₹ 80</p>
+                                    <a href="#" class="btn btn-success btn-sm new-arrivals-add-to-cart-btn"
+                                        data-product-id="NA001-Lemon">Add to cart</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3 new-arrivals-product-item-card"
+                                data-category="Fruits">
+                                <img src="../images/new arrivals 2.png" alt="Apple from Kashmir"
+                                    class="new-arrivals-product-thumbnail me-3">
+                                <div>
+                                    <h5 class="new-arrivals-product-title mb-1">Apple from Kashmir</h5>
+                                    <p class="new-arrivals-product-price mb-2">₹ 240</p>
+                                    <a href="#" class="btn btn-success btn-sm new-arrivals-add-to-cart-btn"
+                                        data-product-id="NA002-Apple">Add to cart</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center new-arrivals-product-item-card"
+                                data-category="Fruits">
+                                <img src="../images/new arrivals 3.png" alt="Coconuts"
+                                    class="new-arrivals-product-thumbnail me-3">
+                                <div>
+                                    <h5 class="new-arrivals-product-title mb-1">Coconuts</h5>
+                                    <p class="new-arrivals-product-price mb-2">₹ 320</p>
+                                    <a href="#" class="btn btn-success btn-sm new-arrivals-add-to-cart-btn"
+                                        data-product-id="NA003-Coconuts">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-6 new-arrivals-promo-stats-column d-flex flex-column justify-content-center align-items-start ps-5">
+                        <h1 class="new-arrivals-promo-heading mb-3">Get <span
+                                class="new-arrivals-discount-percentage">20% Discount</span> on Your
+                            First Sale</h1>
+                        <p class="new-arrivals-promo-description mb-4">To celebrate your first purchase with us, enjoy a
+                            20% discount
+                            on your first order.</p>
+
+                        <div class="d-flex gap-3 mt-4 new-arrivals-active-users-container">
+                            <div class="text-center p-3 new-arrivals-active-user-card">
+                                <h4 class="fw-bold new-arrivals-active-user-count">45K+</h4>
+                                <p class="mb-0 new-arrivals-active-user-label">Active Users</p>
+                            </div>
+                            <div class="text-center p-3 new-arrivals-active-user-card">
+                                <h4 class="fw-bold new-arrivals-active-user-count">45K+</h4>
+                                <p class="mb-0 new-arrivals-active-user-label">Active Users</p>
+                            </div>
+                            <div class="text-center p-3 new-arrivals-active-user-card">
+                                <h4 class="fw-bold new-arrivals-active-user-count">45K+</h4>
+                                <p class="mb-0 new-arrivals-active-user-label">Active Users</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- best deals section -->
+        <section class="best-deals-section">
+            <div class="best-deals-container container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-12 col-lg-6 best-deals-text-content">
+                        <h2 class="best-deals-heading">Best Deals <span class="best-deals-highlight">This Week</span>
+                        </h2>
+                        <p class="best-deals-description">Don't miss out on our incredible deals to help you save while
+                            enjoying fresh, high-quality groceries!</p>
+
+                        <div class="best-deals-timer-wrapper d-flex flex-wrap">
+                            <div class="timer-box">
+                                <span class="timer-value">7</span>
+                                <span class="timer-label">Days</span>
+                            </div>
+                            <div class="timer-box">
+                                <span class="timer-value">168</span>
+                                <span class="timer-label">Hours</span>
+                            </div>
+                            <div class="timer-box">
+                                <span class="timer-value">1004</span>
+                                <span class="timer-label">Minutes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                    </div>
+                </div>
+
+                <div class="best-deals-products-grid">
+                    <div class="row g-4">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="best-deals-product-card" data-category="Vegetables">
+                                <img src="../images/best deals 1.png" alt="Red Chillies" class="best-deals-product-img">
+                                <h4 class="best-deals-product-title">Red Chillies</h4>
+                                <p class="best-deals-product-price">₹ 80</p>
+                                <div class="best-deals-product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <a href="#" class="best-deals-add-to-cart-btn" data-product-id="BD001-Chillies">Add to
+                                    cart</a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="best-deals-product-card" data-category="Dairy & Eggs">
+                                <img src="../images/best deals 2.png" alt="Fresh Eggs" class="best-deals-product-img">
+                                <h4 class="best-deals-product-title">Fresh Eggs</h4>
+                                <p class="best-deals-product-price">₹ 120</p>
+                                <div class="best-deals-product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star empty"></i>
+                                </div>
+                                <a href="#" class="best-deals-add-to-cart-btn" data-product-id="BD002-Eggs">Add to
+                                    cart</a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="best-deals-product-card" data-category="Groceries">
+                                <img src="../images/best deals 3.png" alt="Soya Chunks" class="best-deals-product-img">
+                                <h4 class="best-deals-product-title">Soya Chunks</h4>
+                                <p class="best-deals-product-price">₹ 70</p>
+                                <div class="best-deals-product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <a href="#" class="best-deals-add-to-cart-btn" data-product-id="BD003-Soya">Add to
+                                    cart</a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="best-deals-product-card" data-category="Groceries">
+                                <img src="../images/best deals 4.png" alt="Dry Beans" class="best-deals-product-img">
+                                <h4 class="best-deals-product-title">Dry Beans</h4>
+                                <p class="best-deals-product-price">₹ 135</p>
+                                <div class="best-deals-product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <a href="#" class="best-deals-add-to-cart-btn" data-product-id="BD004-DryBeans">Add to
+                                    cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- customer feedback section -->
+        <section class="customer-feedback-section py-5">
+            <div class="customer-feedback-container container">
+                <div class="row mb-5 text-center">
+                    <div class="col-12">
+                        <h2 class="customer-feedback-main-heading">Our Customer Feedback</h2>
+                        <p class="customer-feedback-description">We value the opinions of our customers that brings
+                            improvement in our services</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <!-- Left Column -->
+                    <div class="col-12 col-lg-6 d-flex justify-content-center mb-4 mb-lg-0">
+                        <div class="customer-feedback-map-wrapper position-relative">
+                            <img src="../images/image on map 1.png" alt="User 1"
+                                class="customer-feedback-avatar customer-feedback-avatar-1">
+                            <img src="../images/image on map 2.png" alt="User 2"
+                                class="customer-feedback-avatar customer-feedback-avatar-2">
+                            <img src="../images/image on map 3.png" alt="User 3"
+                                class="customer-feedback-avatar customer-feedback-avatar-3">
+                            <img src="../images/image on map 4.png" alt="User 4"
+                                class="customer-feedback-avatar customer-feedback-avatar-4">
+                            <img src="../images/image on map 5.png" alt="User 5"
+                                class="customer-feedback-avatar customer-feedback-avatar-5">
+                            <img src="../images/image on map 6.png" alt="User 6"
+                                class="customer-feedback-avatar customer-feedback-avatar-6">
+                            <img src="../images/image on map 7.png" alt="User 7"
+                                class="customer-feedback-avatar customer-feedback-avatar-7">
+                            <img src="../images/image on map 8.png" alt="User 8"
+                                class="customer-feedback-avatar customer-feedback-avatar-8">
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <div class="customer-feedback-card p-4 shadow-sm">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="../images/review image.png" alt="George Stephen"
+                                    class="customer-feedback-profile-pic rounded-circle me-3">
+                                <div>
+                                    <h5 class="customer-feedback-name mb-0">George Stephen</h5>
+                                    <div class="customer-feedback-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="customer-feedback-review-text mb-0">
+                                "I love the quality of the produce! Everything is always fresh and tastes amazing. The
+                                prices are competitive, and the weekly deals are fantastic. I save so much on my grocery
+                                bills!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="app-footer-section">
+        <div class="app-usp-features-section">
+            <div class="container-fluid d-flex flex-wrap align-items-center h-100">
+                <div class="d-flex align-items-center mx-3 my-2">
+                    <div class="app-usp-icon-wrapper me-2">
+                        <img src="../images/free shipping icon.png" alt="Free Shipping" class="app-usp-icon">
+                    </div>
+                    <div>
+                        <p class="mb-0 app-usp-title">Free Shipping</p>
+                        <small class="mb-0 app-usp-description">For Orders Above 500</small>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mx-3 my-2">
+                    <div class="app-usp-icon-wrapper me-2">
+                        <img src="../images/fresh produce icon.png" alt="Fresh Produce" class="app-usp-icon">
+                    </div>
+                    <div>
+                        <p class="mb-0 app-usp-title">Fresh Product</p>
+                        <small class="mb-0 app-usp-description">Guaranteed Product Warranty</small>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mx-3 my-2">
+                    <div class="app-usp-icon-wrapper me-2">
+                        <img src="../images/safety icon.png" alt="Security" class="app-usp-icon">
+                    </div>
+                    <div>
+                        <p class="mb-0 app-usp-title">100% Safety & Security</p>
+                        <small class="mb-0 app-usp-description">Your Data is Highly Secured</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-get-in-touch-wrapper">
+            <img src="../images/get in touch bg .png" alt="Orange Background" class="app-orange-bg-image">
+            <div class="app-get-in-touch-content text-white">
+                <div class="container">
+                    <h5 class="mb-1">Get in Touch with us</h5>
+                    <p class="mb-0">+91 91010 90000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-main-footer">
+            <img src="../images/footer bg.png" alt="Footer Background" class="app-footer-bg-image">
+
+            <div class="container app-footer-content">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="app-footer-logo-block text-white text-md-start">
+                            <img src="../images/logo.png" alt="Groceries at Doorstep" class="app-footer-logo mb-3">
+                            <p>Fresh groceries, particularly fruits, vegetables, wines, grains, and sour proteins, play
+                                a crucial role in nourishing and wellness and promoting overall well-being.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="app-footer-navigate text-white text-left text-md-start">
+                            <h5 class="app-footer-heading">NAVIGATE</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="../pages/privacypolicy.html" class="app-footer-link">Privacy Policy</a>
+                                </li>
+                                <li><a href="../pages/terms_conditions.html" class="app-footer-link">Terms &
+                                        Conditions</a></li>
+                                <li><a href="../pages/terms_conditions.html" class="app-footer-link">How to Order</a>
+                                </li>
+                                <li><a href="../pages/aboutus.html" class="app-footer-link">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="app-footer-gstore text-white text-left text-md-start">
+                            <h5 class="app-footer-heading">G-STORE</h5>
+                            <p class="mb-1">Reg: T2154205T548</p>
+                            <p class="mb-1">TIN: 14578452884</p>
+                            <p class="mb-0">Email: groceries at doorstep@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid app-copyright-bar py-3">
+                <div class="container text-center text-white">
+                    <p class="mb-0">Copyrights 2022 &copy; Groceries At Doorstep Ltd</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <!-- custom js link -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
